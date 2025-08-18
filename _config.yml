@@ -1,0 +1,35 @@
+# Site settings
+title: Lookinglass
+email: support@lookinglass.ai
+description: A powerful GUI for the OpenAI API. Access more models, transparent pricing, and complete control over your AI interactions.
+baseurl: ""
+url: "https://hamiltoncory.github.io"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/
+  - README.md
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"

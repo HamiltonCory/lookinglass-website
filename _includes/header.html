@@ -1,0 +1,45 @@
+<header class="header">
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="{{ '/' | relative_url }}" class="nav-brand">
+                <svg class="telescope-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.5 7L19 5.5L17.5 7L16 5.5L14.5 7L13 5.5L11.5 7L10 5.5L8.5 7L7 5.5L5.5 7L4 5.5L2.5 7L4 8.5L5.5 7L7 8.5L8.5 7L10 8.5L11.5 7L13 8.5L14.5 7L16 8.5L17.5 7L19 8.5L20.5 7Z" fill="currentColor"/>
+                    <circle cx="18" cy="6" r="3" fill="none" stroke="currentColor" stroke-width="2"/>
+                    <path d="M9 21L7 19L5 21L7 19L9 21Z" fill="currentColor"/>
+                    <line x1="15" y1="9" x2="9" y2="15" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                <span class="nav-brand-text">Lookinglass</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="{{ '/' | relative_url }}" class="nav-link">Home</a></li>
+                <li><a href="{{ '/privacy' | relative_url }}" class="nav-link">Privacy</a></li>
+                <li><a href="{{ '/eula' | relative_url }}" class="nav-link">Terms</a></li>
+                <li><a href="#" class="nav-link download-btn">Download</a></li>
+            </ul>
+            
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                <svg class="sun-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
+                    <line x1="12" y1="1" x2="12" y2="3" stroke="currentColor" stroke-width="2"/>
+                    <line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" stroke-width="2"/>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="2"/>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2"/>
+                    <line x1="1" y1="12" x2="3" y2="12" stroke="currentColor" stroke-width="2"/>
+                    <line x1="21" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="2"/>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="2"/>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                <svg class="moon-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="2" fill="currentColor"/>
+                </svg>
+            </button>
+            
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+</header>

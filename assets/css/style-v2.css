@@ -908,3 +908,62 @@ svg.telescope-hero,
     max-width: 100% !important;
     max-height: 100% !important;
 }
+
+/* App Preview Section */
+.app-preview {
+    padding: 6rem 0;
+    background-color: var(--surface-color);
+}
+
+.app-preview-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.app-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.gallery-item {
+    background-color: var(--background-color);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px var(--shadow-color);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.gallery-item h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.gallery-item p {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+    .app-gallery {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}

@@ -2,8 +2,8 @@
 title: Lookinglass
 email: support@lookinglass.ai
 description: A powerful GUI for the OpenAI API. Access more models, transparent pricing, and complete control over your AI interactions.
-baseurl: "/lookinglass-website"
-url: "https://hamiltoncory.github.io"
+baseurl: ""
+url: "https://lookinglass.ai"
 
 # Build settings
 markdown: kramdown

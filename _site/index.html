@@ -1,15 +1,71 @@
----
-layout: default
-title: Home
-description: A powerful GUI for the OpenAI API. Access more models, transparent pricing, and complete control over your AI interactions.
----
-
-<!-- Hero Section -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Lookinglass</title>
+    <meta name="description" content="A powerful GUI for the OpenAI API. Access more models, transparent pricing, and complete control over your AI interactions.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/lookinglass-website/assets/images/telescope-icon.svg">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/lookinglass-website/assets/css/style.css?v=1755528543">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=-apple-system,BlinkMacSystemFont,Segoe+UI,Roboto,Helvetica+Neue,Arial,sans-serif&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/lookinglass-website/" class="nav-brand">
+                <img src="/lookinglass-website/assets/images/telescope-icon.png" alt="Lookinglass" class="nav-logo" />
+                <span class="nav-brand-text">Lookinglass</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="/lookinglass-website/" class="nav-link">Home</a></li>
+                <li><a href="/lookinglass-website/privacy" class="nav-link">Privacy</a></li>
+                <li><a href="/lookinglass-website/eula" class="nav-link">Terms</a></li>
+                <li><a href="#" class="nav-link download-btn">Download</a></li>
+            </ul>
+            
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                <svg class="sun-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
+                    <line x1="12" y1="1" x2="12" y2="3" stroke="currentColor" stroke-width="2"/>
+                    <line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" stroke-width="2"/>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="2"/>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2"/>
+                    <line x1="1" y1="12" x2="3" y2="12" stroke="currentColor" stroke-width="2"/>
+                    <line x1="21" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="2"/>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="2"/>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                <svg class="moon-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="2" fill="currentColor"/>
+                </svg>
+            </button>
+            
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+</header>
+    
+    <main>
+        <!-- Hero Section -->
 <section class="hero">
     <div class="hero-container">
         <div class="hero-content">
             <div class="hero-icon">
-                <img src="{{ '/assets/images/telescope-icon.png' | relative_url }}" alt="Lookinglass Logo" class="telescope-hero" />
+                <img src="/lookinglass-website/assets/images/telescope-icon.png" alt="Lookinglass Logo" class="telescope-hero" />
             </div>
             <h1 class="hero-title">The bridge between you and the GPTs you love</h1>
             <p class="hero-subtitle">A powerful GUI for the OpenAI API. Access 15 AI models with transparent pricing, advanced controls, and complete cost transparency. No subscriptions.</p>
@@ -35,7 +91,7 @@ description: A powerful GUI for the OpenAI API. Access more models, transparent 
             <div class="phone-mockup">
                 <div class="phone-frame">
                     <div class="phone-screen">
-                        <img src="{{ '/assets/images/Lookinglass-WelcomeView.png' | relative_url }}" alt="Lookinglass Welcome Screen" class="app-screenshot" />
+                        <img src="/lookinglass-website/assets/images/Lookinglass-WelcomeView.png" alt="Lookinglass Welcome Screen" class="app-screenshot" />
                     </div>
                 </div>
             </div>
@@ -193,3 +249,49 @@ description: A powerful GUI for the OpenAI API. Access more models, transparent 
         </div>
     </div>
 </section>
+    </main>
+    
+    <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="/lookinglass-website/assets/images/telescope-icon.png" alt="Lookinglass" class="footer-logo" />
+                <span>Lookinglass</span>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="/lookinglass-website/#features">Features</a></li>
+                        <li><a href="#" aria-label="Download from App Store">Download</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="mailto:support@lookinglass.ai">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="/lookinglass-website/privacy">Privacy Policy</a></li>
+                        <li><a href="/lookinglass-website/eula">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Lookinglass. All rights reserved.</p>
+            <p>A powerful GUI for the OpenAI API</p>
+        </div>
+    </div>
+</footer>
+    
+    <script src="/lookinglass-website/assets/js/main.js"></script>
+</body>
+</html>

@@ -1055,3 +1055,19 @@ svg.telescope-hero,
         padding: 15px;
     }
 }
+
+.footer-social {
+  display: flex;
+  gap: 12px; /* space between icons */
+  margin-top: 10px;
+}
+
+.footer-social .social-icon svg {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease;
+}
+
+.footer-social .social-icon:hover svg {
+  transform: scale(1.1);
+}

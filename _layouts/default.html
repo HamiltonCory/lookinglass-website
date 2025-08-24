@@ -6,10 +6,15 @@
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/lookinglass-telescope.svg' | relative_url }}">
+    <link rel="icon" type="image/png" href="{{ '/assets/images/lookinglass-telescope.png' | relative_url }}">
+    <link rel="apple-touch-icon" href="{{ '/assets/images/lookinglass-telescope.png' | relative_url }}">
+
     <!-- Canonical -->
     <link rel="canonical" href="{{ page.url | absolute_url }}">
 
-        <!-- Open Graph -->
+    <!-- Open Graph -->
     <meta property="og:title" content="Lookinglass – The Bridge to OpenAI and Beyond">
     <meta property="og:description" content="Pay only for what you use, choose from 20 models, and stay in control of your data and costs.">
     <meta property="og:type" content="website">

@@ -65,7 +65,7 @@ description: Compare Lookinglass pay-as-you-go pricing with ChatGPT subscription
                     <div class="feature-value excluded">✗</div>
                     <div class="feature-value excluded">✗</div>
                     <div class="feature-value included">✓</div>
-                    <div class="feature-value included"><strong>✓ Pay-per-use</strong></div>
+                    <div class="feature-value included highlight-text"><strong>✓ Pay-per-use</strong></div>
                 </div>
 
                 <div class="comparison-row">
@@ -332,9 +332,9 @@ description: Compare Lookinglass pay-as-you-go pricing with ChatGPT subscription
         <!-- CTA -->
         <div class="pricing-cta">
             <h2>Ready to Take Control?</h2>
-            <p class="cta-main-text">Start with just $1. No monthly commitments. Just stop using it anytime.</p>
+            <p class="cta-main-text">Start free with $1 credit included. No monthly commitments. Just stop using it anytime.</p>
             <a href="#" class="btn-primary">Download Free on iOS</a>
-            <p class="cta-note">Add funds only when you're ready to start chatting</p>
+            <p class="cta-note">Get started immediately with your free $1 credit - no payment required</p>
         </div>
     </div>
 </section>
@@ -463,6 +463,18 @@ document.addEventListener('DOMContentLoaded', function() {
 .comparison-row.highlight {
     background: var(--primary-color);
     color: white;
+}
+
+.comparison-row.highlight .feature-name {
+    color: white !important;
+}
+
+.comparison-row.highlight .highlight-text {
+    color: white !important;
+    background: var(--primary-hover);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-weight: 700;
 }
 
 .comparison-row > div {

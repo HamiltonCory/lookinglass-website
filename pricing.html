@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Pricing
-description: Compare Lookinglass pay-as-you-go pricing with ChatGPT subscriptions. Access 20 models including o3-pro without monthly commitments.
+description: Compare Lookinglass pay-as-you-go pricing with ChatGPT subscriptions. Access 20+ models including o3-pro without monthly commitments.
 ---
 
 <section class="pricing-page">
@@ -61,11 +61,11 @@ description: Compare Lookinglass pay-as-you-go pricing with ChatGPT subscription
                 </div>
 
                 <div class="comparison-row highlight">
-                    <div class="feature-name">o3-pro Access</div>
+                    <div class="feature-name"><strong>o3-pro Access</strong></div>
                     <div class="feature-value excluded">✗</div>
                     <div class="feature-value excluded">✗</div>
                     <div class="feature-value included">✓</div>
-                    <div class="feature-value included">✓ Pay-per-use</div>
+                    <div class="feature-value included"><strong>✓ Pay-per-use</strong></div>
                 </div>
 
                 <div class="comparison-row">
@@ -111,19 +111,27 @@ description: Compare Lookinglass pay-as-you-go pricing with ChatGPT subscription
                 </div>
 
                 <div class="comparison-row">
-                    <div class="feature-name">Conversation Storage</div>
-                    <div class="feature-value warning">Stored</div>
-                    <div class="feature-value warning">Stored</div>
-                    <div class="feature-value warning">Stored</div>
-                    <div class="feature-value included">✓ Not stored</div>
+                    <div class="feature-name">Conversation Threads</div>
+                    <div class="feature-value excluded">✗</div>
+                    <div class="feature-value included">✓</div>
+                    <div class="feature-value included">✓</div>
+                    <div class="feature-value included">✓ Local storage</div>
                 </div>
 
                 <div class="comparison-row">
-                    <div class="feature-name">Anonymous Usage</div>
+                    <div class="feature-name">Conversation Storage</div>
+                    <div class="feature-value warning">Cloud stored</div>
+                    <div class="feature-value warning">Cloud stored</div>
+                    <div class="feature-value warning">Cloud stored</div>
+                    <div class="feature-value included">✓ Device only</div>
+                </div>
+
+                <div class="comparison-row">
+                    <div class="feature-name">Cost Guard Protection</div>
                     <div class="feature-value excluded">✗</div>
                     <div class="feature-value excluded">✗</div>
                     <div class="feature-value excluded">✗</div>
-                    <div class="feature-value included">✓ Guest mode</div>
+                    <div class="feature-value included">✓ Spending alerts</div>
                 </div>
 
                 <!-- Billing -->
@@ -148,7 +156,7 @@ description: Compare Lookinglass pay-as-you-go pricing with ChatGPT subscription
                     <div class="feature-value excluded">✗</div>
                     <div class="feature-value excluded">✗</div>
                     <div class="feature-value excluded">✗</div>
-                    <div class="feature-value included">✓ Save ~50%</div>
+                    <div class="feature-value included">✓ Save 50%</div>
                 </div>
             </div>
         </div>
@@ -272,7 +280,7 @@ description: Compare Lookinglass pay-as-you-go pricing with ChatGPT subscription
             <h2>Why Pay-as-You-Go Makes Sense</h2>
             <div class="reasons-grid">
                 <div class="reason-card">
-                    <h3>🎯 No Subscription Fatigue</h3>
+                    <h3>🚫 No Subscription Fatigue</h3>
                     <p>Stop paying for AI you don't use. With subscriptions, you pay whether you send 5 messages or 500.</p>
                 </div>
                 <div class="reason-card">
@@ -298,7 +306,12 @@ description: Compare Lookinglass pay-as-you-go pricing with ChatGPT subscription
                 <div class="pricing-factors">
                     <div class="factor">
                         <h4>Model Used</h4>
-                        <p>Premium models like o3-pro cost more than basic models like GPT-4o-mini</p>
+                        <p>Premium models like o3-pro cost more than basic models like GPT-5-nano</p>
+                        <div class="cost-examples-mini">
+                            <div>GPT-5-nano (Flex): $0.06 input / $0.50 output per 1M tokens</div>
+                            <div>GPT-4o: $6.25 input / $25 output per 1M tokens</div>
+                            <div>o3-pro: $50 input / $200 output per 1M tokens</div>
+                        </div>
                     </div>
                     <div class="factor">
                         <h4>Message Length</h4>
@@ -310,7 +323,7 @@ description: Compare Lookinglass pay-as-you-go pricing with ChatGPT subscription
                     </div>
                     <div class="factor">
                         <h4>Service Tier</h4>
-                        <p>Standard for immediate responses, Flex for ~50% savings when you can wait</p>
+                        <p>Standard for immediate responses, Flex for exactly 50% savings when you can wait</p>
                     </div>
                 </div>
             </div>
@@ -319,7 +332,7 @@ description: Compare Lookinglass pay-as-you-go pricing with ChatGPT subscription
         <!-- CTA -->
         <div class="pricing-cta">
             <h2>Ready to Take Control?</h2>
-            <p>Start with just $1. No monthly commitments. Cancel anytime (or just stop using it).</p>
+            <p class="cta-main-text">Start with just $1. No monthly commitments. Just stop using it anytime.</p>
             <a href="#" class="btn-primary">Download Free on iOS</a>
             <p class="cta-note">Add funds only when you're ready to start chatting</p>
         </div>
@@ -694,7 +707,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .pricing-factors {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }
@@ -709,6 +722,27 @@ document.addEventListener('DOMContentLoaded', function() {
 .factor h4 {
     color: var(--primary-color);
     margin-bottom: 0.5rem;
+}
+
+.cost-examples-mini {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
+}
+
+.cost-examples-mini div {
+    margin: 0.25rem 0;
+    padding: 0.25rem 0.5rem;
+    background: var(--background-color);
+    border-radius: 0.25rem;
+    border-left: 3px solid var(--primary-color);
+}
+
+.cta-main-text {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 2rem;
 }
 
 .pricing-cta {
@@ -742,6 +776,12 @@ document.addEventListener('DOMContentLoaded', function() {
     opacity: 0.9;
 }
 
+@media (max-width: 968px) {
+    .pricing-factors {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
     .table-header,
     .comparison-row {
@@ -757,6 +797,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     .result-comparison {
+        grid-template-columns: 1fr;
+    }
+    
+    .pricing-factors {
         grid-template-columns: 1fr;
     }
 }

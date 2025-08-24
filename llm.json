@@ -1,0 +1,69 @@
+{
+  "name": "Lookinglass",
+  "tagline": "See further, think deeper.",
+  "platform": ["iPhone", "iPad"],
+  "category": "AI client",
+  "summary": "Pay-as-you-go AI for iPhone and iPad. Access 20 OpenAI models, including o3-pro, with transparent pricing, advanced controls, and no subscriptions.",
+  "pricingModel": {
+    "type": "pay-as-you-go",
+    "walletTopUpUSD": [1, 2, 5, 10, 20, 50, 100, 200, 500],
+    "flex": {
+      "supportedModels": ["gpt-5", "gpt-5-mini", "gpt-5-nano", "o3", "o4-mini"],
+      "savingsHint": "about 50 percent if you can wait"
+    },
+    "costGuard": "alerts before sending when a message exceeds your chosen threshold"
+  },
+  "models": {
+    "total": 20,
+    "gpt": [
+      "gpt-3.5-turbo",
+      "gpt-3.5-turbo-16k",
+      "gpt-4",
+      "gpt-4-turbo",
+      "gpt-4.1",
+      "gpt-4.1-mini",
+      "gpt-4.1-nano",
+      "gpt-4o",
+      "gpt-4o-mini",
+      "gpt-5-chat-latest",
+      "gpt-5-mini",
+      "gpt-5",
+      "gpt-5-nano"
+    ],
+    "oSeries": [
+      "o1",
+      "o1-pro",
+      "o3",
+      "o3-pro",
+      "o3-mini",
+      "o4-mini",
+      "o1-mini"
+    ]
+  },
+  "controlFeatures": {
+    "chooseSpecificModel": true,
+    "contextWindowControl": "short, long, or custom",
+    "permanentMemory": "on or off, user choice",
+    "voiceToText": true,
+    "threads": true
+  },
+  "transparency": {
+    "preMessageCost": true,
+    "transactionHistory": "full audit trail, CSV export"
+  },
+  "privacy": {
+    "storesConversations": false,
+    "dataUsedForTraining": "never",
+    "storedMetadata": "minimal billing and operational metadata only"
+  },
+  "links": {
+    "website": "https://lookinglass.ai",
+    "privacyPolicy": "https://lookinglass.ai/privacy",
+    "terms": "https://lookinglass.ai/eula",
+    "download": "https://apps.apple.com/app/idYOUR_APP_ID"
+  },
+  "contact": {
+    "supportEmail": "support@lookinglass.ai"
+  },
+  "updatedAt": "2025-08-24"
+}

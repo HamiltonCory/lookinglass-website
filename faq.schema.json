@@ -1,0 +1,175 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "Lookinglass Frequently Asked Questions",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why pay-as-you-go instead of subscriptions?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We believe in subscription fatigue relief. Instead of paying $20-200/month whether you use AI or not, you only pay for the messages you actually send. Top up your wallet with amounts from $1-500, use what you need, keep the rest. Many users spend less than $5/month this way."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it typically cost to use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Costs vary by model and message length, but here are some examples:\n\nSimple questions (GPT-4o-mini): $0.001-0.01 per message\nComplex reasoning (o3): $0.01-0.10 per message\nPremium reasoning (o3-pro): $0.05-0.50 for complex tasks\n\nThe app shows you the exact cost before sending each message, so there are never surprises."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens to unused wallet funds?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Your wallet funds never expire and are non-refundable. You can use them whenever you want, even months later. There are no monthly fees or account maintenance charges."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I get a refund on wallet funds?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wallet funds are non-refundable once added, as stated in our terms. However, they never expire, so you can use them whenever you're ready."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which AI models are included?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lookinglass provides access to 20 OpenAI models including:\n\nGPT Models: GPT-5, GPT-4o, GPT-4o-mini, and variants\nO-Series (Reasoning): o1, o1-mini, o3, o3-mini, o4-mini, o3-pro\n\nYou can switch between models mid-conversation based on your needs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is this different from ChatGPT?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Key differences:\n\nPricing: Pay-per-use vs $20-200/month subscriptions\nModel Choice: You pick the exact model; ChatGPT routes automatically\nTransparency: See costs upfront; ChatGPT pricing is hidden\nControl: Adjust memory, context windows; ChatGPT is fixed\nAccess: Get o3-pro without $200/month Pro subscription"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's special about o3-pro access?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "o3-pro is OpenAI's most advanced reasoning model, normally exclusive to ChatGPT Pro subscribers ($200/month). Lookinglass gives you access on a pay-per-message basis, so you can use it for important tasks without the monthly commitment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does \"Flex pricing\" mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Flex pricing saves you ~50% on message costs if you're willing to wait a bit longer for responses. It's perfect for non-urgent tasks where you want to optimize for cost over speed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my data private and secure?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We take privacy seriously:\n\nNo conversation storage: We don't store your messages or AI responses\nMinimal metadata: Only billing and basic usage info is kept\nApple Sign-In: Secure authentication without exposing personal data\nGuest mode: Use completely anonymously if preferred"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What information do you collect?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We collect minimal data for billing and app functionality:\n\nWhich model you used and when\nToken counts for accurate billing\nBasic account info (if you sign in with Apple)\n\nWe never see your actual conversations or prompts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is \"permanent memory\" and how does it work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Permanent memory lets you tell the AI key information about yourself once, and it remembers across all conversations. For example: \"I'm a Python developer working on iOS apps.\" This context gets included automatically, so you don't need to re-explain your background each time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I control how much the AI remembers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely! You control the context window:\n\nShort memory: Remember just the last few messages (cheaper, faster)\nLong memory: Remember the entire conversation history\nCustom: Set exactly how many messages to remember\n\nMore context costs more but provides better continuity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the cost guard feature?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cost guard alerts you before sending messages that exceed your chosen threshold. Set it to $0.01, $0.10, or any amount, and you'll get a warning before accidentally sending an expensive message."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use voice input?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Lookinglass includes built-in voice-to-text, so you can speak your questions naturally instead of typing them."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the app free to download?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Lookinglass is completely free to download. You only pay for the AI messages you actually send."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to create an account?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not required! You can use guest mode for complete anonymity. However, signing in with Apple allows you to:\n\nAccess your wallet and transaction history across devices\nUse permanent memory features\nSave conversation threads"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the minimum amount I can add to my wallet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Just $1! You can amounts from $1 to $500. Most casual users start with $5 or $10 to try it out."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there an onboarding tutorial?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! The app includes an interactive tutorial that explains all the features. You can access it anytime from Settings if you want a refresher."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which devices are supported?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lookinglass works on iPhone and iPad running iOS 15 or later. It's designed exclusively for Apple devices."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it work offline?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, Lookinglass requires an internet connection to communicate with AI models. However, your conversation history and settings are stored locally when possible."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I export my conversation history?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can export your transaction history and usage data as CSV files. Individual conversations aren't stored on our servers for privacy, but you can copy/save them locally within the app."
+      }
+    }
+  ]
+}

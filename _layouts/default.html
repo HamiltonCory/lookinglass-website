@@ -28,6 +28,12 @@
     <meta name="twitter:description" content="Pay-as-you-go, 20 models, and full control over costs and privacy.">
     <meta name="twitter:image" content="{{ '/assets/images/social-card.png' | absolute_url }}">
     
+    <!-- App Store / iOS Meta Tags -->
+    <meta name="apple-itunes-app" content="app-id=6751123527">
+    <meta property="al:ios:app_store_id" content="6751123527">
+    <meta property="al:ios:app_name" content="Lookinglass">
+    <meta property="al:ios:url" content="lookinglass://open">
+    
     <!-- CSS -->
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%s' }}">
     
@@ -35,7 +41,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    
-  <!-- SEO and LLM files -->
+    <!-- SEO and LLM files -->
     <link rel="alternate" type="application/ld+json" href="/faq.schema.json">
     <link rel="alternate" type="application/json" href="/llm.json">
     <link rel="alternate" type="application/ld+json" href="/website.schema.json">
@@ -52,11 +58,15 @@
       "operatingSystem": "iOS",
       "applicationCategory": "ProductivityApplication",
       "category": "AI client",
+      "url": "https://apps.apple.com/app/id6751123527",
+      "downloadUrl": "https://apps.apple.com/app/id6751123527",
+      "installUrl": "https://apps.apple.com/app/id6751123527",
       "offers": {
         "@type": "Offer",
         "price": "0.00",
         "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock"
+        "availability": "https://schema.org/InStock",
+        "url": "https://apps.apple.com/app/id6751123527"
       },
       "isAccessibleForFree": true,
       "screenshot": "https://lookinglass.ai/assets/images/social-card.png",
@@ -65,6 +75,16 @@
         "@type": "Brand",
         "name": "Lookinglass",
         "logo": "https://lookinglass.ai/assets/images/lookinglass-telescope.png"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Lookinglass",
+        "url": "https://lookinglass.ai"
+      },
+      "publisher": {
+        "@type": "Organization", 
+        "name": "Lookinglass",
+        "url": "https://lookinglass.ai"
       }
     }
     </script>

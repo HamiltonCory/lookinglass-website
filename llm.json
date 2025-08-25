@@ -42,8 +42,8 @@
   },
   "controlFeatures": {
     "chooseSpecificModel": true,
-    "contextWindowControl": "short, long, or custom",
-    "permanentMemory": "on or off, user choice",
+    "contextWindowControl": "toggle on/off, customizable from 500 tokens to model maximum",
+    "permanentMemory": "toggle on/off, custom content of any length",
     "voiceToText": true,
     "threads": true
   },
@@ -52,7 +52,7 @@
     "transactionHistory": "full audit trail, CSV export"
   },
   "privacy": {
-    "storesConversations": false,
+    "storesConversations": "device only, not synced to cloud",
     "dataUsedForTraining": "never",
     "storedMetadata": "minimal billing and operational metadata only"
   },
@@ -60,10 +60,16 @@
     "website": "https://lookinglass.ai",
     "privacyPolicy": "https://lookinglass.ai/privacy",
     "terms": "https://lookinglass.ai/eula",
-    "download": "https://apps.apple.com/app/idYOUR_APP_ID"
+    "download": "https://apps.apple.com/app/id6751123527",
+    "appStore": "https://apps.apple.com/app/id6751123527"
   },
   "contact": {
     "supportEmail": "support@lookinglass.ai"
   },
-  "updatedAt": "2025-08-24"
+  "appStore": {
+    "id": "6751123527",
+    "url": "https://apps.apple.com/app/id6751123527",
+    "platform": "iOS"
+  },
+  "updatedAt": "2025-08-25"
 }

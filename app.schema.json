@@ -6,11 +6,15 @@
   "operatingSystem": "iOS",
   "applicationCategory": "BusinessApplication",
   "category": "AI client",
+  "url": "https://apps.apple.com/app/id6751123527",
+  "downloadUrl": "https://apps.apple.com/app/id6751123527",
+  "installUrl": "https://apps.apple.com/app/id6751123527",
   "offers": {
     "@type": "Offer",
     "price": "0.00",
     "priceCurrency": "USD",
-    "availability": "https://schema.org/InStock"
+    "availability": "https://schema.org/InStock",
+    "url": "https://apps.apple.com/app/id6751123527"
   },
   "isAccessibleForFree": true,
   "screenshot": "https://lookinglass.ai/assets/images/social-card.png",
@@ -19,5 +23,15 @@
     "@type": "Brand",
     "name": "Lookinglass",
     "logo": "https://lookinglass.ai/assets/images/lookinglass-telescope.png"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "Lookinglass",
+    "url": "https://lookinglass.ai"
+  },
+  "publisher": {
+    "@type": "Organization", 
+    "name": "Lookinglass",
+    "url": "https://lookinglass.ai"
   }
 }

@@ -20,6 +20,13 @@ description: Compare Lookinglass pay-as-you-go pricing with ChatGPT subscription
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     }
 
+    .flex-disclaimer {
+        font-size: 0.8rem;
+        color: var(--text-secondary);
+        margin-top: 0.25rem;
+        font-style: italic;
+    }
+
     .pricing-page {
     padding: 2rem 0;
     background-color: var(--background-color);
@@ -1022,7 +1029,7 @@ description: Compare Lookinglass pay-as-you-go pricing with ChatGPT subscription
                     <div class="input-group">
                         <label for="complexity-level">Complexity level:</label>
                         <select id="complexity-level" onchange="calculateCosts()">
-                            <option value="simple">Simple questions (GPT-4o)</option>
+                            <option value="simple">Simple questions (GPT-5 nano)</option>
                             <option value="mixed" selected>Mix of simple & complex</option>
                             <option value="complex">Complex reasoning (o3/o3-pro)</option>
                         </select>
@@ -1032,6 +1039,7 @@ description: Compare Lookinglass pay-as-you-go pricing with ChatGPT subscription
                         <label for="flex-usage">Use Flex pricing:</label>
                         <input type="checkbox" id="flex-usage" onchange="calculateCosts()">
                         <span class="flex-note">Save 50% when you can wait</span>
+                        <div class="flex-disclaimer">*Flex pricing available for o3 only (not o3-pro) in complex reasoning mode</div>
                     </div>
                     
                     <div class="calculator-results">
@@ -1082,29 +1090,33 @@ description: Compare Lookinglass pay-as-you-go pricing with ChatGPT subscription
                 <div class="breakdown-explanation">
                     <p>Our pricing is based on the actual computational cost of your requests:</p>
                 </div>
-                <div class="pricing-factors">
-                    <div class="factor">
-                        <h4>Model Used</h4>
-                        <p>Premium models like o3-pro cost more than basic models like GPT-5-nano</p>
-                        <div class="cost-examples-mini">
-                            <div>GPT-5-nano (Flex): $0.06 input / $0.50 output per 1M tokens</div>
-                            <div>GPT-4o: $6.25 input / $25 output per 1M tokens</div>
-                            <div>o3-pro: $50 input / $200 output per 1M tokens</div>
+                    <div class="pricing-factors">
+                        <div class="factor">
+                            <h4>Model Used</h4>
+                            <p>Premium models like o3-pro cost more than basic models like GPT-5-nano</p>
+                            <div class="cost-examples-mini">
+                                <div>GPT-5-nano (Flex): $0.06 input / $0.50 output per 1M tokens</div>
+                                <div>GPT-4o: $6.25 input / $25 output per 1M tokens</div>
+                                <div>o3-pro: $50 input / $200 output per 1M tokens</div>
+                            </div>
+                        </div>
+                        <div class="factor">
+                            <h4>Service Tier</h4>
+                            <p>Standard for immediate responses, Flex for exactly 50% savings when you can wait</p>
+                            <div class="cost-examples-mini">
+                                <div>Flex available: GPT-5, GPT-5-mini, GPT-5-nano, o3, o4-mini</div>
+                                <div>Standard only: GPT-4o, o1, o3-pro, and other premium models</div>
+                            </div>
+                        </div>
+                        <div class="factor">
+                            <h4>Context Window</h4>
+                            <p>Remembering more conversation history costs more but provides better continuity</p>
+                        </div>
+                        <div class="factor">
+                            <h4>Message Length</h4>
+                            <p>Longer messages and responses use more computational resources</p>
                         </div>
                     </div>
-                    <div class="factor">
-                        <h4>Message Length</h4>
-                        <p>Longer messages and responses use more computational resources</p>
-                    </div>
-                    <div class="factor">
-                        <h4>Context Window</h4>
-                        <p>Remembering more conversation history costs more but provides better continuity</p>
-                    </div>
-                    <div class="factor">
-                        <h4>Service Tier</h4>
-                        <p>Standard for immediate responses, Flex for exactly 50% savings when you can wait</p>
-                    </div>
-                </div>
             </div>
 
             <!-- CTA -->

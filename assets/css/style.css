@@ -1118,3 +1118,512 @@ svg.telescope-hero,
     color: var(--text-secondary);
     line-height: 1.7;
 }
+
+.flex-disclaimer {
+        font-size: 0.8rem;
+        color: var(--text-secondary);
+        margin-top: 0.25rem;
+        font-style: italic;
+    }
+
+    .pricing-page {
+    padding: 2rem 0;
+    background-color: var(--background-color);
+    }
+
+    .pricing-header {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .pricing-header h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--text-primary);
+        margin-bottom: 1rem;
+    }
+
+    .pricing-subtitle {
+        font-size: 1.25rem;
+        color: var(--text-secondary);
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    /* Desktop Comparison Table */
+    .comparison-table {
+        background: var(--surface-color);
+        border-radius: 1rem;
+        overflow: hidden;
+        margin-bottom: 3rem;
+        border: 1px solid var(--border-color);
+    }
+
+    .table-header {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr 1.2fr;
+        background: var(--primary-color);
+        color: white;
+        font-weight: 600;
+    }
+
+    .table-header > div {
+        padding: 1.5rem 1rem;
+        text-align: center;
+    }
+
+    .feature-column {
+        text-align: left !important;
+        font-weight: 700;
+    }
+
+    .plan-column h3 {
+        margin: 0 0 0.5rem 0;
+        font-size: 1.1rem;
+    }
+
+    .price {
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+
+    .price-detail {
+        font-size: 0.9rem;
+        opacity: 0.9;
+        margin-top: 0.25rem;
+    }
+
+    .lookinglass {
+        background: var(--primary-hover) !important;
+    }
+
+    .comparison-row {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr 1.2fr;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .comparison-row.highlight {
+        background: var(--primary-color);
+        color: white;
+    }
+
+    .comparison-row.highlight .feature-name {
+        color: white !important;
+    }
+
+    .comparison-row > div {
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .feature-name {
+        text-align: left !important;
+        justify-content: flex-start !important;
+        font-weight: 500;
+        color: var(--text-primary);
+    }
+
+    .feature-value.included {
+        color: var(--success);
+        font-weight: 600;
+    }
+
+    .feature-value.excluded {
+        color: var(--error);
+        font-weight: 600;
+    }
+
+    .feature-value.limited {
+        color: var(--warning);
+        font-weight: 600;
+    }
+
+    .feature-value.warning {
+        color: var(--warning);
+        font-weight: 500;
+    }
+
+    .feature-value.highlight {
+        background: var(--primary-color);
+        color: white;
+        font-weight: 700;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    .checkmark {
+        background: var(--success);
+        color: white !important;
+        border-radius: 0.5rem;
+        padding: 0.5rem 0.75rem;
+        font-weight: 700;
+        display: inline-block;
+        min-width: 80px;
+    }
+
+    .comparison-row.highlight .checkmark {
+        background: white;
+        color: var(--primary-color) !important;
+    }
+
+    /* Mobile Cards - Hidden by default */
+    .mobile-comparison {
+        display: none;
+    }
+
+    .mobile-plan-card {
+        background: var(--surface-color);
+        border: 1px solid var(--border-color);
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+        overflow: hidden;
+    }
+
+    .mobile-plan-header {
+        background: var(--primary-color);
+        color: white;
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    .mobile-plan-header.lookinglass {
+        background: var(--primary-hover);
+    }
+
+    .mobile-plan-header h3 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .mobile-plan-price {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 0.25rem;
+    }
+
+    .mobile-plan-detail {
+        font-size: 0.9rem;
+        opacity: 0.9;
+    }
+
+    .mobile-features-list {
+        padding: 0;
+    }
+
+    .mobile-feature-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1.5rem;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .mobile-feature-item:last-child {
+        border-bottom: none;
+    }
+
+    .mobile-feature-name {
+        font-weight: 500;
+        color: var(--text-primary);
+    }
+
+    .mobile-feature-value {
+        font-weight: 600;
+        text-align: right;
+    }
+
+    .mobile-feature-value.included {
+        color: var(--success);
+    }
+
+    .mobile-feature-value.excluded {
+        color: var(--error);
+    }
+
+    .mobile-feature-value.limited {
+        color: var(--warning);
+    }
+
+    .mobile-feature-value.warning {
+        color: var(--warning);
+    }
+
+    .mobile-checkmark {
+        background: var(--success);
+        color: white;
+        padding: 0.25rem 0.75rem;
+        border-radius: 1rem;
+        font-size: 0.9rem;
+        font-weight: 700;
+    }
+
+    /* Cost Examples */
+    .cost-examples {
+        margin: 4rem 0;
+    }
+
+    .cost-examples h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        color: var(--text-primary);
+    }
+
+    .examples-intro {
+        text-align: center;
+        color: var(--text-secondary);
+        margin-bottom: 2rem;
+    }
+
+    .examples-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+
+    .example-card {
+        background: var(--surface-color);
+        padding: 2rem;
+        border-radius: 1rem;
+        border: 1px solid var(--border-color);
+    }
+
+    .example-card h3 {
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+    }
+
+    .usage-pattern {
+        margin-bottom: 1.5rem;
+    }
+
+    .usage-pattern p {
+        margin: 0.5rem 0;
+        color: var(--text-secondary);
+        font-size: 0.9rem;
+    }
+
+    .cost-comparison {
+        margin-top: 1rem;
+    }
+
+    .cost-row {
+        display: flex;
+        justify-content: space-between;
+        margin: 0.5rem 0;
+    }
+
+    .cost {
+        font-weight: 600;
+    }
+
+    .cost.highlight {
+        color: var(--primary-color);
+    }
+
+    .savings {
+        text-align: center;
+        color: var(--success);
+        font-weight: 600;
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--border-color);
+    }
+
+    /* Cost Calculator */
+    .cost-calculator {
+        background: var(--surface-color);
+        padding: 3rem;
+        border-radius: 1rem;
+        margin: 3rem 0;
+        border: 1px solid var(--border-color);
+    }
+
+    .cost-calculator h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        color: var(--text-primary);
+    }
+
+    .calculator-form {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .input-group {
+        margin-bottom: 2rem;
+    }
+
+    .input-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+        color: var(--text-primary);
+    }
+
+    .input-group input[type="range"] {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .input-group select {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid var(--border-color);
+        border-radius: 0.5rem;
+        background: var(--background-color);
+        color: var(--text-primary);
+    }
+
+    .flex-note {
+        font-size: 0.9rem;
+        color: var(--text-secondary);
+        margin-left: 0.5rem;
+    }
+
+    .calculator-results {
+        background: var(--background-color);
+        padding: 2rem;
+        border-radius: 0.75rem;
+        margin-top: 2rem;
+    }
+
+    .result-comparison {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .result-item {
+        text-align: center;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        background: var(--surface-color);
+    }
+
+    .result-item.highlight {
+        background: var(--primary-color);
+        color: white;
+    }
+
+    .result-cost {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-top: 0.5rem;
+    }
+
+    .savings-result {
+        text-align: center;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--border-color);
+        font-size: 1.25rem;
+    }
+
+    .savings-amount {
+        color: var(--success);
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+    /* Why Pay-as-You-Go */
+    .why-payg {
+        margin: 4rem 0;
+    }
+
+    .why-payg h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        color: var(--text-primary);
+    }
+
+    .reasons-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+    }
+
+    .reason-card {
+        background: var(--surface-color);
+        padding: 2rem;
+        border-radius: 1rem;
+        border: 1px solid var(--border-color);
+        text-align: center;
+    }
+
+    .reason-card h3 {
+        color: var(--text-primary);
+        margin-bottom: 1rem;
+    }
+
+    .reason-card p {
+        color: var(--text-secondary);
+    }
+
+    /* Pricing Breakdown */
+    .pricing-breakdown {
+        margin: 4rem 0;
+    }
+
+    .pricing-breakdown h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        color: var(--text-primary);
+    }
+
+    .breakdown-explanation {
+        max-width: 800px;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+
+    .breakdown-explanation p {
+        color: var(--text-secondary);
+        text-align: center;
+    }
+
+    .pricing-factors {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .factor {
+        background: var(--surface-color);
+        padding: 1.5rem;
+        border-radius: 0.75rem;
+        border: 1px solid var(--border-color);
+    }
+
+    .factor h4 {
+        color: var(--primary-color);
+        margin-bottom: 0.5rem;
+    }
+
+    .factor p {
+        color: var(--text-secondary);
+        margin-bottom: 1rem;
+    }
+
+    .cost-examples-mini {
+        margin-top: 1rem;
+        font-size: 0.85rem;
+        color: var(--text-secondary);
+        line-height: 1.4;
+    }
+
+    .cost-examples-mini div {
+        margin: 0.25rem 0;
+        padding: 0.25rem 0.5rem;
+        background: var(--background-color);
+        border-radius: 0.25rem;
+        border-left: 3px solid var(--primary-color);
+    }

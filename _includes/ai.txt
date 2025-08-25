@@ -1,0 +1,11 @@
+# /ai.txt
+Site: https://lookinglass.ai
+Owner: Lookinglass
+Contact: support@lookinglass.ai
+Sitemap: https://lookinglass.ai/sitemap.xml
+
+# Canonical machine-readable resources
+Resource: https://lookinglass.ai/llm.json
+Resource: https://lookinglass.ai/faq.schema.json
+Resource: https://lookinglass.ai/app.schema.json
+Resource: https://lookinglass.ai/website.schema.json

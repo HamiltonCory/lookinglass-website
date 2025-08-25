@@ -1,10 +1,69 @@
+# /robots.txt
+
+# Default: allow normal crawling of site content,
+# but avoid indexing helper JSON + ai.txt directly
 User-agent: *
 Allow: /
-
-# Don’t index JSON helper files directly
 Disallow: /llm.json
-Disallow: /website.schema.json
-Disallow: /app.schema.json
 Disallow: /faq.schema.json
-
+Disallow: /app.schema.json
+Disallow: /website.schema.json
+Disallow: /ai.txt
+Disallow: /.well-known/ai.txt
 Sitemap: https://lookinglass.ai/sitemap.xml
+
+# --- Explicit permissions for AI & research crawlers ---
+
+# OpenAI
+User-agent: GPTBot
+Allow: /
+Allow: /llm.json
+Allow: /faq.schema.json
+Allow: /app.schema.json
+Allow: /website.schema.json
+Allow: /ai.txt
+Allow: /.well-known/ai.txt
+
+# Anthropic
+User-agent: ClaudeBot
+Allow: /
+Allow: /llm.json
+Allow: /faq.schema.json
+Allow: /app.schema.json
+Allow: /website.schema.json
+Allow: /ai.txt
+Allow: /.well-known/ai.txt
+
+# Common Crawl (feeds many LLMs)
+User-agent: CCBot
+Allow: /
+Allow: /llm.json
+Allow: /faq.schema.json
+Allow: /app.schema.json
+Allow: /website.schema.json
+Allow: /ai.txt
+Allow: /.well-known/ai.txt
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+Allow: /llm.json
+Allow: /faq.schema.json
+Allow: /app.schema.json
+Allow: /website.schema.json
+Allow: /ai.txt
+Allow: /.well-known/ai.txt
+
+# Google Generative AI (separate from normal Googlebot)
+User-agent: Google-Extended
+Allow: /
+Allow: /llm.json
+Allow: /faq.schema.json
+Allow: /app.schema.json
+Allow: /website.schema.json
+Allow: /ai.txt
+Allow: /.well-known/ai.txt
+
+# (Optional) Bing politeness (Google ignores crawl-delay)
+User-agent: Bingbot
+Crawl-delay: 5

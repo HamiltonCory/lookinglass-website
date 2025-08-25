@@ -1,0 +1,3 @@
+Contact: mailto:support@lookinglass.ai
+Expires: 2026-12-31T23:59:59Z
+Acknowledgments: https://lookinglass.ai

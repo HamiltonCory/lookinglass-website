@@ -4,807 +4,616 @@ title: Pricing
 description: Compare Lookinglass pay-as-you-go pricing with ChatGPT subscriptions. Access 20+ models including o3-pro without monthly commitments.
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pricing - Lookinglass</title>
-    <style>
-        /* CSS Custom Properties for Theme Colors */
-        :root {
-            /* Light theme colors */
-            --primary-color: #004B3A;
-            --primary-hover: #003529;
-            --secondary-color: #6B7280;
-            --background-color: #FFFFFF;
-            --surface-color: #F9FAFB;
-            --text-primary: #111827;
-            --text-secondary: #6B7280;
-            --border-color: #E5E7EB;
-            --shadow-color: rgba(0, 0, 0, 0.1);
-            
-            /* Common colors */
-            --white: #FFFFFF;
-            --black: #000000;
-            --success: #10B981;
-            --warning: #F59E0B;
-            --error: #EF4444;
-        }
 
-        /* Dark theme colors */
-        [data-theme="dark"] {
-            --primary-color: #22C77A;
-            --primary-hover: #1DB368;
-            --secondary-color: #9CA3AF;
-            --background-color: #111827;
-            --surface-color: #1F2937;
-            --text-primary: #F9FAFB;
-            --text-secondary: #D1D5DB;
-            --border-color: #374151;
-            --shadow-color: rgba(0, 0, 0, 0.3);
-        }
+<style>
+    .pricing-page {
+    padding: 2rem 0;
+    background-color: var(--background-color);
+    }
 
-        /* Auto dark mode based on system preference */
-        @media (prefers-color-scheme: dark) {
-            :root:not([data-theme="light"]) {
-                --primary-color: #22C77A;
-                --primary-hover: #1DB368;
-                --secondary-color: #9CA3AF;
-                --background-color: #111827;
-                --surface-color: #1F2937;
-                --text-primary: #F9FAFB;
-                --text-secondary: #D1D5DB;
-                --border-color: #374151;
-                --shadow-color: rgba(0, 0, 0, 0.3);
-            }
-        }
+    .pricing-header {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    .pricing-header h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--text-primary);
+        margin-bottom: 1rem;
+    }
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--background-color);
-            color: var(--text-primary);
-            line-height: 1.6;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
+    .pricing-subtitle {
+        font-size: 1.25rem;
+        color: var(--text-secondary);
+        max-width: 600px;
+        margin: 0 auto;
+    }
 
-        .pricing-page .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1rem;
-        }
+    /* Desktop Comparison Table */
+    .comparison-table {
+        background: var(--surface-color);
+        border-radius: 1rem;
+        overflow: hidden;
+        margin-bottom: 3rem;
+        border: 1px solid var(--border-color);
+    }
 
-        .pricing-page {
-            padding: 2rem 0;
-            background-color: var(--background-color);
-        }
+    .table-header {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr 1.2fr;
+        background: var(--primary-color);
+        color: white;
+        font-weight: 600;
+    }
 
-        .pricing-header {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
+    .table-header > div {
+        padding: 1.5rem 1rem;
+        text-align: center;
+    }
 
-        .pricing-header h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 1rem;
-        }
+    .feature-column {
+        text-align: left !important;
+        font-weight: 700;
+    }
 
-        .pricing-subtitle {
-            font-size: 1.25rem;
-            color: var(--text-secondary);
-            max-width: 600px;
-            margin: 0 auto;
-        }
+    .plan-column h3 {
+        margin: 0 0 0.5rem 0;
+        font-size: 1.1rem;
+    }
 
-        /* Desktop Comparison Table */
-        .comparison-table {
-            background: var(--surface-color);
-            border-radius: 1rem;
-            overflow: hidden;
-            margin-bottom: 3rem;
-            border: 1px solid var(--border-color);
-        }
+    .price {
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
 
-        .table-header {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr 1.2fr;
-            background: var(--primary-color);
-            color: white;
-            font-weight: 600;
-        }
+    .price-detail {
+        font-size: 0.9rem;
+        opacity: 0.9;
+        margin-top: 0.25rem;
+    }
 
-        .table-header > div {
-            padding: 1.5rem 1rem;
-            text-align: center;
-        }
+    .lookinglass {
+        background: var(--primary-hover) !important;
+    }
 
-        .feature-column {
-            text-align: left !important;
-            font-weight: 700;
-        }
+    .comparison-row {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr 1.2fr;
+        border-bottom: 1px solid var(--border-color);
+    }
 
-        .plan-column h3 {
-            margin: 0 0 0.5rem 0;
-            font-size: 1.1rem;
-        }
+    .comparison-row.highlight {
+        background: var(--primary-color);
+        color: white;
+    }
 
-        .price {
-            font-size: 1.25rem;
-            font-weight: 700;
-        }
+    .comparison-row.highlight .feature-name {
+        color: white !important;
+    }
 
-        .price-detail {
-            font-size: 0.9rem;
-            opacity: 0.9;
-            margin-top: 0.25rem;
-        }
+    .comparison-row > div {
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
 
-        .lookinglass {
-            background: var(--primary-hover) !important;
-        }
+    .feature-name {
+        text-align: left !important;
+        justify-content: flex-start !important;
+        font-weight: 500;
+        color: var(--text-primary);
+    }
 
-        .comparison-row {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr 1.2fr;
-            border-bottom: 1px solid var(--border-color);
-        }
+    .feature-value.included {
+        color: var(--success);
+        font-weight: 600;
+    }
 
-        .comparison-row.highlight {
-            background: var(--primary-color);
-            color: white;
-        }
+    .feature-value.excluded {
+        color: var(--error);
+        font-weight: 600;
+    }
 
-        .comparison-row.highlight .feature-name {
-            color: white !important;
-        }
+    .feature-value.limited {
+        color: var(--warning);
+        font-weight: 600;
+    }
 
-        .comparison-row > div {
-            padding: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
+    .feature-value.warning {
+        color: var(--warning);
+        font-weight: 500;
+    }
 
-        .feature-name {
-            text-align: left !important;
-            justify-content: flex-start !important;
-            font-weight: 500;
-            color: var(--text-primary);
-        }
+    .feature-value.highlight {
+        background: var(--primary-color);
+        color: white;
+        font-weight: 700;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+    }
 
-        .feature-value.included {
-            color: var(--success);
-            font-weight: 600;
-        }
+    .checkmark {
+        background: var(--success);
+        color: white !important;
+        border-radius: 0.5rem;
+        padding: 0.5rem 0.75rem;
+        font-weight: 700;
+        display: inline-block;
+        min-width: 80px;
+    }
 
-        .feature-value.excluded {
-            color: var(--error);
-            font-weight: 600;
-        }
+    .comparison-row.highlight .checkmark {
+        background: white;
+        color: var(--primary-color) !important;
+    }
 
-        .feature-value.limited {
-            color: var(--warning);
-            font-weight: 600;
-        }
+    /* Mobile Cards - Hidden by default */
+    .mobile-comparison {
+        display: none;
+    }
 
-        .feature-value.warning {
-            color: var(--warning);
-            font-weight: 500;
-        }
+    .mobile-plan-card {
+        background: var(--surface-color);
+        border: 1px solid var(--border-color);
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+        overflow: hidden;
+    }
 
-        .feature-value.highlight {
-            background: var(--primary-color);
-            color: white;
-            font-weight: 700;
-            border-radius: 0.5rem;
-            padding: 0.5rem;
-        }
+    .mobile-plan-header {
+        background: var(--primary-color);
+        color: white;
+        padding: 1.5rem;
+        text-align: center;
+    }
 
-        /* Enhanced checkmark styling for better visibility */
-        .checkmark {
-            background: var(--success);
-            color: white !important;
-            border-radius: 0.5rem;
-            padding: 0.5rem 0.75rem;
-            font-weight: 700;
-            display: inline-block;
-            min-width: 80px;
-        }
+    .mobile-plan-header.lookinglass {
+        background: var(--primary-hover);
+    }
 
-        .comparison-row.highlight .checkmark {
-            background: white;
-            color: var(--primary-color) !important;
-        }
+    .mobile-plan-header h3 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
 
-        /* Mobile Cards - Hidden by default */
-        .mobile-comparison {
-            display: none;
-        }
+    .mobile-plan-price {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 0.25rem;
+    }
 
-        .mobile-plan-card {
-            background: var(--surface-color);
-            border: 1px solid var(--border-color);
-            border-radius: 1rem;
-            margin-bottom: 2rem;
-            overflow: hidden;
-        }
+    .mobile-plan-detail {
+        font-size: 0.9rem;
+        opacity: 0.9;
+    }
 
-        .mobile-plan-header {
-            background: var(--primary-color);
-            color: white;
-            padding: 1.5rem;
-            text-align: center;
-        }
+    .mobile-features-list {
+        padding: 0;
+    }
 
-        .mobile-plan-header.lookinglass {
-            background: var(--primary-hover);
-        }
+    .mobile-feature-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1.5rem;
+        border-bottom: 1px solid var(--border-color);
+    }
 
-        .mobile-plan-header h3 {
-            font-size: 1.25rem;
-            margin-bottom: 0.5rem;
-        }
+    .mobile-feature-item:last-child {
+        border-bottom: none;
+    }
 
-        .mobile-plan-price {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 0.25rem;
-        }
+    .mobile-feature-name {
+        font-weight: 500;
+        color: var(--text-primary);
+    }
 
-        .mobile-plan-detail {
-            font-size: 0.9rem;
-            opacity: 0.9;
-        }
+    .mobile-feature-value {
+        font-weight: 600;
+        text-align: right;
+    }
 
-        .mobile-features-list {
-            padding: 0;
-        }
+    .mobile-feature-value.included {
+        color: var(--success);
+    }
 
-        .mobile-feature-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 1.5rem;
-            border-bottom: 1px solid var(--border-color);
-        }
+    .mobile-feature-value.excluded {
+        color: var(--error);
+    }
 
-        .mobile-feature-item:last-child {
-            border-bottom: none;
-        }
+    .mobile-feature-value.limited {
+        color: var(--warning);
+    }
 
-        .mobile-feature-name {
-            font-weight: 500;
-            color: var(--text-primary);
-        }
+    .mobile-feature-value.warning {
+        color: var(--warning);
+    }
 
-        .mobile-feature-value {
-            font-weight: 600;
-            text-align: right;
-        }
+    .mobile-checkmark {
+        background: var(--success);
+        color: white;
+        padding: 0.25rem 0.75rem;
+        border-radius: 1rem;
+        font-size: 0.9rem;
+        font-weight: 700;
+    }
 
-        .mobile-feature-value.included {
-            color: var(--success);
-        }
+    /* Cost Examples */
+    .cost-examples {
+        margin: 4rem 0;
+    }
 
-        .mobile-feature-value.excluded {
-            color: var(--error);
-        }
+    .cost-examples h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        color: var(--text-primary);
+    }
 
-        .mobile-feature-value.limited {
-            color: var(--warning);
-        }
+    .examples-intro {
+        text-align: center;
+        color: var(--text-secondary);
+        margin-bottom: 2rem;
+    }
 
-        .mobile-feature-value.warning {
-            color: var(--warning);
-        }
+    .examples-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
 
-        .mobile-checkmark {
-            background: var(--success);
-            color: white;
-            padding: 0.25rem 0.75rem;
-            border-radius: 1rem;
-            font-size: 0.9rem;
-            font-weight: 700;
-        }
+    .example-card {
+        background: var(--surface-color);
+        padding: 2rem;
+        border-radius: 1rem;
+        border: 1px solid var(--border-color);
+    }
 
-        /* Cost Examples */
-        .cost-examples {
-            margin: 4rem 0;
-        }
+    .example-card h3 {
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+    }
 
-        .cost-examples h2 {
-            text-align: center;
-            margin-bottom: 1rem;
-            font-size: 2rem;
-            color: var(--text-primary);
-        }
+    .usage-pattern {
+        margin-bottom: 1.5rem;
+    }
 
-        .examples-intro {
-            text-align: center;
-            color: var(--text-secondary);
-            margin-bottom: 2rem;
+    .usage-pattern p {
+        margin: 0.5rem 0;
+        color: var(--text-secondary);
+        font-size: 0.9rem;
+    }
+
+    .cost-comparison {
+        margin-top: 1rem;
+    }
+
+    .cost-row {
+        display: flex;
+        justify-content: space-between;
+        margin: 0.5rem 0;
+    }
+
+    .cost {
+        font-weight: 600;
+    }
+
+    .cost.highlight {
+        color: var(--primary-color);
+    }
+
+    .savings {
+        text-align: center;
+        color: var(--success);
+        font-weight: 600;
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--border-color);
+    }
+
+    /* Cost Calculator */
+    .cost-calculator {
+        background: var(--surface-color);
+        padding: 3rem;
+        border-radius: 1rem;
+        margin: 3rem 0;
+        border: 1px solid var(--border-color);
+    }
+
+    .cost-calculator h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        color: var(--text-primary);
+    }
+
+    .calculator-form {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .input-group {
+        margin-bottom: 2rem;
+    }
+
+    .input-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+        color: var(--text-primary);
+    }
+
+    .input-group input[type="range"] {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .input-group select {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid var(--border-color);
+        border-radius: 0.5rem;
+        background: var(--background-color);
+        color: var(--text-primary);
+    }
+
+    .flex-note {
+        font-size: 0.9rem;
+        color: var(--text-secondary);
+        margin-left: 0.5rem;
+    }
+
+    .calculator-results {
+        background: var(--background-color);
+        padding: 2rem;
+        border-radius: 0.75rem;
+        margin-top: 2rem;
+    }
+
+    .result-comparison {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .result-item {
+        text-align: center;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        background: var(--surface-color);
+    }
+
+    .result-item.highlight {
+        background: var(--primary-color);
+        color: white;
+    }
+
+    .result-cost {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-top: 0.5rem;
+    }
+
+    .savings-result {
+        text-align: center;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--border-color);
+        font-size: 1.25rem;
+    }
+
+    .savings-amount {
+        color: var(--success);
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+    /* Why Pay-as-You-Go */
+    .why-payg {
+        margin: 4rem 0;
+    }
+
+    .why-payg h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        color: var(--text-primary);
+    }
+
+    .reasons-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+    }
+
+    .reason-card {
+        background: var(--surface-color);
+        padding: 2rem;
+        border-radius: 1rem;
+        border: 1px solid var(--border-color);
+        text-align: center;
+    }
+
+    .reason-card h3 {
+        color: var(--text-primary);
+        margin-bottom: 1rem;
+    }
+
+    .reason-card p {
+        color: var(--text-secondary);
+    }
+
+    /* Pricing Breakdown */
+    .pricing-breakdown {
+        margin: 4rem 0;
+    }
+
+    .pricing-breakdown h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        color: var(--text-primary);
+    }
+
+    .breakdown-explanation {
+        max-width: 800px;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+
+    .breakdown-explanation p {
+        color: var(--text-secondary);
+        text-align: center;
+    }
+
+    .pricing-factors {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .factor {
+        background: var(--surface-color);
+        padding: 1.5rem;
+        border-radius: 0.75rem;
+        border: 1px solid var(--border-color);
+    }
+
+    .factor h4 {
+        color: var(--primary-color);
+        margin-bottom: 0.5rem;
+    }
+
+    .factor p {
+        color: var(--text-secondary);
+        margin-bottom: 1rem;
+    }
+
+    .cost-examples-mini {
+        margin-top: 1rem;
+        font-size: 0.85rem;
+        color: var(--text-secondary);
+        line-height: 1.4;
+    }
+
+    .cost-examples-mini div {
+        margin: 0.25rem 0;
+        padding: 0.25rem 0.5rem;
+        background: var(--background-color);
+        border-radius: 0.25rem;
+        border-left: 3px solid var(--primary-color);
+    }
+
+    /* CTA Section */
+    .pricing-cta {
+        text-align: center;
+        margin: 4rem 0;
+        padding: 3rem;
+        background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
+        color: white;
+        border-radius: 1rem;
+    }
+
+    .pricing-cta h2 {
+        margin-bottom: 1rem;
+        color: white;
+    }
+
+    .cta-main-text {
+        font-size: 1.1rem;
+        color: rgba(255, 255, 255, 0.95);
+        margin-bottom: 2rem;
+    }
+
+    .cta-note {
+        margin-top: 1rem;
+        font-size: 0.9rem;
+        opacity: 1;
+        color: rgba(255, 255, 255, 0.95);
+        font-weight: 500;
+    }
+
+    /* Mobile Responsive Styles for Pricing */
+    @media (max-width: 968px) {
+        .pricing-factors {
+            grid-template-columns: repeat(2, 1fr);
         }
 
         .examples-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+            grid-template-columns: 1fr;
         }
+    }
 
-        .example-card {
-            background: var(--surface-color);
-            padding: 2rem;
-            border-radius: 1rem;
-            border: 1px solid var(--border-color);
+    @media (max-width: 768px) {
+        /* Hide desktop table on mobile */
+        .comparison-table {
+            display: none;
         }
-
-        .example-card h3 {
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-        }
-
-        .usage-pattern {
-            margin-bottom: 1.5rem;
-        }
-
-        .usage-pattern p {
-            margin: 0.5rem 0;
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-        }
-
-        .cost-comparison {
-            margin-top: 1rem;
-        }
-
-        .cost-row {
-            display: flex;
-            justify-content: space-between;
-            margin: 0.5rem 0;
-        }
-
-        .cost {
-            font-weight: 600;
-        }
-
-        .cost.highlight {
-            color: var(--primary-color);
-        }
-
-        .savings {
-            text-align: center;
-            color: var(--success);
-            font-weight: 600;
-            margin-top: 1rem;
-            padding-top: 1rem;
-            border-top: 1px solid var(--border-color);
-        }
-
-        /* Cost Calculator */
-        .cost-calculator {
-            background: var(--surface-color);
-            padding: 3rem;
-            border-radius: 1rem;
-            margin: 3rem 0;
-            border: 1px solid var(--border-color);
-        }
-
-        .cost-calculator h2 {
-            text-align: center;
-            margin-bottom: 1rem;
-            font-size: 2rem;
-            color: var(--text-primary);
-        }
-
-        .calculator-form {
-            max-width: 500px;
-            margin: 0 auto;
-        }
-
-        .input-group {
-            margin-bottom: 2rem;
-        }
-
-        .input-group label {
+        
+        /* Show mobile cards */
+        .mobile-comparison {
             display: block;
-            margin-bottom: 0.5rem;
-            font-weight: 600;
-            color: var(--text-primary);
         }
-
-        .input-group input[type="range"] {
-            width: 100%;
-            margin-bottom: 0.5rem;
-        }
-
-        .input-group select {
-            width: 100%;
-            padding: 0.75rem;
-            border: 1px solid var(--border-color);
-            border-radius: 0.5rem;
-            background: var(--background-color);
-            color: var(--text-primary);
-        }
-
-        .flex-note {
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-            margin-left: 0.5rem;
-        }
-
-        .calculator-results {
-            background: var(--background-color);
-            padding: 2rem;
-            border-radius: 0.75rem;
-            margin-top: 2rem;
+        
+        .cost-calculator {
+            padding: 2rem 1.5rem;
         }
 
         .result-comparison {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            margin-bottom: 1.5rem;
+            grid-template-columns: 1fr;
         }
 
-        .result-item {
-            text-align: center;
-            padding: 1rem;
-            border-radius: 0.5rem;
-            background: var(--surface-color);
-        }
-
-        .result-item.highlight {
-            background: var(--primary-color);
-            color: white;
-        }
-
-        .result-cost {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-top: 0.5rem;
-        }
-
-        .savings-result {
-            text-align: center;
-            padding-top: 1.5rem;
-            border-top: 1px solid var(--border-color);
-            font-size: 1.25rem;
-        }
-
-        .savings-amount {
-            color: var(--success);
-            font-weight: 700;
-            font-size: 1.5rem;
-        }
-
-        /* Why Pay-as-You-Go */
-        .why-payg {
-            margin: 4rem 0;
-        }
-
-        .why-payg h2 {
-            text-align: center;
-            margin-bottom: 2rem;
-            font-size: 2rem;
-            color: var(--text-primary);
+        .pricing-factors {
+            grid-template-columns: 1fr;
         }
 
         .reasons-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             gap: 2rem;
+        }
+
+        .pricing-cta {
+            padding: 2rem 1.5rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .mobile-plan-header {
+            padding: 1.25rem;
+        }
+        
+        .mobile-feature-item {
+            padding: 0.875rem 1.25rem;
+        }
+
+        .cost-calculator p {
+            text-align: center;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+
+        .example-card {
+            padding: 1.5rem;
         }
 
         .reason-card {
-            background: var(--surface-color);
-            padding: 2rem;
-            border-radius: 1rem;
-            border: 1px solid var(--border-color);
-            text-align: center;
-        }
-
-        .reason-card h3 {
-            color: var(--text-primary);
-            margin-bottom: 1rem;
-        }
-
-        .reason-card p {
-            color: var(--text-secondary);
-        }
-
-        /* Pricing Breakdown */
-        .pricing-breakdown {
-            margin: 4rem 0;
-        }
-
-        .pricing-breakdown h2 {
-            text-align: center;
-            margin-bottom: 2rem;
-            font-size: 2rem;
-            color: var(--text-primary);
-        }
-
-        .breakdown-explanation {
-            max-width: 800px;
-            margin: 0 auto;
-            margin-bottom: 2rem;
-        }
-
-        .breakdown-explanation p {
-            color: var(--text-secondary);
-            text-align: center;
-        }
-
-        .pricing-factors {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr); /* Force 2 columns */
-            gap: 2rem;
-            margin-top: 2rem;
+            padding: 1.5rem;
         }
 
         .factor {
-            background: var(--surface-color);
-            padding: 1.5rem;
-            border-radius: 0.75rem;
-            border: 1px solid var(--border-color);
+            padding: 1.25rem;
         }
 
-        .factor h4 {
-            color: var(--primary-color);
-            margin-bottom: 0.5rem;
-        }
-
-        .factor p {
-            color: var(--text-secondary);
-            margin-bottom: 1rem;
-        }
-
-        .cost-examples-mini {
-            margin-top: 1rem;
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-            line-height: 1.4;
-        }
-
-        .cost-examples-mini div {
-            margin: 0.25rem 0;
-            padding: 0.25rem 0.5rem;
-            background: var(--background-color);
-            border-radius: 0.25rem;
-            border-left: 3px solid var(--primary-color);
-        }
-
-        /* CTA Section */
         .pricing-cta {
-            text-align: center;
-            margin: 4rem 0;
-            padding: 3rem;
-            background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
-            color: white;
-            border-radius: 1rem;
+            padding: 2rem 1rem;
         }
-
-        .pricing-cta h2 {
-            margin-bottom: 1rem;
-            color: white;
-        }
-
-        .cta-main-text {
-            font-size: 1.1rem;
-            color: rgba(255, 255, 255, 0.95);
-            margin-bottom: 2rem;
-        }
-
-        .btn-primary {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: white;
-            color: var(--primary-color);
-            font-size: 1.1rem;
-            padding: 1rem 2rem;
-            border-radius: 0.75rem;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.2s ease;
-            border: none;
-            cursor: pointer;
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-        }
-
-        .cta-note {
-            margin-top: 1rem;
-            font-size: 0.9rem;
-            opacity: 1;
-            color: rgba(255, 255, 255, 0.95);
-            font-weight: 500;
-        }
-
-        /* Theme Toggle Button */
-        .theme-toggle {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background: var(--surface-color);
-            border: 1px solid var(--border-color);
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            z-index: 1000;
-        }
-
-        .theme-toggle:hover {
-            background: var(--primary-color);
-            color: white;
-        }
-
-        .sun-icon {
-            display: block;
-        }
-
-        .moon-icon {
-            display: none;
-        }
-
-        [data-theme="dark"] .sun-icon {
-            display: none;
-        }
-
-        [data-theme="dark"] .moon-icon {
-            display: block;
-        }
-
-        @media (prefers-color-scheme: dark) {
-            :root:not([data-theme="light"]) .sun-icon {
-                display: none;
-            }
-            :root:not([data-theme="light"]) .moon-icon {
-                display: block;
-            }
-        }
-
-        /* Mobile Responsive Styles */
-        @media (max-width: 968px) {
-            .pricing-header h1 {
-                font-size: 2rem;
-            }
-            
-            .pricing-subtitle {
-                font-size: 1.1rem;
-            }
-
-            .pricing-factors {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .examples-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        @media (max-width: 768px) {
-            /* Hide desktop table on mobile */
-
-            .pricing-page .container {
-            padding: 0 0.75rem;
-            }
-
-            .comparison-table {
-                display: none;
-            }
-            
-            /* Show mobile cards */
-            .mobile-comparison {
-                display: block;
-            }
-            
-            .pricing-header h1 {
-                font-size: 1.75rem;
-            }
-            
-            .container {
-                padding: 0 0.75rem;
-            }
-
-            .cost-calculator {
-                padding: 2rem 1.5rem;
-            }
-
-            .result-comparison {
-                grid-template-columns: 1fr;
-            }
-
-            .pricing-factors {
-                grid-template-columns: 1fr;
-            }
-
-            .reasons-grid {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr); /* Force 2 columns */
-                gap: 2rem;
-            }
-
-            .pricing-cta {
-                padding: 2rem 1.5rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .pricing-header h1 {
-                font-size: 1.5rem;
-            }
-            
-            .pricing-subtitle {
-                font-size: 1rem;
-            }
-            
-            .mobile-plan-header {
-                padding: 1.25rem;
-            }
-            
-            .mobile-feature-item {
-                padding: 0.875rem 1.25rem;
-            }
-
-            .cost-calculator p {
-                text-align: center;
-                color: var(--text-secondary);
-                margin-bottom: 2rem;
-            }
-
-            .example-card {
-                padding: 1.5rem;
-            }
-
-            .reason-card {
-                padding: 1.5rem;
-            }
-
-            .factor {
-                padding: 1.25rem;
-            }
-
-            .pricing-cta {
-                padding: 2rem 1rem;
-            }
-        }
-    </style>
-</head>
-<body>
-    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
-        <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
-            <line x1="12" y1="1" x2="12" y2="3" stroke="currentColor" stroke-width="2"/>
-            <line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" stroke-width="2"/>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="2"/>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2"/>
-            <line x1="1" y1="12" x2="3" y2="12" stroke="currentColor" stroke-width="2"/>
-            <line x1="21" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="2"/>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="2"/>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2"/>
-        </svg>
-        <svg class="moon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="2" fill="currentColor"/>
-        </svg>
-    </button>
+    }
+</style>
 
     <section class="pricing-page">
         <div class="container">
@@ -1378,5 +1187,3 @@ description: Compare Lookinglass pay-as-you-go pricing with ChatGPT subscription
             calculateCosts();
         });
     </script>
-</body>
-</html>

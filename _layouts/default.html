@@ -15,7 +15,7 @@
     <link rel="canonical" href="{{ page.url | absolute_url }}">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Lookinglass – The Bridge to OpenAI and Beyond">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} - {% endif %}Lookinglass – The Bridge to OpenAI and Beyond">
     <meta property="og:description" content="Pay only for what you use, choose from 20 models, and stay in control of your data and costs.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ page.url | absolute_url }}">

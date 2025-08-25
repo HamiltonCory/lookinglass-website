@@ -1077,3 +1077,20 @@ svg.telescope-hero,
 .footer-social .social-icon:hover svg {
   transform: scale(1.1);
 }
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--background-color);
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.social-icon:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+    transform: translateY(-2px);
+}

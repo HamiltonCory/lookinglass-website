@@ -64,7 +64,7 @@ description: Compare Lookinglass pay-as-you-go pricing with ChatGPT subscription
                     <div class="feature-name"><strong>o3-pro Access</strong></div>
                     <div class="feature-value excluded">✗</div>
                     <div class="feature-value excluded">✗</div>
-                    <div class="feature-value included">✓</div>
+                    <div class="feature-value included"><strong>✓</strong></div>
                     <div class="feature-value included highlight-text"><strong>✓ Pay-per-use</strong></div>
                 </div>
 
@@ -108,14 +108,6 @@ description: Compare Lookinglass pay-as-you-go pricing with ChatGPT subscription
                     <div class="feature-value warning">Yes (opt-out)</div>
                     <div class="feature-value warning">Yes (opt-out)</div>
                     <div class="feature-value included">✓ Never</div>
-                </div>
-
-                <div class="comparison-row">
-                    <div class="feature-name">Conversation Threads</div>
-                    <div class="feature-value excluded">✗</div>
-                    <div class="feature-value included">✓</div>
-                    <div class="feature-value included">✓</div>
-                    <div class="feature-value included">✓ Local storage</div>
                 </div>
 
                 <div class="comparison-row">
@@ -253,7 +245,7 @@ description: Compare Lookinglass pay-as-you-go pricing with ChatGPT subscription
                 <div class="input-group">
                     <label for="flex-usage">Use Flex pricing:</label>
                     <input type="checkbox" id="flex-usage" onchange="calculateCosts()">
-                    <span class="flex-note">Save ~50% when you can wait</span>
+                    <span class="flex-note">Save 50% when you can wait</span>
                 </div>
                 
                 <div class="calculator-results">
@@ -785,7 +777,9 @@ document.addEventListener('DOMContentLoaded', function() {
 .cta-note {
     margin-top: 1rem;
     font-size: 0.9rem;
-    opacity: 0.9;
+    opacity: 1;
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 500;
 }
 
 @media (max-width: 968px) {

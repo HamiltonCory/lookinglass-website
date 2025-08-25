@@ -14,10 +14,5 @@
       "url": "https://lookinglass.ai/assets/images/social-card.png"
     }
   },
-  "inLanguage": "en",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://lookinglass.ai/?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
+  "inLanguage": "en"
 }

@@ -304,10 +304,12 @@ a:hover {
     transition: all 0.2s ease;
     border: none;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .btn-primary:hover {
     background-color: var(--primary-hover);
+    color: var(--white) !important; /* Force white text on hover */
     transform: translateY(-2px);
     box-shadow: 0 10px 25px var(--shadow-color);
 }
@@ -325,11 +327,13 @@ a:hover {
     border: 2px solid var(--border-color);
     transition: all 0.2s ease;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .btn-secondary:hover {
     background-color: var(--surface-color);
     border-color: var(--primary-color);
+    color: var(--text-primary) !important; /* Keep consistent text color */
     transform: translateY(-2px);
 }
 

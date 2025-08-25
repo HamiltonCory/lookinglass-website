@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Don’t index JSON helper files directly
+Disallow: /llm.json
+Disallow: /website.schema.json
+Disallow: /app.schema.json
+Disallow: /faq.schema.json
+
+Sitemap: https://lookinglass.ai/sitemap.xml

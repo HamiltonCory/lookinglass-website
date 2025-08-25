@@ -1,0 +1,23 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://lookinglass.ai/#website",
+  "url": "https://lookinglass.ai",
+  "name": "Lookinglass",
+  "description": "Pay-as-you-go AI for iPhone and iPad. Access 20 OpenAI models including o3-pro, with transparent pricing and advanced controls.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lookinglass",
+    "url": "https://lookinglass.ai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://lookinglass.ai/assets/images/social-card.png"
+    }
+  },
+  "inLanguage": "en",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://lookinglass.ai/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}

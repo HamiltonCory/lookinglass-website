@@ -617,37 +617,23 @@ section.cta .btn-primary:hover {
     border: 1px solid var(--border-color);
 }
 
-/* Generic hover (fallback) */
-.social-links a:hover,
-.footer-social .social-icon:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px var(--shadow-color);
+/* Social Links - Base styles */
+.social-links {
+    display: flex;
+    gap: 1rem;
 }
 
-/* Platform-specific hover colors */
-.social-icon.facebook:hover {
-    background-color: #1877F2;
-    border-color: #1877F2;
-}
-
-.social-icon.instagram:hover {
-    background: linear-gradient(45deg, #E4405F, #FF6B35, #FFDC80);
-    border-color: #E4405F;
-}
-
-.social-icon.linkedin:hover {
-    background-color: #0077B5;
-    border-color: #0077B5;
-}
-
-.social-icon.twitter:hover {
-    background-color: #1DA1F2;
-    border-color: #1DA1F2;
-}
-
-/* Ensure icons stay visible on colored backgrounds */
-.social-icon:hover svg {
-    color: white !important;
+.social-links a, 
+.footer-social .social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--surface-color);
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
+    border: 1px solid var(--border-color);
 }
 
 /* SVG icon sizing */
@@ -656,6 +642,20 @@ section.cta .btn-primary:hover {
     max-width: 20px;
     height: 20px !important; 
     max-height: 20px;
+}
+
+/* Subtle, consistent hover effect */
+.social-links a:hover,
+.footer-social .social-icon:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px var(--shadow-color);
+    background-color: var(--background-color);
+    border-color: var(--text-secondary);
+}
+
+/* Keep icons their original brand colors but enhance visibility */
+.social-icon:hover svg {
+    transform: scale(1.1);
 }
 
 /* Footer social adjustments */

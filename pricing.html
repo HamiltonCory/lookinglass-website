@@ -1198,9 +1198,12 @@ description: Compare Lookinglass pay-as-you-go pricing with ChatGPT subscription
             const chatgptCost = messages <= 100 ? 20 : 200; // Plus vs Pro threshold
             
             // Update display
-            document.getElementById('lookinglass-cost').textContent = `${lookingglassCost.toFixed(2)}/month`;
-            document.getElementById('chatgpt-cost').textContent = `${chatgptCost}/month`;
-            document.getElementById('monthly-savings').textContent = `${Math.max(0, chatgptCost - lookingglassCost).toFixed(2)}`;
+            document.getElementById('lookinglass-cost').textContent =
+            `$${lookingglassCost.toFixed(2)}/month`;
+            document.getElementById('chatgpt-cost').textContent =
+            `$${chatgptCost}/month`;
+            document.getElementById('monthly-savings').textContent =
+            `$${Math.max(0, chatgptCost - lookingglassCost).toFixed(2)}`;
         }
 
         // Initialize when DOM is loaded

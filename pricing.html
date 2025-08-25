@@ -15,7 +15,7 @@ description: Compare Lookinglass pay-as-you-go pricing with ChatGPT subscription
     
     .pricing-cta .btn-primary:hover {
         background-color: var(--white);
-        color: var(--primary-color);
+        color: var(--primary-color) !important;
         transform: translateY(-2px);
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     }
@@ -1192,9 +1192,9 @@ description: Compare Lookinglass pay-as-you-go pricing with ChatGPT subscription
                 avgCostPerMessage *= 0.5;
             }
             
-            // Calculate monthly costs
+            // NEW - switches based on Lookinglass cost reaching $20
             const lookingglassCost = messages * avgCostPerMessage;
-            const chatgptCost = messages <= 100 ? 20 : 200; // Plus vs Pro threshold
+            const chatgptCost = lookingglassCost >= 20 ? 200 : 20;
             
             // Update display
             document.getElementById('lookinglass-cost').textContent =

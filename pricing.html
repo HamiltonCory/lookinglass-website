@@ -7,53 +7,25 @@ description: Compare Lookinglass pay-as-you-go pricing with ChatGPT subscription
 
 <style>
 
-    /* CSS Custom Properties for Theme Colors */
-    :root {
-        /* Light theme colors */
-        --primary-color: #004B3A;
-        --primary-hover: #003529;
-        --secondary-color: #6B7280;
-        --background-color: #FFFFFF;
-        --surface-color: #F9FAFB;
-        --text-primary: #111827;
-        --text-secondary: #6B7280;
-        --border-color: #E5E7EB;
-        --shadow-color: rgba(0, 0, 0, 0.1);
-        
-        /* Common colors */
-        --white: #FFFFFF;
-        --black: #000000;
-        --success: #10B981;
-        --warning: #F59E0B;
-        --error: #EF4444;
+    .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: white;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+    border-radius: 0.75rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
     }
 
-    /* Dark theme colors */
-    [data-theme="dark"] {
-        --primary-color: #22C77A;
-        --primary-hover: #1DB368;
-        --secondary-color: #9CA3AF;
-        --background-color: #111827;
-        --surface-color: #1F2937;
-        --text-primary: #F9FAFB;
-        --text-secondary: #D1D5DB;
-        --border-color: #374151;
-        --shadow-color: rgba(0, 0, 0, 0.3);
-    }
-
-    /* Auto dark mode based on system preference */
-    @media (prefers-color-scheme: dark) {
-        :root:not([data-theme="light"]) {
-            --primary-color: #22C77A;
-            --primary-hover: #1DB368;
-            --secondary-color: #9CA3AF;
-            --background-color: #111827;
-            --surface-color: #1F2937;
-            --text-primary: #F9FAFB;
-            --text-secondary: #D1D5DB;
-            --border-color: #374151;
-            --shadow-color: rgba(0, 0, 0, 0.3);
-        }
+    .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     }
 
     .pricing-page {

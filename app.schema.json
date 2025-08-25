@@ -13,17 +13,11 @@
     "availability": "https://schema.org/InStock"
   },
   "isAccessibleForFree": true,
-  "downloadUrl": "https://apps.apple.com/app/idYOUR_APP_ID",
   "screenshot": "https://lookinglass.ai/assets/images/social-card.png",
   "description": "Pay as you go, not by subscription. Lookinglass for iPhone and iPad gives you access to 20 OpenAI models, including o3-pro, with transparent pricing and advanced controls.",
   "brand": {
     "@type": "Brand",
     "name": "Lookinglass",
     "logo": "https://lookinglass.ai/assets/images/lookinglass-telescope.png"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5",
-    "ratingCount": "1"
   }
 }

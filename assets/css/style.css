@@ -526,8 +526,8 @@ a:hover {
     color: var(--primary-color);
 }
 
-.cta .btn-primary:hover {
-    background-color: var(--white);
+section.cta .btn-primary:hover {
+    background-color: var(--white) !important;
     color: var(--primary-color) !important;
     transform: translateY(-2px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);

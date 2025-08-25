@@ -573,8 +573,15 @@ description: Compare Lookinglass pay-as-you-go pricing with ChatGPT subscription
 
         .reasons-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr); /* 2x2 on desktop */
             gap: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .reasons-grid {
+                grid-template-columns: 1fr; /* 4x1 on mobile */
+                gap: 1.5rem; /* Slightly smaller gap on mobile */
+            }
         }
 
         .pricing-cta {

@@ -1627,3 +1627,44 @@ svg.telescope-hero,
         border-radius: 0.25rem;
         border-left: 3px solid var(--primary-color);
     }
+    
+    .pricing-cta .btn-primary {
+        background-color: var(--white);
+        color: var(--primary-color);
+        border: 2px solid var(--white);
+    }
+    
+    .pricing-cta .btn-primary:hover {
+        background-color: var(--white);
+        color: var(--primary-color) !important;
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+
+        .pricing-cta {
+        text-align: center;
+        margin: 4rem 0;
+        padding: 3rem;
+        background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
+        color: white;
+        border-radius: 1rem;
+    }
+
+    .pricing-cta h2 {
+        margin-bottom: 1rem;
+        color: white;
+    }
+
+    .cta-main-text {
+        font-size: 1.1rem;
+        color: rgba(255, 255, 255, 0.95);
+        margin-bottom: 2rem;
+    }
+
+    .cta-note {
+        margin-top: 1rem;
+        font-size: 0.9rem;
+        opacity: 1;
+        color: rgba(255, 255, 255, 0.95);
+        font-weight: 500;
+    }

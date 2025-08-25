@@ -36,12 +36,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=-apple-system,BlinkMacSystemFont,Segoe+UI,Roboto,Helvetica+Neue,Arial,sans-serif&display=swap" rel="stylesheet">
 
-     <!-- SEO and LLM files -->
+  <!-- SEO and LLM files -->
     <link rel="alternate" type="application/ld+json" href="/faq.schema.json">
     <link rel="alternate" type="application/json" href="/llm.json">
     <link rel="alternate" type="application/ld+json" href="/website.schema.json">
     <link rel="alternate" type="application/ld+json" href="/app.schema.json">
     <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["MobileApplication", "SoftwareApplication", "Product"],
+      "@id": "https://lookinglass.ai/#app",
+      "name": "Lookinglass",
+      "operatingSystem": "iOS",
+      "applicationCategory": "ProductivityApplication",
+      "category": "AI client",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      },
+      "isAccessibleForFree": true,
+      "screenshot": "https://lookinglass.ai/assets/images/social-card.png",
+      "description": "Pay as you go, not by subscription. Lookinglass for iPhone and iPad gives you access to 20 OpenAI models, including o3-pro, with transparent pricing and advanced controls.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lookinglass",
+        "logo": "https://lookinglass.ai/assets/images/telescope-icon.png"
+      }
+    }
+    </script>
 
 </head>
 <body>

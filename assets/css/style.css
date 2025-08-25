@@ -1097,7 +1097,7 @@ svg.telescope-hero,
 /* Who Uses Section */
 .who-uses {
     padding: 6rem 0;
-    background: #ffffff;
+    background: var(--bg-primary, #ffffff);
     position: relative;
 }
 
@@ -1112,7 +1112,7 @@ svg.telescope-hero,
 .who-uses h2 {
     font-size: 3rem;
     font-weight: 700;
-    color: #333;
+    color: var(--text-primary);
     text-align: center;
     margin-bottom: 1.5rem;
     position: relative;
@@ -1121,7 +1121,7 @@ svg.telescope-hero,
 .who-uses-subtitle {
     text-align: center;
     font-size: 1.25rem;
-    color: #666;
+    color: var(--text-secondary);
     margin-bottom: 3rem;
     font-weight: 300;
 }
@@ -1135,7 +1135,7 @@ svg.telescope-hero,
 .who-uses-content p {
     font-size: 1.1rem;
     line-height: 1.8;
-    color: #555;
+    color: var(--text-tertiary);
     text-align: left;
     margin-bottom: 1.5rem;
     position: relative;
@@ -1144,7 +1144,7 @@ svg.telescope-hero,
 
 /* Key highlight phrases */
 .highlight-text {
-    background: rgba(34, 199, 122, 0.1);
+    background: var(--accent-bg);
     padding: 2px 6px;
     border-radius: 4px;
     font-weight: 600;
@@ -1157,16 +1157,16 @@ svg.telescope-hero,
     gap: 2rem;
     margin: 3rem 0;
     padding: 2rem 0;
-    border-top: 1px solid #e5e5e5;
-    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .stat-item {
     text-align: center;
     padding: 1rem;
-    background: #f8f9fa;
+    background: var(--bg-secondary);
     border-radius: 12px;
-    border: 1px solid #e5e5e5;
+    border: 1px solid var(--border-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -1178,13 +1178,13 @@ svg.telescope-hero,
 .stat-number {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #22c77a;
+    color: var(--accent-color);
     margin-bottom: 0.5rem;
 }
 
 .stat-label {
     font-size: 0.9rem;
-    color: #666;
+    color: var(--text-secondary);
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 500;
@@ -1199,39 +1199,40 @@ svg.telescope-hero,
 }
 
 .user-type-card {
-    background: #f8f9fa;
+    background: var(--bg-secondary);
     padding: 1.5rem;
     border-radius: 12px;
-    border: 1px solid #e5e5e5;
+    border: 1px solid var(--border-color);
     transition: all 0.3s ease;
 }
 
 .user-type-card:hover {
-    border-color: #22c77a;
+    border-color: var(--accent-color);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .user-type-icon {
     width: 40px;
     height: 40px;
-    background: linear-gradient(135deg, #22c77a, #1db368);
+    background: linear-gradient(135deg, var(--accent-color), #1db368);
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 1rem;
+    font-size: 1.2rem;
 }
 
 .user-type-title {
     font-size: 1.1rem;
     font-weight: 600;
-    color: #333;
+    color: var(--text-primary);
     margin-bottom: 0.5rem;
 }
 
 .user-type-desc {
     font-size: 0.9rem;
-    color: #666;
+    color: var(--text-secondary);
     line-height: 1.5;
 }
 

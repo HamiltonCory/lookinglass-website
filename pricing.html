@@ -14,8 +14,8 @@ description: Compare Lookinglass pay-as-you-go pricing with ChatGPT subscription
     }
 
     .pricing-cta .btn-primary:hover {
-        background-color: rgba(255, 255, 255, 0.9);
-        color: var(--primary-hover);
+        background-color: var(--primary-hover);
+        color: var(--white) !important;
         transform: translateY(-2px);
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     }
@@ -1177,13 +1177,13 @@ description: Compare Lookinglass pay-as-you-go pricing with ChatGPT subscription
             let avgCostPerMessage;
             switch(complexity) {
                 case 'simple':
-                    avgCostPerMessage = 0.005; // GPT-4o mostly
+                    avgCostPerMessage = 0.00015; // GPT-5-nano: ~35 input + 150 output tokens
                     break;
                 case 'mixed':
-                    avgCostPerMessage = 0.02;  // Mix of models
+                    avgCostPerMessage = 0.13;    // Mix of simple and complex
                     break;
                 case 'complex':
-                    avgCostPerMessage = 0.08;  // o3/o3-pro heavy
+                    avgCostPerMessage = 0.26;    // o3-pro: ~350 input + 1200 output tokens
                     break;
             }
             

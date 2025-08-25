@@ -980,7 +980,6 @@ svg.telescope-hero,
         gap: 1.5rem;
     }
 }
-/* Add these styles to style-v2.css */
 
 /* Logo styles for header and footer */
 .nav-logo, .footer-logo {
@@ -1098,7 +1097,7 @@ svg.telescope-hero,
 /* Who Uses Section */
 .who-uses {
     padding: 4rem 0;
-    background-color: var(--background-color);
+    background-color: var(--primary-color); /* Dark green #004B3A in light mode, #22C77A in dark mode */
 }
 
 .who-uses-container {
@@ -1117,6 +1116,11 @@ svg.telescope-hero,
     margin-bottom: 1.5rem;
     color: var(--text-secondary);
     line-height: 1.7;
+}
+
+.who-uses h2,
+.who-uses p {
+    color: var(--white); /* Ensure text is white on the dark green background */
 }
 
 .flex-disclaimer {

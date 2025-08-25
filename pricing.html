@@ -1,3 +1,9 @@
+---
+layout: default
+title: Pricing
+description: Compare Lookinglass pay-as-you-go pricing with ChatGPT subscriptions. Access 20+ models including o3-pro without monthly commitments.
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -540,7 +546,7 @@
 
         .pricing-factors {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(2, 1fr); /* Force 2 columns */
             gap: 2rem;
             margin-top: 2rem;
         }
@@ -726,7 +732,9 @@
             }
 
             .reasons-grid {
-                grid-template-columns: 1fr;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr); /* Force 2 columns */
+                gap: 2rem;
             }
 
             .pricing-cta {
@@ -751,8 +759,10 @@
                 padding: 0.875rem 1.25rem;
             }
 
-            .cost-calculator {
-                padding: 1.5rem 1rem;
+            .cost-calculator p {
+                text-align: center;
+                color: var(--text-secondary);
+                margin-bottom: 2rem;
             }
 
             .example-card {

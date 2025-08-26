@@ -16,246 +16,390 @@ description: Complete guide to Lookinglass AI models. Compare 13 Chat models and
                 <p>Lookinglass gives you access to 20 OpenAI models across two families: 13 Chat models for fast, versatile conversations and 7 O-series models for complex reasoning tasks. This guide helps you choose the right model and settings for your needs.</p>
             </div>
 
-            <h2>Chat Models vs O-Series Models</h2>
-            
-            <div class="models-comparison">
-                <div class="models-type-card">
-                    <h3>Chat Models (13 available)</h3>
-                    <p><strong>Best for:</strong> General conversations, creative writing, code generation, quick questions, and most everyday AI tasks.</p>
-                    <ul>
-                        <li><strong>Speed:</strong> Fast responses, typically 1-5 seconds</li>
-                        <li><strong>Cost:</strong> Generally lower cost per message</li>
-                        <li><strong>Control:</strong> Temperature setting (0.0-2.0) for creativity control</li>
-                        <li><strong>Flexibility:</strong> 5 models support Flex pricing for 50% savings</li>
-                    </ul>
+            <!-- ChatGPT Models Section -->
+            <section class="model-section">
+                <h2 class="section-title">ChatGPT Models (13 Available)</h2>
+                <p class="section-description">General-purpose conversation and task completion models, perfect for everyday AI interactions.</p>
+
+                <div class="models-grid">
+                    <div class="model-card">
+                        <h3>GPT-5 Series (4 Models)</h3>
+                        <p class="model-description">OpenAI's newest and most advanced general-purpose models with enhanced reasoning capabilities.</p>
+                        <ul class="model-details">
+                            <li><strong>Models:</strong> GPT-5, GPT-5-chat-latest, GPT-5-mini, GPT-5-nano</li>
+                            <li><strong>Best for:</strong> Complex reasoning, creative writing, advanced problem solving</li>
+                            <li><strong>Context:</strong> 128K tokens</li>
+                            <li><strong>Flex available:</strong> Yes on all models (50% savings)</li>
+                            <li><strong>Cost range:</strong> $0.0001 - $0.20 per message</li>
+                        </ul>
+                    </div>
+
+                    <div class="model-card">
+                        <h3>GPT-4o Series (2 Models)</h3>
+                        <p class="model-description">High-performance models optimized for speed and efficiency while maintaining quality.</p>
+                        <ul class="model-details">
+                            <li><strong>Models:</strong> GPT-4o, GPT-4o-mini</li>
+                            <li><strong>Best for:</strong> General tasks, analysis, coding assistance</li>
+                            <li><strong>Context:</strong> 128K tokens</li>
+                            <li><strong>Flex available:</strong> No</li>
+                            <li><strong>Cost range:</strong> $0.001 - $0.15 per message</li>
+                        </ul>
+                    </div>
+
+                    <div class="model-card">
+                        <h3>GPT-4.1 Series (3 Models)</h3>
+                        <p class="model-description">Advanced GPT-4 variants with improved capabilities and efficiency options.</p>
+                        <ul class="model-details">
+                            <li><strong>Models:</strong> GPT-4.1, GPT-4.1-mini, GPT-4.1-nano</li>
+                            <li><strong>Best for:</strong> Balanced performance and cost, versatile tasks</li>
+                            <li><strong>Context:</strong> 128K tokens</li>
+                            <li><strong>Flex available:</strong> Select models</li>
+                            <li><strong>Cost range:</strong> $0.001 - $0.12 per message</li>
+                        </ul>
+                    </div>
+
+                    <div class="model-card">
+                        <h3>GPT-4 Legacy (2 Models)</h3>
+                        <p class="model-description">Original GPT-4 models, still powerful for many applications.</p>
+                        <ul class="model-details">
+                            <li><strong>Models:</strong> GPT-4, GPT-4-turbo</li>
+                            <li><strong>Best for:</strong> Established workflows, compatibility needs</li>
+                            <li><strong>Context:</strong> 8K - 128K tokens</li>
+                            <li><strong>Flex available:</strong> No</li>
+                            <li><strong>Cost range:</strong> $0.01 - $0.10 per message</li>
+                        </ul>
+                    </div>
+
+                    <div class="model-card">
+                        <h3>GPT-3.5 Series (2 Models)</h3>
+                        <p class="model-description">Cost-effective models perfect for high-volume, straightforward tasks.</p>
+                        <ul class="model-details">
+                            <li><strong>Models:</strong> GPT-3.5-turbo, GPT-3.5-turbo-16k</li>
+                            <li><strong>Best for:</strong> Simple questions, basic tasks, cost optimization</li>
+                            <li><strong>Context:</strong> 4K - 16K tokens</li>
+                            <li><strong>Flex available:</strong> Yes (50% savings)</li>
+                            <li><strong>Cost range:</strong> $0.0001 - $0.005 per message</li>
+                        </ul>
+                    </div>
                 </div>
-                
-                <div class="models-type-card">
-                    <h3>O-Series Models (7 available)</h3>
-                    <p><strong>Best for:</strong> Complex reasoning, mathematical problems, code debugging, research, and tasks requiring deep thinking.</p>
-                    <ul>
-                        <li><strong>Reasoning:</strong> Advanced step-by-step thinking process</li>
-                        <li><strong>Quality:</strong> Higher accuracy on complex problems</li>
-                        <li><strong>Control:</strong> Effort levels (Low/Medium/Hard) instead of temperature</li>
-                        <li><strong>Time:</strong> Slower responses as models "think" before answering</li>
-                    </ul>
+            </section>
+
+            <!-- O-Series Models Section -->
+            <section class="model-section">
+                <h2 class="section-title">O-Series Reasoning Models (7 Available)</h2>
+                <p class="section-description">Advanced reasoning models that "think" step-by-step through complex problems, perfect for mathematics, logic, and detailed analysis.</p>
+
+                <div class="models-grid">
+                    <div class="model-card">
+                        <h3>o3 Series (3 Models)</h3>
+                        <p class="model-description">Latest generation reasoning models with configurable thinking depth. <span class="highlight">o3-pro exclusive to ChatGPT Pro ($200/month)</span> - available pay-per-use in Lookinglass.</p>
+                        <ul class="model-details">
+                            <li><strong>Models:</strong> o3, o3-pro, o3-mini</li>
+                            <li><strong>Best for:</strong> Complex reasoning, research-level problems, mathematical proofs</li>
+                            <li><strong>Effort levels:</strong> Small, Medium, Large (affects cost and thinking time)</li>
+                            <li><strong>Flex available:</strong> o3 only (50% savings)</li>
+                            <li><strong>Cost range:</strong> $0.01 - $5.00+ per message</li>
+                        </ul>
+                    </div>
+
+                    <div class="model-card">
+                        <h3>o1 Series (3 Models)</h3>
+                        <p class="model-description">First-generation reasoning models that pioneered step-by-step thinking for complex problems.</p>
+                        <ul class="model-details">
+                            <li><strong>Models:</strong> o1, o1-pro, o1-mini</li>
+                            <li><strong>Best for:</strong> Mathematical problems, logical reasoning, academic work</li>
+                            <li><strong>Effort levels:</strong> Fixed (no configuration)</li>
+                            <li><strong>Flex available:</strong> No</li>
+                            <li><strong>Cost range:</strong> $0.05 - $0.50 per message</li>
+                        </ul>
+                    </div>
+
+                    <div class="model-card">
+                        <h3>o4-mini</h3>
+                        <p class="model-description">Efficient reasoning model designed for everyday logical tasks without the cost of larger models.</p>
+                        <ul class="model-details">
+                            <li><strong>Models:</strong> o4-mini (1 model)</li>
+                            <li><strong>Best for:</strong> Basic reasoning, educational problems, logic puzzles</li>
+                            <li><strong>Effort levels:</strong> Small, Medium, Large</li>
+                            <li><strong>Flex available:</strong> Yes (50% savings)</li>
+                            <li><strong>Cost range:</strong> $0.005 - $0.20 per message</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
+            </section>
 
-            <h2>Available Chat Models</h2>
-            
-            <div class="models-grid">
-                <div class="models-card">
-                    <h4>GPT-5 Family</h4>
-                    <ul>
-                        <li><strong>GPT-5</strong> - Latest flagship model <span class="models-flex-badge">Flex</span></li>
-                        <li><strong>GPT-5 mini</strong> - Balanced performance and cost <span class="models-flex-badge">Flex</span></li>
-                        <li><strong>GPT-5 nano</strong> - Fast and economical <span class="models-flex-badge">Flex</span></li>
-                        <li><strong>GPT-5 chat (latest)</strong> - Most current version</li>
-                    </ul>
+            <!-- Guide Sections -->
+            <section class="guide-section">
+                <div class="container">
+                    <h2 class="section-title">Choosing the Right Model</h2>
+                    <div class="guide-content">
+                        <div class="guide-cards">
+                            <div class="guide-card">
+                                <h4>For Quick Questions</h4>
+                                <p>Simple queries, definitions, basic coding help</p>
+                                <ul>
+                                    <li><strong>Recommended:</strong> GPT-5-nano (Flex)</li>
+                                    <li><strong>Cost:</strong> ~$0.0001 per message</li>
+                                    <li><strong>Speed:</strong> Very fast</li>
+                                    <li><strong>Example:</strong> "What's the capital of France?" or "Fix this syntax error"</li>
+                                </ul>
+                            </div>
+
+                            <div class="guide-card">
+                                <h4>For Complex Tasks</h4>
+                                <p>Writing, analysis, coding projects, creative work</p>
+                                <ul>
+                                    <li><strong>Recommended:</strong> GPT-5 or GPT-4o</li>
+                                    <li><strong>Cost:</strong> $0.01 - $0.20 per message</li>
+                                    <li><strong>Speed:</strong> Fast</li>
+                                    <li><strong>Example:</strong> "Write a business plan" or "Analyze this data"</li>
+                                </ul>
+                            </div>
+
+                            <div class="guide-card">
+                                <h4>For Math & Logic</h4>
+                                <p>Mathematical problems, logical reasoning, step-by-step solutions</p>
+                                <ul>
+                                    <li><strong>Recommended:</strong> o3 (Flex) or o4-mini</li>
+                                    <li><strong>Cost:</strong> $0.01 - $0.50 per message</li>
+                                    <li><strong>Speed:</strong> Slower (thinks through problems)</li>
+                                    <li><strong>Example:</strong> "Solve this calculus problem" or "Debug this algorithm"</li>
+                                </ul>
+                            </div>
+
+                            <div class="guide-card">
+                                <h4>For Research-Level Work</h4>
+                                <p>PhD-level problems, complex research, advanced reasoning</p>
+                                <ul>
+                                    <li><strong>Recommended:</strong> o3-pro (Large effort)</li>
+                                    <li><strong>Cost:</strong> $1.00 - $5.00+ per message</li>
+                                    <li><strong>Speed:</strong> Very slow (deep thinking)</li>
+                                    <li><strong>Example:</strong> "Prove this theorem" or "Design a complex system"</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="models-card">
-                    <h4>GPT-4.1 & GPT-4o Family</h4>
-                    <ul>
-                        <li><strong>GPT-4.1</strong> - Enhanced reasoning capabilities</li>
-                        <li><strong>GPT-4.1 mini</strong> - Compact version</li>
-                        <li><strong>GPT-4.1 nano</strong> - Smallest, fastest</li>
-                        <li><strong>GPT-4o</strong> - Optimized for conversations</li>
-                        <li><strong>GPT-4o mini</strong> - Cost-effective option</li>
-                    </ul>
+            </section>
+
+            <section class="model-section">
+                <h2 class="section-title">Understanding Context Windows & Tokens</h2>
+                <div class="guide-content">
+                    <div class="guide-cards">
+                        <div class="guide-card">
+                            <h4>What Are Tokens?</h4>
+                            <p>Tokens are pieces of text that AI models process. Understanding tokens helps you control costs.</p>
+                            <ul>
+                                <li><strong>1 token ≈ 4 characters</strong> or about 0.75 words</li>
+                                <li><strong>100 tokens ≈ 75 words</strong> (one paragraph)</li>
+                                <li><strong>1,000 tokens ≈ 750 words</strong> (one page)</li>
+                                <li>Both your input AND the AI's response count as tokens</li>
+                            </ul>
+                        </div>
+
+                        <div class="guide-card">
+                            <h4>Context Windows Explained</h4>
+                            <p>Context is how much conversation history the AI remembers. More context = better continuity but higher costs.</p>
+                            <ul>
+                                <li><strong>Short context (2K tokens):</strong> Last few messages only</li>
+                                <li><strong>Medium context (8K tokens):</strong> Several pages of conversation</li>
+                                <li><strong>Long context (32K tokens):</strong> Entire conversation history</li>
+                                <li><strong>Maximum (128K tokens):</strong> Hundreds of pages of context</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="models-card">
-                    <h4>Legacy Models</h4>
-                    <ul>
-                        <li><strong>GPT-4 Turbo</strong> - Previous generation flagship</li>
-                        <li><strong>GPT-4</strong> - Original GPT-4</li>
-                        <li><strong>GPT-3.5 Turbo</strong> - Fast, economical choice</li>
-                        <li><strong>GPT-3.5 Turbo 16k</strong> - Extended context window</li>
-                    </ul>
+            </section>
+
+            <section class="guide-section">
+                <div class="container">
+                    <h2 class="section-title">Advanced Settings</h2>
+                    <div class="guide-content">
+                        <div class="guide-cards">
+                            <div class="guide-card">
+                                <h4>Temperature</h4>
+                                <p>Controls how creative or focused the AI's responses are.</p>
+                                <ul>
+                                    <li><strong>Low (0.1-0.3):</strong> Focused, consistent, factual responses</li>
+                                    <li><strong>Medium (0.7):</strong> Balanced creativity and accuracy</li>
+                                    <li><strong>High (1.0-1.5):</strong> Creative, varied, sometimes unexpected</li>
+                                    <li><strong>Best for most tasks:</strong> 0.7 (default)</li>
+                                </ul>
+                            </div>
+
+                            <div class="guide-card">
+                                <h4>Effort Level (O-Models)</h4>
+                                <p>How much time the AI spends thinking through problems.</p>
+                                <ul>
+                                    <li><strong>Small:</strong> Quick thinking, lower cost, faster responses</li>
+                                    <li><strong>Medium:</strong> Balanced thinking time and cost</li>
+                                    <li><strong>Large:</strong> Deep thinking, higher cost, best quality</li>
+                                    <li><strong>Choose based on:</strong> Problem complexity and time sensitivity</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <h2>Available O-Series Models</h2>
-            
-            <div class="models-grid">
-                <div class="models-card reasoning">
-                    <h4>Premium Reasoning</h4>
-                    <ul>
-                        <li><strong>o1-pro</strong> - Most advanced reasoning model</li>
-                        <li><strong>o3-pro</strong> - Latest professional reasoning</li>
-                    </ul>
-                </div>
-                
-                <div class="models-card reasoning">
-                    <h4>Standard Reasoning</h4>
-                    <ul>
-                        <li><strong>o1</strong> - Original reasoning model</li>
-                        <li><strong>o3</strong> - Advanced reasoning <span class="models-flex-badge">Flex</span></li>
-                    </ul>
-                </div>
-                
-                <div class="models-card reasoning">
-                    <h4>Compact Reasoning</h4>
-                    <ul>
-                        <li><strong>o1-mini</strong> - Faster, more affordable</li>
-                        <li><strong>o3-mini</strong> - Latest compact version</li>
-                        <li><strong>o4-mini</strong> - Next-generation compact <span class="models-flex-badge">Flex</span></li>
-                    </ul>
-                </div>
-            </div>
-
-            <h2>Flex vs Standard Pricing</h2>
-            
-            <h3>Standard Pricing</h3>
-            <p>Immediate responses with full priority processing. Best when you need answers right away for time-sensitive work, live conversations, or urgent tasks.</p>
-            
-            <h3>Flex Pricing (50% savings)</h3>
-            <p>Responses may take longer as your request is processed when server capacity is available. Perfect for non-urgent tasks like content generation, research, analysis, or any work where you can wait a bit for significant cost savings.</p>
-            
-            <p><strong>Flex-supported models:</strong> GPT-5, GPT-5 mini, GPT-5 nano, o3, and o4-mini</p>
-
-            <h2>Model Controls</h2>
-
-            <h3>Temperature (Chat Models)</h3>
-            <p>Controls creativity and randomness in responses:</p>
-            <ul>
-                <li><strong>0.0-0.3:</strong> Focused, consistent, factual responses</li>
-                <li><strong>0.4-0.7:</strong> Balanced creativity and accuracy (default)</li>
-                <li><strong>0.8-2.0:</strong> Creative, varied, experimental outputs</li>
-            </ul>
-
-            <h3>Effort Levels (O-Series Models)</h3>
-            <p>Determines how much computational "thinking" the model does:</p>
-            <ul>
-                <li><strong>Low:</strong> Faster responses, suitable for simpler reasoning tasks</li>
-                <li><strong>Medium:</strong> Balanced speed and depth (recommended default)</li>
-                <li><strong>Hard:</strong> Maximum reasoning power for the most complex problems</li>
-            </ul>
-
-            <h2>Context Windows & Tokens</h2>
-
-            <h3>What are tokens?</h3>
-            <p>Tokens are pieces of text the AI processes. Roughly 1 token = 0.75 words in English. Both your input and the AI's response count toward token usage.</p>
-
-            <h3>Context Window</h3>
-            <p>The maximum amount of text (in tokens) the model can consider at once, including:</p>
-            <ul>
-                <li>Your permanent memory settings</li>
-                <li>Previous conversation history (if context is enabled)</li>
-                <li>Your current message</li>
-                <li>Space reserved for the AI's response</li>
-            </ul>
-
-            <h3>Model Limits</h3>
-            <ul>
-                <li><strong>Legacy models (GPT-3.5, GPT-4):</strong> 8K-16K tokens</li>
-                <li><strong>GPT-4o family:</strong> 128K tokens (~96,000 words)</li>
-                <li><strong>GPT-4.1 & GPT-5 families:</strong> 400K-1M tokens (~300K-750K words)</li>
-                <li><strong>O-series models:</strong> 128K-200K tokens (~96K-150K words)</li>
-            </ul>
-
-            <h2>Choosing the Right Model</h2>
-
-            <h3>For everyday conversations and tasks:</h3>
-            <ul>
-                <li><strong>GPT-5 nano (Flex)</strong> - Most economical for simple questions</li>
-                <li><strong>GPT-4o mini</strong> - Good balance of speed and capability</li>
-                <li><strong>GPT-5</strong> - Best overall chat model</li>
-            </ul>
-
-            <h3>For complex reasoning and analysis:</h3>
-            <ul>
-                <li><strong>o3-mini</strong> - Affordable reasoning for most tasks</li>
-                <li><strong>o3</strong> - Advanced reasoning with Flex option</li>
-                <li><strong>o3-pro</strong> - Maximum reasoning power for critical work</li>
-            </ul>
-
-            <h3>For cost optimization:</h3>
-            <ul>
-                <li>Use <strong>Flex pricing</strong> when you can wait</li>
-                <li>Disable context window for unrelated questions</li>
-                <li>Choose "nano" or "mini" models for simple tasks</li>
-                <li>Set appropriate temperature/effort levels</li>
-            </ul>
+            </section>
 
             <div class="legal-footer">
-                <p><strong>Ready to explore our models?</strong> <a href="{{ '/pricing' | relative_url }}">View detailed pricing</a> or <a href="https://apps.apple.com/app/id6751123527" target="_blank" rel="noopener">download Lookinglass</a> to start experimenting.</p>
+                <p><strong>Ready to start using these models?</strong> <a href="{{ '/pricing' | relative_url }}">View detailed pricing</a> or <a href="https://apps.apple.com/app/id6751123527" target="_blank" rel="noopener">download Lookinglass</a> to get started.</p>
             </div>
         </div>
     </div>
 </section>
 
 <style>
-.models-comparison {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    margin: 2rem 0;
+/* Model sections */
+.model-section {
+    padding: 3rem 0;
 }
 
-.models-type-card {
-    background-color: var(--surface-color);
-    padding: 2rem;
-    border-radius: 1rem;
-    border: 1px solid var(--border-color);
-}
-
-.models-type-card h3 {
-    color: var(--primary-color);
+.section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-primary);
     margin-bottom: 1rem;
+    text-align: center;
 }
 
+.section-description {
+    text-align: center;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Model grid - wider cards using more page width */
 .models-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-    margin: 2rem 0;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
-.models-card {
+/* Model cards - fixed hover issue */
+.model-card {
     background-color: var(--surface-color);
-    padding: 1.5rem;
-    border-radius: 0.75rem;
-    border: 1px solid var(--border-color);
+    border: 2px solid var(--border-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    position: relative;
 }
 
-.models-card.reasoning {
-    border-left: 4px solid var(--warning);
+/* Fixed hover - no green background, just subtle border change */
+.model-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 8px 25px var(--shadow-color);
+    transform: translateY(-2px);
 }
 
-.models-card h4 {
-    color: var(--primary-color);
-    margin-bottom: 1rem;
+.model-card h3 {
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
 }
 
-.models-card ul {
-    margin-left: 0;
+.model-description {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+/* Model details - removed bullets and arrows */
+.model-details {
     list-style: none;
 }
 
-.models-card li {
-    padding: 0.25rem 0;
+.model-details li {
+    padding: 0.5rem 0;
+    color: var(--text-secondary);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.model-details li:last-child {
+    border-bottom: none;
+}
+
+.model-details strong {
+    color: var(--text-primary);
+}
+
+/* Guide sections */
+.guide-section {
+    padding: 3rem 0;
+    background-color: var(--surface-color);
+}
+
+.guide-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Guide cards - wider layout */
+.guide-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.guide-card {
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+/* Fixed header sizing consistency */
+.guide-card h4 {
+    font-size: 1.5rem; /* Same size for all headers */
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+/* Remove bullets from guide content */
+.guide-card ul {
+    list-style: none;
+    margin-left: 0;
+}
+
+.guide-card li {
+    padding: 0.5rem 0;
     color: var(--text-secondary);
 }
 
-.models-flex-badge {
-    background-color: var(--success);
-    color: white;
-    font-size: 0.75rem;
-    padding: 0.25rem 0.5rem;
-    border-radius: 1rem;
-    font-weight: 500;
-    margin-left: 0.5rem;
+.highlight {
+    background: linear-gradient(120deg, rgba(34, 199, 122, 0.2) 0%, rgba(34, 199, 122, 0.1) 100%);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+    color: var(--text-primary);
 }
 
+/* Responsive design */
 @media (max-width: 768px) {
-    .models-comparison {
+    .models-grid,
+    .guide-cards {
         grid-template-columns: 1fr;
     }
     
-    .models-grid {
-        grid-template-columns: 1fr;
+    .container {
+        padding: 0 1rem;
     }
-}</style>
+}
+
+@media (max-width: 480px) {
+    .model-card,
+    .guide-card {
+        padding: 1.5rem;
+    }
+}
+
+/* Dark mode adjustments */
+[data-theme="dark"] .highlight {
+    background: rgba(34, 199, 122, 0.3);
+}
+</style>

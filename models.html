@@ -252,21 +252,21 @@ description: Complete guide to Lookinglass AI models. Compare 13 Chat models and
 <style>
 /* Model sections */
 .model-section {
-    padding: 1.5rem 0;
+    padding: 1rem 0; /* was 1.5rem */
 }
 
 .section-title {
     font-size: 2rem;
     font-weight: 600;
     color: var(--text-primary);
-    margin-bottom: 1rem;
+    margin: 0 0 0.5rem 0; /* tighter, removed top margin */
     text-align: center;
 }
 
 .section-description {
     text-align: center;
     color: var(--text-secondary);
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem; /* was 2rem */
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -276,8 +276,8 @@ description: Complete guide to Lookinglass AI models. Compare 13 Chat models and
 .models-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
+    gap: 1.5rem; /* was 2rem */
+    margin-top: 1rem; /* was 2rem */
 }
 
 /* Model cards - fixed hover issue */
@@ -299,13 +299,13 @@ description: Complete guide to Lookinglass AI models. Compare 13 Chat models and
 
 .model-card h3 {
     color: var(--text-primary);
-    margin-bottom: 0.5rem;
+    margin: 0 0 0.5rem 0; /* was margin-bottom only */
     font-size: 1.5rem;
 }
 
 .model-description {
     color: var(--text-secondary);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem; /* was 1.5rem */
 }
 
 /* Model details - removed bullets and arrows */
@@ -314,7 +314,7 @@ description: Complete guide to Lookinglass AI models. Compare 13 Chat models and
 }
 
 .model-details li {
-    padding: 0.5rem 0;
+    padding: 0.4rem 0; /* was 0.5rem */
     color: var(--text-secondary);
     border-bottom: 1px solid var(--border-color);
 }
@@ -329,7 +329,7 @@ description: Complete guide to Lookinglass AI models. Compare 13 Chat models and
 
 /* Guide sections */
 .guide-section {
-    padding: 1.5rem 0;
+    padding: 1rem 0; /* was 1.5rem */
     background-color: var(--surface-color);
 }
 
@@ -342,8 +342,8 @@ description: Complete guide to Lookinglass AI models. Compare 13 Chat models and
 .guide-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
+    gap: 1.5rem; /* was 2rem */
+    margin-top: 1.5rem; /* was 2rem */
 }
 
 .guide-card {
@@ -355,9 +355,9 @@ description: Complete guide to Lookinglass AI models. Compare 13 Chat models and
 
 /* Fixed header sizing consistency */
 .guide-card h4 {
-    font-size: 1.5rem; /* Same size for all headers */
+    font-size: 1.5rem;
     color: var(--text-primary);
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem; /* was 1rem */
 }
 
 /* Remove bullets from guide content */
@@ -367,7 +367,7 @@ description: Complete guide to Lookinglass AI models. Compare 13 Chat models and
 }
 
 .guide-card li {
-    padding: 0.5rem 0;
+    padding: 0.4rem 0; /* was 0.5rem */
     color: var(--text-secondary);
 }
 
@@ -385,7 +385,7 @@ description: Complete guide to Lookinglass AI models. Compare 13 Chat models and
     .guide-cards {
         grid-template-columns: 1fr;
     }
-    
+
     .container {
         padding: 0 1rem;
     }

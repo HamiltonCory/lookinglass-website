@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/lookinglass-website/eula.html</loc>
+<loc>https://lookinglass.ai/eula.html</loc>
 </url>
 <url>
-<loc>http://localhost:4000/lookinglass-website/</loc>
+<loc>https://lookinglass.ai/faq.html</loc>
 </url>
 <url>
-<loc>http://localhost:4000/lookinglass-website/privacy.html</loc>
+<loc>https://lookinglass.ai/</loc>
+</url>
+<url>
+<loc>https://lookinglass.ai/pricing.html</loc>
+</url>
+<url>
+<loc>https://lookinglass.ai/privacy.html</loc>
 </url>
 </urlset>

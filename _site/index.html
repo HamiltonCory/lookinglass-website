@@ -3,34 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lookinglass - Pay-as-You-Go AI App with 20 OpenAI Models | No Subscriptions</title>
+    <title>Home - Lookinglass</title>
     <meta name="description" content="A powerful GUI for the OpenAI API. Access more models, transparent pricing, and complete control over your AI interactions.">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/lookinglass-website/assets/images/lookinglass-telescope.svg">
+    <link rel="icon" type="image/svg+xml" href="/assets/images/lookinglass-telescope.svg">
+    <link rel="icon" type="image/png" href="/assets/images/lookinglass-telescope.png">
+    <link rel="apple-touch-icon" href="/assets/images/lookinglass-telescope.png">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://lookinglass.ai/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Home - Lookinglass – The Bridge to OpenAI and Beyond">
+    <meta property="og:description" content="Pay only for what you use, choose from 20 models, and stay in control of your data and costs.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lookinglass.ai/">
+    <meta property="og:image" content="https://lookinglass.ai/assets/images/social-card.png">
+    <meta property="og:image:alt" content="Lookinglass logo and app preview">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lookinglass – The Bridge to OpenAI and Beyond">
+    <meta name="twitter:description" content="Pay-as-you-go, 20 models, and full control over costs and privacy.">
+    <meta name="twitter:image" content="https://lookinglass.ai/assets/images/social-card.png">
+    
+    <!-- App Store / iOS Meta Tags -->
+    <meta name="apple-itunes-app" content="app-id=6751123527">
+    <meta property="al:ios:app_store_id" content="6751123527">
+    <meta property="al:ios:app_name" content="Lookinglass">
+    <meta property="al:ios:url" content="lookinglass://open">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="/lookinglass-website/assets/css/style.css?v=1755528543">
+    <link rel="stylesheet" href="/assets/css/style.css?v=1756167239">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=-apple-system,BlinkMacSystemFont,Segoe+UI,Roboto,Helvetica+Neue,Arial,sans-serif&display=swap" rel="stylesheet">
+   
+    <!-- SEO and LLM files -->
+    <link rel="alternate" type="application/ld+json" href="/faq.schema.json">
+    <link rel="alternate" type="application/json" href="/llm.json">
+    <link rel="alternate" type="application/ld+json" href="/website.schema.json">
+    <link rel="alternate" type="application/ld+json" href="/app.schema.json">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["MobileApplication", "SoftwareApplication", "Product"],
+      "@id": "https://lookinglass.ai/#app",
+      "name": "Lookinglass",
+      "operatingSystem": "iOS",
+      "applicationCategory": "ProductivityApplication",
+      "category": "AI client",
+      "url": "https://apps.apple.com/app/id6751123527",
+      "downloadUrl": "https://apps.apple.com/app/id6751123527",
+      "installUrl": "https://apps.apple.com/app/id6751123527",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://apps.apple.com/app/id6751123527"
+      },
+      "isAccessibleForFree": true,
+      "screenshot": "https://lookinglass.ai/assets/images/social-card.png",
+      "description": "Pay as you go, not by subscription. Lookinglass for iPhone and iPad gives you access to 20 OpenAI models, including o3-pro, with transparent pricing and advanced controls.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lookinglass",
+        "logo": "https://lookinglass.ai/assets/images/lookinglass-telescope.png"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Lookinglass",
+        "url": "https://lookinglass.ai"
+      },
+      "publisher": {
+        "@type": "Organization", 
+        "name": "Lookinglass",
+        "url": "https://lookinglass.ai"
+      }
+    }
+    </script>
+
 </head>
 <body>
     <header class="header">
     <nav class="nav">
         <div class="nav-container">
-            <a href="/lookinglass-website/" class="nav-brand">
-                <img src="{{ '/assets/images/lookinglass-telescope.png' | relative_url }}" alt="Lookinglass" class="nav-logo" />
+            <a href="/" class="nav-brand">
+                <img src="/assets/images/lookinglass-telescope.png" alt="Lookinglass" class="nav-logo" />
                 <span class="nav-brand-text">Lookinglass</span>
             </a>
             
             <ul class="nav-menu">
-                <li><a href="/lookinglass-website/" class="nav-link">Home</a></li>
-                <li><a href="/lookinglass-website/privacy" class="nav-link">Privacy</a></li>
-                <li><a href="/lookinglass-website/eula" class="nav-link">Terms</a></li>
-                <li><a href="#" class="nav-link download-btn">Download</a></li>
+                <li><a href="/" class="nav-link">Home</a></li>
+                <li><a href="/pricing" class="nav-link">Pricing</a></li>
+                <li><a href="/faq" class="nav-link">FAQ</a></li>
+                <li><a href="/privacy" class="nav-link">Privacy</a></li>
+                <li><a href="/eula" class="nav-link">Terms</a></li>
+                <li><a href="https://apps.apple.com/app/id6751123527" target="_blank" rel="noopener" class="nav-link download-btn">Download</a></li>
             </ul>
             
             <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
@@ -60,18 +135,18 @@
 </header>
     
     <main>
-<!-- Hero Section -->
+        <!-- Hero Section -->
 <section class="hero">
     <div class="hero-container">
         <div class="hero-content">
             <div class="hero-icon">
-                <img src="{{ '/assets/images/lookinglass-telescope.png' | relative_url }}" alt="Lookinglass Logo" class="telescope-hero" />
+                <img src="/assets/images/lookinglass-telescope.png" alt="Lookinglass Logo" class="telescope-hero" />
             </div>
-            <h1 class="hero-title">The bridge between you and the GPTs you love</h1>
-            <p class="hero-subtitle">A powerful GUI for the OpenAI API. Access 15 AI models with transparent pricing, advanced controls, and complete cost transparency. No subscriptions.</p>
+            <h1 class="hero-title">See further, think deeper. Ideas brought into focus.</h1>
+            <p class="hero-subtitle">The first AI client that puts you in complete control—with transparent pay-as-you-go pricing and access to 20 models including exclusive o3-pro.</p>
             
             <div class="hero-cta">
-                <a href="#" class="btn-primary">
+                <a href="https://apps.apple.com/app/id6751123527" target="_blank" rel="noopener" class="btn-primary">
                     <svg class="apple-icon" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
                     </svg>
@@ -83,7 +158,7 @@
             <div class="hero-badges">
                 <span class="badge">iOS Only</span>
                 <span class="badge">No Subscriptions</span>
-                <span class="badge">15 AI Models</span>
+                <span class="badge">20 OpenAI Models</span>
             </div>
         </div>
         
@@ -91,13 +166,71 @@
             <div class="phone-mockup">
                 <div class="phone-frame">
                     <div class="phone-screen">
-                        <img src="{{ '/assets/images/Lookinglass-WelcomeView.png' | relative_url }}" alt="Lookinglass Welcome Screen" class="app-screenshot" />
+                        <img src="/assets/images/Lookinglass-WelcomeView.png" alt="Lookinglass Welcome Screen" class="app-screenshot" />
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+    <!-- Enhanced AI Power Users Section -->
+    <section class="who-uses">
+        <div class="who-uses-container">
+            <h2>Built for AI Power Users Who Want Control</h2>
+            <p class="who-uses-subtitle">Professional-grade AI access without enterprise-level commitments</p>
+            
+            <div class="power-user-stats">
+                <div class="stat-item">
+                    <div class="stat-number">20</div>
+                    <div class="stat-label">AI Models</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Transparent</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">$0</div>
+                    <div class="stat-label">Subscriptions</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Available</div>
+                </div>
+            </div>
+
+            <div class="user-types">
+                <div class="user-type-card">
+                    <div class="user-type-icon" role="img" aria-label="Education">🎓</div>
+                    <div class="user-type-title">Researchers & Students</div>
+                    <div class="user-type-desc">Access specific models for academic work without breaking the budget</div>
+                </div>
+                <div class="user-type-card">
+                    <div class="user-type-icon" role="img" aria-label="Startup">🚀</div>
+                    <div class="user-type-title">Startup Founders</div>
+                    <div class="user-type-desc">Manage AI expenses precisely while building AI-powered applications</div>
+                </div>
+                <div class="user-type-card">
+                    <div class="user-type-icon" role="img" aria-label="Development">💻</div>
+                    <div class="user-type-title">Developers</div>
+                    <div class="user-type-desc">Test different models and integrate Lookinglass into their development workflow with full cost control</div>
+                </div>
+                <div class="user-type-card">
+                    <div class="user-type-icon" role="img" aria-label="Power User">⚡</div>
+                    <div class="user-type-title">Power Users</div>
+                    <div class="user-type-desc">Advanced users who want flexibility and transparency in AI interactions</div>
+                </div>
+            </div>
+
+            <div class="who-uses-content">
+                <p>Lookinglass serves users who are <span class="highlight-text">tired of expensive AI subscriptions</span> that limit model choice and hide costs. Whether you're a researcher who needs access to specific OpenAI models, a startup founder managing AI expenses, or a developer building AI-powered applications, Lookinglass puts you in control.</p>
+                
+                <p>Unlike traditional AI apps that lock you into monthly subscriptions, Lookinglass operates on <span class="highlight-text">transparent pay-as-you-go pricing</span>. You choose the exact AI model for each conversation, see costs upfront, and pay only for what you use. No subscription fatigue, no surprise bills, no restrictions on switching between GPT-4, ChatGPT, and O-series models mid-conversation.</p>
+                
+                <p>Perfect for users who want <span class="highlight-text">professional-grade AI access</span> without enterprise-level commitments. From quick GPT-4o queries costing pennies to complex O-model reasoning tasks, Lookinglass scales with your needs while keeping your data private and your costs transparent.</p>
+            </div>
+        </div>
+    </section>
 
 <!-- App Preview Section -->
 <section class="app-preview">
@@ -107,55 +240,55 @@
         
         <div class="app-gallery">
             <div class="gallery-item">
-                <img src="{{ '/assets/images/Lookinglass-WelcomeView.png' | relative_url }}" alt="Welcome Screen" loading="lazy">
+                <img src="/assets/images/Lookinglass-WelcomeView.png" alt="Welcome Screen" loading="lazy">
                 <h3>Welcome Experience</h3>
                 <p>Get started with a clean, intuitive interface</p>
             </div>
             
             <div class="gallery-item">
-                <img src="{{ '/assets/images/Lookinglass-ChatView.png' | relative_url }}" alt="Chat Interface" loading="lazy">
+                <img src="/assets/images/Lookinglass-ChatView.png" alt="Chat Interface" loading="lazy">
                 <h3>Chat Interface</h3>
                 <p>Clean conversation view with model selection</p>
             </div>
             
             <div class="gallery-item">
-                <img src="{{ '/assets/images/Lookinglass-ChatModels.png' | relative_url }}" alt="Model Selection" loading="lazy">
-                <h3>15 AI Models</h3>
-                <p>Choose from 10 ChatGPT and 5 O-models</p>
+                <img src="/assets/images/Lookinglass-ChatModels.png" alt="Model Selection" loading="lazy">
+                <h3>20 OpenAI Models</h3>
+                <p>Choose from 13 ChatGPT and 7 O-models</p>
             </div>
             
             <div class="gallery-item">
-                <img src="{{ '/assets/images/Lookinglass-PriceView.png' | relative_url }}" alt="Pricing View" loading="lazy">
+                <img src="/assets/images/Lookinglass-PriceView.png" alt="Pricing View" loading="lazy">
                 <h3>Transparent Pricing</h3>
                 <p>See exact costs before sending messages</p>
             </div>
             
             <div class="gallery-item">
-                <img src="{{ '/assets/images/Lookinglass-PricingViewFlex.png' | relative_url }}" alt="Flex Pricing" loading="lazy">
+                <img src="/assets/images/Lookinglass-PricingViewFlex.png" alt="Flex Pricing" loading="lazy">
                 <h3>Flex Pricing</h3>
-                <p>Save ~50% with flexible response times</p>
+                <p>Save 50% with flexible response times</p>
             </div>
             
             <div class="gallery-item">
-                <img src="{{ '/assets/images/Lookinglass-Wallet.png' | relative_url }}" alt="Wallet" loading="lazy">
+                <img src="/assets/images/Lookinglass-Wallet.png" alt="Wallet" loading="lazy">
                 <h3>Smart Wallet</h3>
                 <p>Manage funds and track spending</p>
             </div>
             
             <div class="gallery-item">
-                <img src="{{ '/assets/images/Lookinglass-Audit.png' | relative_url }}" alt="Transaction Audit" loading="lazy">
+                <img src="/assets/images/Lookinglass-Audit.png" alt="Transaction Audit" loading="lazy">
                 <h3>Transaction History</h3>
                 <p>Complete audit trail and CSV export</p>
             </div>
             
             <div class="gallery-item">
-                <img src="{{ '/assets/images/Lookinglass-Settings1.png' | relative_url }}" alt="Settings" loading="lazy">
+                <img src="/assets/images/Lookinglass-Settings1.png" alt="Settings" loading="lazy">
                 <h3>Advanced Controls</h3>
                 <p>Fine-tune your AI experience</p>
             </div>
             
             <div class="gallery-item">
-                <img src="{{ '/assets/images/Lookinglass-Settings2.png' | relative_url }}" alt="More Settings" loading="lazy">
+                <img src="/assets/images/Lookinglass-Settings2.png" alt="More Settings" loading="lazy">
                 <h3>Context & Memory</h3>
                 <p>Control conversation context and permanent memory</p>
             </div>
@@ -167,7 +300,7 @@
 <section id="features" class="features">
     <div class="features-container">
         <h2 class="section-title">Everything you need for AI conversations</h2>
-        <p class="section-subtitle">Get more control, transparency, and access to the latest OpenAI models</p>
+        <p class="section-subtitle">Get more control, transparency, and access to 20 OpenAI models.</p>
         
         <div class="features-grid">
             <div class="feature-card">
@@ -176,8 +309,8 @@
                         <path d="M9 11H15M9 15H15M17 21H7C5.89543 21 5 20.1046 5 19V5C5 3.89543 5.89543 3 7 3H12.5858C12.851 3 13.1054 3.10536 13.2929 3.29289L19.7071 9.70711C19.8946 9.89464 20 10.149 20 10.4142V19C20 20.1046 19.1046 21 18 21H17ZM17 21V11H13V7H7V19H17Z" stroke="currentColor" stroke-width="2"/>
                     </svg>
                 </div>
-                <h3>15 AI Models</h3>
-                <p>Access 10 ChatGPT models and 5 O-models. Switch between models per conversation thread whenever you want.</p>
+                <h3>20 OpenAI Models</h3>
+                <p>Access 13 ChatGPT models and 7 O-models. Switch between any model at any time, even mid-conversation.</p>
             </div>
             
             <div class="feature-card">
@@ -187,7 +320,7 @@
                     </svg>
                 </div>
                 <h3>Transparent Pricing</h3>
-                <p>See exact costs before sending messages. Pay-as-you-go with no subscriptions. Optional Flex pricing saves ~50% if you can wait.</p>
+                <p>See exact costs before sending messages. Pay-as-you-go with no subscriptions. Optional Flex pricing saves 50% if you can wait.</p>
             </div>
             
             <div class="feature-card">
@@ -197,7 +330,7 @@
                     </svg>
                 </div>
                 <h3>Smart Wallet</h3>
-                <p>Add funds from $1-$500, audit all transactions, and export CSV reports. Built-in cost guard prevents surprise charges.</p>
+                <p>Add funds from $1-$500, audit all transactions, and export CSV reports. Built-in cost guard alerts you before high-cost messages.</p>
             </div>
             
             <div class="feature-card">
@@ -218,7 +351,7 @@
                     </svg>
                 </div>
                 <h3>Privacy First</h3>
-                <p>We don't store your conversations or prompts. Only metadata for billing and operations. Your data stays private.</p>
+                <p>We don't store your conversations, prompts, or AI responses - everything stays on your device. We only keep minimal billing and usage metadata.</p>
             </div>
             
             <div class="feature-card">
@@ -239,8 +372,8 @@
     <div class="cta-container">
         <div class="cta-content">
             <h2>Ready to unlock the full potential of AI?</h2>
-            <p>Join thousands of users who've upgraded their AI experience with Lookinglass</p>
-            <a href="#" class="btn-primary">
+            <p>Your window into AI — putting you in control, with transparency and freedom from subscriptions.</p>
+            <a href="https://apps.apple.com/app/id6751123527" target="_blank" rel="noopener" class="btn-primary">
                 <svg class="apple-icon" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
                 </svg>
@@ -252,46 +385,64 @@
     </main>
     
     <footer class="footer">
-    <div class="footer-container">
-        <div class="footer-content">
-            <div class="footer-brand">
-                <img src="{{ '/assets/images/lookinglass-telescope.png' | relative_url }}" alt="Lookinglass" class="footer-logo" />
-                <span>Lookinglass</span>
-            </div>
-            
-            <div class="footer-links">
-                <div class="footer-section">
-                    <h4>Product</h4>
-                    <ul>
-                        <li><a href="/lookinglass-website/#features">Features</a></li>
-                        <li><a href="#" aria-label="Download from App Store">Download</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Support</h4>
-                    <ul>
-                        <li><a href="mailto:support@lookinglass.ai">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="/lookinglass-website/privacy">Privacy Policy</a></li>
-                        <li><a href="/lookinglass-website/eula">Terms of Service</a></li>
-                    </ul>
-                </div>
-            </div>
+  <div class="footer-container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <img src="/assets/images/lookinglass-telescope.png" alt="Lookinglass" class="footer-logo" />
+        <span>Lookinglass</span>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-section">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="/#features">Features</a></li>
+            <a href="https://apps.apple.com/app/id6751123527" target="_blank" rel="noopener" aria-label="Download from App Store">Download</a></li>
+          </ul>
         </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2025 Lookinglass. All rights reserved.</p>
-            <p>A powerful GUI for the OpenAI API</p>
+
+        <div class="footer-section">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="mailto:support@lookinglass.ai">Contact</a></li>
+            <li><a href="/faq">FAQ</a></li>
+          </ul>
         </div>
+
+        <div class="footer-section">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="/privacy">Privacy Policy</a></li>
+            <li><a href="/eula">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
+
+    <div class="footer-bottom">
+      <div class="footer-social">
+        <a href="https://www.facebook.com/LookinglassApp/" target="_blank" aria-label="Facebook" class="social-icon facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path fill="#1877F2" d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-3h2.5V9.5c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.3.2 2.3.2v2.5h-1.3c-1.3 0-1.7.8-1.7 1.6V12H17l-.5 3h-2.5v7A10 10 0 0 0 22 12z"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/company/lookinglass-ai" target="_blank" aria-label="LinkedIn" class="social-icon linkedin">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path fill="#0A66C2" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/lookinglass.ai/" target="_blank" aria-label="Instagram" class="social-icon instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path fill="#E4405F" d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.6 0 3 1.4 3 3v10c0 1.6-1.4 3-3 3H7c-1.6 0-3-1.4-3-3V7c0-1.6 1.4-3 3-3h10zm-5 3.5A5.5 5.5 0 1 0 17.5 13 5.5 5.5 0 0 0 12 7.5zm0 9A3.5 3.5 0 1 1 15.5 13 3.5 3.5 0 0 1 12 16.5zM18 6.2a1.2 1.2 0 1 1-1.2-1.2A1.2 1.2 0 0 1 18 6.2z"/>
+          </svg>
+        </a>
+      </div>
+      <p>&copy; 2025 Lookinglass. All rights reserved.</p>
+      <p>See further, think deeper with Lookinglass</p>
+    </div>
+  </div>
 </footer>
     
-    <script src="/lookinglass-website/assets/js/main.js"></script>
+    <script src="/assets/js/main.js"></script>
 </body>
 </html>

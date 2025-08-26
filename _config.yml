@@ -35,3 +35,6 @@ defaults:
     values:
       layout: "default"
 
+# Sass/CSS compression
+sass:
+  style: compressed

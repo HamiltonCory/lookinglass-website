@@ -2,7 +2,10 @@
   <div class="footer-container">
     <div class="footer-content">
       <div class="footer-brand">
-        <img src="{{ '/assets/images/lookinglass-telescope.png' | relative_url }}" alt="Lookinglass" class="footer-logo" />
+        <picture>
+          <source srcset="{{ '/assets/images/lookinglass-telescope.webp' | relative_url }}" type="image/webp">
+          <img src="{{ '/assets/images/lookinglass-telescope.png' | relative_url }}" alt="Lookinglass" class="footer-logo" />
+        </picture>
         <span>Lookinglass</span>
       </div>
 

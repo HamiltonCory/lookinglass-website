@@ -2,8 +2,11 @@
     <nav class="nav">
         <div class="nav-container">
             <a href="{{ '/' | relative_url }}" class="nav-brand">
+            <picture>
+                <source srcset="{{ '/assets/images/lookinglass-telescope.webp' | relative_url }}" type="image/webp">
                 <img src="{{ '/assets/images/lookinglass-telescope.png' | relative_url }}" alt="Lookinglass" class="nav-logo" />
-                <span class="nav-brand-text">Lookinglass</span>
+            </picture>
+            <span class="nav-brand-text">Lookinglass</span>
             </a>
             
             <ul class="nav-menu">

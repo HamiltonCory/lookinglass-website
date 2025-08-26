@@ -6,10 +6,21 @@
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
     
-    <!-- Favicon -->
+
+    <!-- Favicon: .ico for browser compatibility -->
+    <link rel="icon" type="image/x-icon" href="{{ '/assets/images/lookinglass-telescope.ico' | relative_url }}">
+
+    <!-- Favicon: .svg for modern browsers -->
     <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/lookinglass-telescope.svg' | relative_url }}">
+
+    <!-- Favicon: .png fallback -->
     <link rel="icon" type="image/png" href="{{ '/assets/images/lookinglass-telescope.png' | relative_url }}">
-    <link rel="apple-touch-icon" href="{{ '/assets/images/lookinglass-telescope.png' | relative_url }}">
+
+    <!-- Apple Touch Icon (recommended size: 180x180) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/images/lookinglass-telescope.png' | relative_url }}">
+
+    <!-- Optional: WebP for future favicon support (not yet widely adopted) -->
+    <!-- <link rel="icon" type="image/webp" href="{{ '/assets/images/lookinglass-telescope.webp' | relative_url }}"> -->
 
     <!-- Canonical -->
     <link rel="canonical" href="{{ page.url | absolute_url }}">

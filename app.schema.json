@@ -22,7 +22,7 @@
   "brand": {
     "@type": "Brand",
     "name": "Lookinglass",
-    "logo": "https://lookinglass.ai/assets/images/lookinglass-telescope.png"
+    "logo": "https://lookinglass.ai/assets/images/lookinglass-telescope.webp"
   },
   "author": {
     "@type": "Organization",

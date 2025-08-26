@@ -7,6 +7,11 @@
   "theme_color": "#22C77A",
   "icons": [
     {
+      "src": "/assets/images/lookinglass-telescope.webp",
+      "sizes": "512x512",
+      "type": "image/webp"
+    },
+    {
       "src": "/assets/images/lookinglass-telescope.png",
       "sizes": "512x512",
       "type": "image/png"

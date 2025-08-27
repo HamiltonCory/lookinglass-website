@@ -1009,7 +1009,8 @@ svg.telescope-hero,
 
 .gallery-item img {
     width: 100%;
-    height: auto;
+    aspect-ratio: 9/16; /* iPhone screenshot ratio */
+    object-fit: cover;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
 }

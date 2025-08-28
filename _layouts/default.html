@@ -6,6 +6,16 @@
     <title>{{ page.title | default: "Lookinglass" }}</title>
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
     
+   <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17514825186"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-17514825186');
+    </script>
+
+    <!-- Preload assets -->
     <link rel="preload" as="image" href="{{ '/assets/images/lookinglass-telescope.webp' | relative_url }}">
     <link rel="preload" as="image" href="{{ '/assets/images/Lookinglass-Welcome.webp' | relative_url }}">
 

@@ -19,8 +19,8 @@ description: Common questions about Lookinglass - the pay-as-you-go AI client fo
             <h2><span role="img" aria-label="money bag">💰</span> Pricing & Billing</h2>
             
             <h3>Why pay-as-you-go instead of subscriptions?</h3>
-            <p>We believe in subscription fatigue relief. Instead of paying $20-200/month whether you use AI or not, you only pay for the messages you actually send. Top up your wallet with amounts from $1-500, use what you need, keep the rest. Many users spend less than $5/month this way.</p>
-            
+            <p>We built Lookinglass to fight subscription fatigue. Instead of paying $20–$200/month whether you use AI or not, you only pay for the messages you send.</p>
+
             <h3>How much does it typically cost to use?</h3>
             <p>Costs vary by model and message length, but here are some examples:</p>
             <ul>
@@ -30,11 +30,8 @@ description: Common questions about Lookinglass - the pay-as-you-go AI client fo
             </ul>
             <p>The app shows you the exact cost before sending each message, so there are never surprises.</p>
             
-            <h3>What happens to unused wallet funds?</h3>
-            <p>Your wallet funds never expire and are non-refundable. You can use them whenever you want, even months later. There are no monthly fees or account maintenance charges.</p>
-            
-            <h3>Can I get a refund on wallet funds?</h3>
-            <p>Wallet funds are non-refundable once added, as stated in our terms. However, they never expire, so you can use them whenever you're ready.</p>
+            <h3>What happens to my wallet funds?</h3>
+            <p>Wallet funds are <strong>non-refundable</strong> but <strong>never expire</strong>. You can use them anytime, with no monthly fees or account maintenance charges. Whether you top up $1 or $100, the balance stays available until you need it.</p>
             
             <h2><span role="img" aria-label="brain">🧠</span> AI Models & Features</h2>
             
@@ -70,22 +67,24 @@ description: Common questions about Lookinglass - the pay-as-you-go AI client fo
                 <li><strong>No conversation storage:</strong> We don't store your messages or AI responses</li>
                 <li><strong>Minimal metadata:</strong> Only billing and basic usage info is kept</li>
                 <li><strong>Apple Sign-In:</strong> Secure authentication without exposing personal data</li>
-                <li><strong>Guest mode:</strong> Use completely anonymously if preferred</li>
             </ul>
             
             <h3>What information do you collect?</h3>
-            <p>We collect minimal data for billing and app functionality:</p>
+            <p>We collect minimal technical data to support billing, performance monitoring, and app functionality. We never store your prompts, responses, or conversation history — all of that stays on your device.</p>
             <ul>
-                <li>Which model you used and when</li>
-                <li>Token counts for accurate billing</li>
-                <li>Basic account info (if you sign in with Apple)</li>
+                <li>Model used and timestamp of each request</li>
+                <li>Token counts (input and output) for accurate billing</li>
+                <li>Selected settings (temperature, effort, context window, output limit)</li>
+                <li>Query latency and delivery status (e.g., success, timeout)</li>
+                <li>Basic account details (if you sign in with Apple)</li>
             </ul>
-            <p>We never see your actual conversations or prompts.</p>
+            <p>This data helps power features like cost tracking, usage history, and error handling; but we never store or access the content of your conversations.</p>
             
             <h2><span role="img" aria-label="mobile phone">📱</span> App Features</h2>
             
             <h3>What is "permanent memory" and how does it work?</h3>
-            <p>Permanent memory lets you tell the AI key information about yourself once, and it remembers across all conversations. For example: "I'm a Python developer working on iOS apps." This context gets included automatically, so you don't need to re-explain your background each time.</p>
+            <p>Permanent memory lets you tell the AI key information about yourself once, and it remembers across all conversations. For example: "I'm a Python developer working on iOS apps." This context gets included automatically, so you don’t need to re-explain your background each time.</p>
+            <p>Your memory is stored locally on your device and is sent with each message when enabled — but it’s never stored on our servers or visible to us. You’re always in control of what it remembers and when it’s used.</p>
             
             <h3>Can I control how much the AI remembers?</h3>
             <p>Absolutely! You control the context window:</p>
@@ -99,24 +98,26 @@ description: Common questions about Lookinglass - the pay-as-you-go AI client fo
             <h3>What is the cost guard feature?</h3>
             <p>Cost guard alerts you before sending messages that exceed your chosen threshold. Set it to $0.01, $0.10, or any amount, and you'll get a warning before accidentally sending an expensive message.</p>
             
-            <h3>Can I use voice input?</h3>
+            <h3>Can I use voice-to-text?</h3>
             <p>Yes! Lookinglass includes built-in voice-to-text, so you can speak your questions naturally instead of typing them.</p>
             
             <h2><span role="img" aria-label="rocket">🚀</span> Getting Started</h2>
             
             <h3>Is the app free to download?</h3>
-            <p>Yes, Lookinglass is completely free to download. You only pay for the AI messages you actually send.</p>
+            <p>Yes, Lookinglass is completely free to download. You only pay for the messages you actually send.</p>
             
             <h3>Do I need to create an account?</h3>
-            <p>Not required! You can use guest mode for complete anonymity. However, signing in with Apple allows you to:</p>
+            <p>No account is required to preview the app — guest mode lets you explore the interface and settings without signing in. However, guest mode does <strong>not</strong> allow you to send messages to AI models.</p>
+            <p>To interact with models and use wallet features, you'll need to sign in with Apple. This enables:</p>
             <ul>
-                <li>Access your wallet and transaction history across devices</li>
-                <li>Use permanent memory features</li>
-                <li>Save conversation threads</li>
+                <li>Sending messages to any of the 20 AI models</li>
+                <li>Accessing your wallet and transaction history across devices</li>
+                <li>Using permanent memory features</li>
+                <li>Saving and managing conversation threads</li>
             </ul>
             
             <h3>What's the minimum amount I can add to my wallet?</h3>
-            <p>Just $1! You can amounts from $1 to $500. Most casual users start with $5 or $10 to try it out.</p>
+            <p>Just $1! You can add amounts from $1 to $500. Many users start with $5 or $10 to try it out.</p>
             
             <h3>Is there an onboarding tutorial?</h3>
             <p>Yes! The app includes an interactive tutorial that explains all the features. You can access it anytime from Settings if you want a refresher.</p>
@@ -130,7 +131,7 @@ description: Common questions about Lookinglass - the pay-as-you-go AI client fo
             <p>No, Lookinglass requires an internet connection to communicate with AI models. However, your conversation history and settings are stored locally when possible.</p>
             
             <h3>Can I export my conversation history?</h3>
-            <p>You can export your transaction history and usage data as CSV files. Individual conversations aren't stored on our servers for privacy, but you can copy/save them locally within the app.</p>
+            <p>Right now, you can <strong>copy and paste individual messages</strong> from your conversations, but there's no built-in export feature for full chat threads yet. However, you can export your <strong>transaction history and usage data</strong> as CSV files anytime.</p>
             
             <div class="legal-footer">
                 <p><strong>Still have questions?</strong> Contact us at <a href="mailto:support@lookinglass.ai">support@lookinglass.ai</a></p>

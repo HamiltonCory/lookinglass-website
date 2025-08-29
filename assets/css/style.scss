@@ -603,12 +603,6 @@ section.cta .btn-primary:hover {
     color: var(--primary-color);
 }
 
-.footer-links {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-}
-
 .footer-section h4 {
     font-size: 1rem;
     font-weight: 600;
@@ -682,6 +676,37 @@ section.cta .btn-primary:hover {
     align-items: center;
     color: var(--text-secondary);
     font-size: 0.875rem;
+}
+
+/* Footer Responsive Styles */
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+@media (max-width: 1024px) {
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .footer-links {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
 }
 
 /* Legal Pages */
@@ -839,22 +864,6 @@ section.cta .btn-primary:hover {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
-    
-    .footer-links {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
-    }
-    
-    .footer-bottom {
-        flex-direction: column;
-        gap: 1rem;
-        text-align: center;
-    }
-    
-    .phone-frame {
-        width: 250px;
-        height: 500px;
-    }
 }
 
 @media (max-width: 480px) {
@@ -880,16 +889,6 @@ section.cta .btn-primary:hover {
 
     .cta-content h2 {
         font-size: 2rem;
-    }
-
-    .footer-links {
-        grid-template-columns: 1fr;
-    }
-
-    .phone-frame {
-        width: 200px;
-        height: 400px;
-        padding: 15px;
     }
 
     .phone-frame::before {
@@ -1070,25 +1069,6 @@ svg.telescope-hero,
 /* Dark mode adjustments */
 [data-theme="dark"] .phone-frame {
     background: linear-gradient(145deg, #2d2d2d, #1a1a1a);
-}
-
-/* Responsive footer */
-.footer-links {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-}
-
-@media (max-width: 768px) {
-    .footer-links {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-    
-    .phone-frame {
-        width: 250px;
-        height: 500px;
-    }
 }
 
 /* Who Uses Section */

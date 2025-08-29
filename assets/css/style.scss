@@ -864,6 +864,32 @@ section.cta .btn-primary:hover {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
+    
+    .app-gallery {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .who-uses {
+        padding: 4rem 0;
+    }
+    
+    .who-uses h2 {
+        font-size: 2.5rem;
+    }
+    
+    .who-uses-container {
+        padding: 0 1rem;
+    }
+    
+    .power-user-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .user-types {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 480px) {
@@ -889,11 +915,6 @@ section.cta .btn-primary:hover {
 
     .cta-content h2 {
         font-size: 2rem;
-    }
-
-    .phone-frame::before {
-        width: 40px;
-        height: 4px;
     }
 }
 
@@ -1019,13 +1040,6 @@ svg.telescope-hero,
 .gallery-item p {
     color: var(--text-secondary);
     font-size: 0.875rem;
-}
-
-@media (max-width: 768px) {
-    .app-gallery {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
 }
 
 /* Logo styles for header and footer */
@@ -1224,30 +1238,6 @@ svg.telescope-hero,
     font-size: 0.9rem;
     color: var(--text-secondary);
     line-height: 1.5;
-}
-
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-    .who-uses {
-        padding: 4rem 0;
-    }
-    
-    .who-uses h2 {
-        font-size: 2.5rem;
-    }
-    
-    .who-uses-container {
-        padding: 0 1rem;
-    }
-    
-    .power-user-stats {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-    }
-    
-    .user-types {
-        grid-template-columns: 1fr;
-    }
 }
 
 .flex-disclaimer {

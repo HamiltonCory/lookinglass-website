@@ -411,7 +411,7 @@ a:hover {
 
 /* Phone Frame (no longer needs shadow) */
 .phone-frame {
-    width: 300px;
+    width: 340px;
     aspect-ratio: 9 / 19.5; /* iPhone 16 Pro Max */
     background: linear-gradient(145deg, #f0f0f0, #e0e0e0);
     border-radius: 35px;
@@ -422,14 +422,7 @@ a:hover {
 
 .phone-frame::before {
     content: '';
-    position: absolute;
-    top: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 5px;
-    background: #999;
-    border-radius: 3px;
+     display: none
 }
 
 /* Screen area */

@@ -1067,7 +1067,7 @@ svg.telescope-hero,
     width: 100%;
     max-width: 250px; /* Add this */
     height: auto;
-    object-fit: contain; /* Better than cover for UI previews */
+    object-fit: cover; /* Better than cover for UI previews */
     border-radius: 25px;
 }
 

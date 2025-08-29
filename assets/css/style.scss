@@ -412,14 +412,15 @@ a:hover {
 }
 
 /* Phone Frame (no longer needs shadow) */
+/*
 .phone-frame {
     width: 300px;
-    aspect-ratio: 9 / 19.5; /* iPhone 16 Pro Max */
+    aspect-ratio: 9 / 19.5;
     background: linear-gradient(145deg, #f0f0f0, #e0e0e0);
     border-radius: 35px;
     position: relative;
     padding: 0;
-    box-shadow: none; /* ✅ Remove from here */
+    box-shadow: none;
 }
 
 .phone-frame::before {
@@ -427,7 +428,6 @@ a:hover {
      display: none
 }
 
-/* Screen area */
 .phone-screen {
     width: 100%;
     aspect-ratio: 9 / 19.5;
@@ -443,6 +443,18 @@ a:hover {
     text-align: center;
     color: var(--text-secondary);
     padding: 2rem;
+}
+*/
+
+.hero-phone-mockup {
+    max-width: 300px;
+    height: auto;
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.1));
+    transition: transform 0.3s ease;
+}
+
+.hero-phone-mockup:hover {
+    transform: translateY(-5px);
 }
 
 .screenshot-placeholder .lookinglass-telescope {

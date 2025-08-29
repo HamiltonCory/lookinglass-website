@@ -1002,6 +1002,12 @@ svg.telescope-hero,
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.gallery-title {
+  font-weight: bold;
+  font-size: 1.125rem; /* or whatever you were using for <h3> */
+  margin-top: 0.5rem;
+}
+
 .gallery-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px var(--shadow-color);
@@ -1343,6 +1349,13 @@ svg.telescope-hero,
     .table-header > div {
         padding: 1.5rem 1rem;
         text-align: center;
+    }
+
+    .feature-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
     }
 
     .feature-column {

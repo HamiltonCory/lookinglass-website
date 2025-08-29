@@ -49,6 +49,32 @@
     }
 }
 
+/* Critical Mobile Performance Fix */
+@media (max-width: 768px) {
+    /* Disable all animations and transitions on mobile */
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    /* Hide expensive graphics on mobile */
+    .hero-image,
+    .phone-mockup,
+    .phone-frame {
+        display: none !important;
+    }
+    
+    /* Simplify hover effects */
+    .feature-card:hover,
+    .gallery-item:hover,
+    .user-type-card:hover,
+    .stat-item:hover {
+        transform: none !important;
+        box-shadow: none !important;
+    }
+}
+
 /* Reset and Base Styles */
 * {
     margin: 0;
@@ -377,11 +403,15 @@ a:hover {
     position: relative;
 }
 
+/* Phone Mockup */
 .phone-frame {
-  width: 90vw;
-  max-width: 300px;
-  height: auto;
-  aspect-ratio: 9/16;
+    width: 300px;
+    height: 600px;
+    background: linear-gradient(145deg, #f0f0f0, #e0e0e0);
+    border-radius: 35px;
+    padding: 20px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+    position: relative;
 }
 
 .phone-frame::before {
@@ -622,25 +652,6 @@ section.cta .btn-primary:hover {
     border: 1px solid var(--border-color);
 }
 
-/* Social Links - Base styles */
-.social-links {
-    display: flex;
-    gap: 1rem;
-}
-
-.social-links a, 
-.footer-social .social-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    background-color: var(--surface-color);
-    border-radius: 0.5rem;
-    transition: all 0.2s ease;
-    border: 1px solid var(--border-color);
-}
-
 /* SVG icon sizing */
 .social-links svg {
     width: 20px !important; 
@@ -660,23 +671,6 @@ section.cta .btn-primary:hover {
 
 /* Keep icons their original brand colors but enhance visibility */
 .social-icon:hover svg {
-    transform: scale(1.1);
-}
-
-/* Footer social adjustments */
-.footer-social {
-    display: flex;
-    gap: 12px;
-    margin-top: 10px;
-}
-
-.footer-social .social-icon svg {
-    width: 24px;
-    height: 24px;
-    transition: transform 0.2s ease;
-}
-
-.footer-social .social-icon:hover svg {
     transform: scale(1.1);
 }
 
@@ -813,10 +807,6 @@ section.cta .btn-primary:hover {
     .hero-title {
         font-size: 3rem;
     }
-    
-    .footer-links {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
 
 @media (max-width: 768px) {
@@ -850,11 +840,6 @@ section.cta .btn-primary:hover {
         gap: 1.5rem;
     }
     
-    .footer-content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-    
     .footer-links {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
@@ -876,37 +861,37 @@ section.cta .btn-primary:hover {
     .hero {
         padding: 2rem 0 3rem;
     }
-    
+
     .hero-title {
         font-size: 2rem;
     }
-    
+
     .hero-subtitle {
         font-size: 1rem;
     }
-    
+
     .features {
         padding: 3rem 0;
     }
-    
+
     .cta {
         padding: 3rem 0;
     }
-    
+
     .cta-content h2 {
         font-size: 2rem;
     }
-    
+
     .footer-links {
         grid-template-columns: 1fr;
     }
-    
+
     .phone-frame {
         width: 200px;
         height: 400px;
         padding: 15px;
     }
-    
+
     .phone-frame::before {
         width: 40px;
         height: 4px;
@@ -1064,22 +1049,12 @@ svg.telescope-hero,
 /* App screenshot in phone mockup */
 .app-screenshot {
     width: 100%;
+    max-width: 250px; /* Add this */
     height: auto;
-    aspect-ratio: 9 / 16;
-    object-fit: cover;
+    object-fit: contain; /* Better than cover for UI previews */
     border-radius: 25px;
 }
 
-/* Phone mockup improvements */
-.phone-frame {
-    width: 300px;
-    height: 600px;
-    background: linear-gradient(145deg, #f0f0f0, #e0e0e0);
-    border-radius: 35px;
-    padding: 20px;
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
-    position: relative;
-}
 
 .phone-screen {
     width: 100%;
@@ -1113,14 +1088,6 @@ svg.telescope-hero,
     .phone-frame {
         width: 250px;
         height: 500px;
-    }
-}
-
-@media (max-width: 480px) {
-    .phone-frame {
-        width: 200px;
-        height: 400px;
-        padding: 15px;
     }
 }
 

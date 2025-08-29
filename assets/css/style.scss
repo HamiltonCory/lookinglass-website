@@ -399,19 +399,25 @@ a:hover {
   }
 }
 
+/* Wrapper: Phone Mockup */
 .phone-mockup {
     position: relative;
+    display: inline-block;
+    background-color: #fff; /* Match site background */
+    border-radius: 35px;
+    overflow: hidden; /* Prevent shadow bleed */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Move shadow here */
 }
 
-/* Phone Mockup */
+/* Phone Frame (no longer needs shadow) */
 .phone-frame {
     width: 300px;
+    aspect-ratio: 9 / 19.5; /* iPhone 16 Pro Max */
     background: linear-gradient(145deg, #f0f0f0, #e0e0e0);
     border-radius: 35px;
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
     position: relative;
     padding: 0;
-    overflow: hidden;
+    box-shadow: none; /* ✅ Remove from here */
 }
 
 .phone-frame::before {
@@ -420,16 +426,16 @@ a:hover {
     top: 15px;
     left: 50%;
     transform: translateX(-50%);
-    width: 60px !important;
-    max-width: 60px;
+    width: 60px;
     height: 5px;
     background: #999;
     border-radius: 3px;
 }
 
+/* Screen area */
 .phone-screen {
     width: 100%;
-    aspect-ratio: 9 / 19.5; /* iPhone 16 Pro Max ratio */
+    aspect-ratio: 9 / 19.5;
     background-color: var(--background-color);
     border-radius: 25px;
     overflow: hidden;

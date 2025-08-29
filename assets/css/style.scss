@@ -628,9 +628,11 @@ section.cta .btn-primary:hover {
 }
 
 /* Social Links - Base styles */
-.social-links {
+.footer-social {
     display: flex;
+    flex-direction: row;
     gap: 1rem;
+    margin-top: 1rem;
 }
 
 .social-links a, 

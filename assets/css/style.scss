@@ -1075,7 +1075,7 @@ svg.telescope-hero,
 .app-screenshot {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Better than cover for UI previews */
+    object-fit: scale-down; /* Better than cover for UI previews */
     border-radius: 0;
 }
 

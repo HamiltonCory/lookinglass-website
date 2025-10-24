@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Lookingass | Pricing
-description: Compare Lookinglass pay-as-you-go pricing with ChatGPT subscriptions. Access 20+ models including o3-pro without monthly commitments.
+title: Lookinglass | Pricing
+description: Compare Lookinglass pay-as-you-go pricing with ChatGPT subscriptions. Access 21 models including o3-pro without monthly commitments.
 ---
 
 <style>
@@ -158,7 +158,7 @@ description: Compare Lookinglass pay-as-you-go pricing with ChatGPT subscription
                     <div class="feature-value">2-3</div>
                     <div class="feature-value">8-10</div>
                     <div class="feature-value">15+</div>
-                    <div class="feature-value"><span class="checkmark">✓ 19 Models</span></div>
+                    <div class="feature-value"><span class="checkmark">✓ 21 Models</span></div>
                 </div>
 
                 <!-- Control Features -->
@@ -196,7 +196,7 @@ description: Compare Lookinglass pay-as-you-go pricing with ChatGPT subscription
                 </div>
 
                 <div class="comparison-row">
-                    <div class="feature-name">Cost Guard Protection</div>
+                    <div class="feature-name">Spending Protection</div>
                     <div class="feature-value excluded">✗</div>
                     <div class="feature-value excluded">✗</div>
                     <div class="feature-value excluded">✗</div>
@@ -371,7 +371,7 @@ description: Compare Lookinglass pay-as-you-go pricing with ChatGPT subscription
                         </div>
                         <div class="mobile-feature-item">
                             <div class="mobile-feature-name">Total Models</div>
-                            <div class="mobile-feature-value"><strong>19 Models</strong></div>
+                            <div class="mobile-feature-value"><strong>21 Models</strong></div>
                         </div>
                         <div class="mobile-feature-item">
                             <div class="mobile-feature-name">Choose Model</div>
@@ -467,7 +467,7 @@ description: Compare Lookinglass pay-as-you-go pricing with ChatGPT subscription
                     <p>Estimate your monthly costs based on your usage pattern:</p>
                     <div class="input-group">
                         <label for="messages-month">Messages per month:</label>
-                        <input type="range" id="messages-month" min="1" max="500" value="50" oninput="calculateCosts()">
+                        <input type="range" id="messages-month" min="1" max="3000" value="50" oninput="calculateCosts()">
                         <span id="messages-display">50</span>
                     </div>
                     
@@ -516,7 +516,7 @@ description: Compare Lookinglass pay-as-you-go pricing with ChatGPT subscription
                     </div>
                     <div class="reason-card">
                         <h3><span role="img" aria-label="money bag">💰</span> Budget Control</h3>
-                        <p>Set spending limits with cost guard. See cost estimates before sending.</p>
+                        <p>Set spending limits with spending protection. See maximum possible cost before sending.</p>
                     </div>
                     <div class="reason-card">
                         <h3><span role="img" aria-label="wrench">🔧</span> Model Flexibility</h3>
@@ -629,17 +629,23 @@ description: Compare Lookinglass pay-as-you-go pricing with ChatGPT subscription
             // Update display
             document.getElementById('messages-display').textContent = messages;
             
-            // Base cost per message estimates
+            // Base cost per message estimates (based on Pricing.swift with 2.5x markup)
             let avgCostPerMessage;
             switch(complexity) {
                 case 'simple':
-                    avgCostPerMessage = 0.00015; // GPT-5-nano: ~35 input + 150 output tokens
+                    // gpt-5-nano with smart savings: ~35 input + 150 output tokens
+                    // Input: 0.03125 per 1M, Output: 0.125 per 1M (after flex discount)
+                    avgCostPerMessage = 0.00002;
                     break;
                 case 'mixed':
-                    avgCostPerMessage = 0.13;    // Mix of simple and complex
+                    // Mix of gpt-5-nano (with flex) and gpt-4o: ~100 input + 300 output tokens avg
+                    // Weighted average of simple ($0.00002) and moderate ($0.008)
+                    avgCostPerMessage = 0.004;
                     break;
                 case 'complex':
-                    avgCostPerMessage = 0.26;    // o3-pro: ~350 input + 1200 output tokens
+                    // o3-pro: ~350 input + 1200 output tokens
+                    // Input: 50 per 1M, Output: 200 per 1M
+                    avgCostPerMessage = 0.26;
                     break;
             }
             

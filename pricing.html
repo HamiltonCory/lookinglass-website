@@ -622,9 +622,25 @@ description: Compare Lookinglass pay-as-you-go pricing with ChatGPT subscription
 
         // Cost Calculator
         function calculateCosts() {
-            const messages = document.getElementById('messages-month').value;
+            const messagesSlider = document.getElementById('messages-month');
             const complexity = document.getElementById('complexity-level').value;
             const flexEnabled = document.getElementById('flex-usage').checked;
+            
+            // Dynamically adjust slider max based on complexity
+            let maxMessages = 3000;
+            if (complexity === 'complex') {
+                maxMessages = 500;
+            }
+            
+            // Update slider max
+            messagesSlider.max = maxMessages;
+            
+            // If current value exceeds new max, reset it
+            if (parseInt(messagesSlider.value) > maxMessages) {
+                messagesSlider.value = maxMessages;
+            }
+            
+            const messages = messagesSlider.value;
             
             // Update display
             document.getElementById('messages-display').textContent = messages;

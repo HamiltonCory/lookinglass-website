@@ -37,6 +37,14 @@
     },
     {
       "@type": "Question",
+      "name": "Why would I pay when ChatGPT is free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You probably shouldn't—if free ChatGPT's limitations work for you.\n\nFree tier limitations:\n- Rate limits that OpenAI doesn't publish or explain\n- \"Try again later\" messages that cut you off mid-work\n- Context truncation: Your conversation history gets shortened automatically—you don't control it\n- Automatic model switching: Downgraded to lower-quality models without notification\n- No visibility: Can't see which model you're using or how much capacity remains\n- \"At capacity\" errors: Access denied during peak hours\n\nConsider Lookinglass if:\n- You need predictability: No surprise limits or \"try again later\"\n- Context matters: Control how much conversation history the AI remembers (500 tokens to 1M)\n- Quality consistency matters: Choose your model, get consistent results every time\n- You need transparency: See your balance, costs, model, and tokens—always\n- You need pro models: Access o3-pro, o1-pro, gpt-5-pro without $200/month subscriptions\n\nStart with $1 free credit and compare the experience yourself."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Which AI models are included?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -48,7 +56,7 @@
       "name": "How is this different from ChatGPT?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Key differences:\n\nPricing: Pay-per-use vs $20-200/month subscriptions\nModel Choice: You pick the exact model; ChatGPT routes automatically\nTransparency: See costs upfront; ChatGPT pricing is hidden\nControl: Adjust memory, context windows; ChatGPT is fixed\nAccess: Get o3-pro without $200/month Pro subscription"
+        "text": "Transparency & Control: ChatGPT decides which model handles your request and automatically truncates conversation history to manage costs. With Lookinglass, YOU choose the model, YOU control context window size (500 tokens to 1M), and YOU see exactly what you're paying for.\n\nPredictable Quality: ChatGPT routes to different models behind the scenes, so quality varies. Lookinglass gives you the exact model you selected—every time.\n\nFair Pricing: Subscriptions charge the same whether you send 10 messages or 1,000. With Lookinglass, light months cost less, heavy months cost more. Your bill matches your actual usage."
       }
     },
     {
@@ -61,10 +69,10 @@
     },
     {
       "@type": "Question",
-      "name": "What does \"Flex pricing\" mean?",
+      "name": "What is smart savings?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Flex pricing saves you 50% on message costs if you're willing to wait a bit longer for responses. It's perfect for non-urgent tasks where you want to optimize for cost over speed."
+        "text": "Smart savings saves you 50% on message costs if you're willing to wait a bit longer for responses. It's available on select models (gpt-5 series, o3, o4-mini) and perfect for non-urgent tasks where you want to optimize for cost over speed."
       }
     },
     {

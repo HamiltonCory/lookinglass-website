@@ -649,13 +649,13 @@ description: Compare Lookinglass pay-as-you-go pricing with ChatGPT subscription
             let avgCostPerMessage;
             switch(complexity) {
                 case 'simple':
-                    // gpt-5-nano with smart savings: ~35 input + 150 output tokens
-                    // Input: 0.03125 per 1M, Output: 0.125 per 1M (after flex discount)
-                    avgCostPerMessage = 0.00002;
+                    // gpt-5-nano with smart savings: ~50 input + 200 output tokens
+                    // Input: 0.03125 per 1M, Output: 0.125 per 1M (after smart savings discount)
+                    avgCostPerMessage = 0.00003;
                     break;
                 case 'mixed':
-                    // Mix of gpt-5-nano (with flex) and gpt-4o: ~100 input + 300 output tokens avg
-                    // Weighted average of simple ($0.00002) and moderate ($0.008)
+                    // Mix of gpt-5-nano (with smart savings) and gpt-4o: ~100 input + 300 output tokens avg
+                    // Weighted average of simple ($0.00003) and moderate ($0.008)
                     avgCostPerMessage = 0.004;
                     break;
                 case 'complex':

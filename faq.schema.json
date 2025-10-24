@@ -96,15 +96,15 @@
       "name": "Can I control how much the AI remembers?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! You control the context window:\n\nShort memory: Remember just the last few messages (cheaper, faster)\nLong memory: Remember the entire conversation history\nCustom: Set exactly how many messages to remember\n\nMore context costs more but provides better continuity."
+        "text": "Absolutely! You have full control over smart memory (context window):\n\nToggle on/off: Enable or disable conversation history entirely\nWhen enabled: Set from 500 tokens (minimum) up to your model's maximum context\nAdjustable in 500-token increments: Fine-tune exactly how much history the AI remembers\nResponse length control: Set output tokens from 100 (minimum) in 100-token increments\n\nMore context costs more but provides better continuity."
       }
     },
     {
       "@type": "Question",
-      "name": "What is the cost guard feature?",
+      "name": "What is spending protection?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Cost guard alerts you before sending messages that exceed your chosen threshold. Set it to $0.01, $0.10, or any amount, and you'll get a warning before accidentally sending an expensive message."
+        "text": "Spending protection alerts you before sending messages that exceed your chosen threshold. Enable spending alerts in settings, set your preferred threshold (like $0.01, $0.10, or any amount), and you'll get a warning before accidentally sending an expensive message."
       }
     },
     {

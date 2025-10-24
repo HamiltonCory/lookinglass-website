@@ -40,7 +40,7 @@
       "name": "Why would I pay when ChatGPT is free?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "You probably shouldn't—if free ChatGPT's limitations work for you.\n\nFree tier limitations:\n- Rate limits that OpenAI doesn't publish or explain\n- \"Try again later\" messages that cut you off mid-work\n- Context truncation: Your conversation history gets shortened automatically—you don't control it\n- Automatic model switching: Downgraded to lower-quality models without notification\n- No visibility: Can't see which model you're using or how much capacity remains\n- \"At capacity\" errors: Access denied during peak hours\n\nConsider Lookinglass if:\n- You need predictability: No surprise limits or \"try again later\"\n- Context matters: Control how much conversation history the AI remembers (500 tokens to 1M)\n- Quality consistency matters: Choose your model, get consistent results every time\n- You need transparency: See your balance, costs, model, and tokens—always\n- You need pro models: Access o3-pro, o1-pro, gpt-5-pro without $200/month subscriptions\n\nStart with $1 free credit and compare the experience yourself."
+        "text": "You probably shouldn't—if free ChatGPT's limitations work for you.\n\nFree tier limitations:\n- Rate limits that OpenAI doesn't publish or explain\n- Context truncation: Your conversation history gets shortened automatically—you don't control it\n- Automatic model switching: Downgraded to lower-quality models without notification\n- No visibility: Can't see which model you're using or how much capacity remains\n\nConsider Lookinglass if:\n- You need predictability: No surprise limits\n- Context matters: Control how much conversation history the AI remembers (500 tokens to 1M)\n- Quality consistency matters: Choose your model, get consistent results every time\n- You need transparency: See your balance, costs, model, and tokens—always\n- You need pro models: Access o3-pro, o1-pro, gpt-5-pro without $200/month subscriptions\n\nStart with $1 free credit and compare the experience yourself."
       }
     },
     {
@@ -61,10 +61,10 @@
     },
     {
       "@type": "Question",
-      "name": "What's special about o3-pro access?",
+      "name": "What's special about pro model access?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "o3-pro is OpenAI's most advanced reasoning model, normally exclusive to ChatGPT Pro subscribers ($200/month). Lookinglass gives you access on a pay-per-message basis, so you can use it for important tasks without the monthly commitment."
+        "text": "Lookinglass gives you access to all three pro models—o3-pro, o1-pro, and gpt-5-pro—on a pay-per-message basis. These premium models are normally exclusive to ChatGPT Pro subscribers ($200/month), but with Lookinglass you can use them for important tasks without the monthly commitment."
       }
     },
     {

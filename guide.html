@@ -1,0 +1,300 @@
+---
+layout: default
+title: Lookinglass | App Guide - Chat Interface & Thread Management
+description: Learn how to use Lookinglass - from sending messages and managing conversations to exporting threads and using voice input.
+---
+
+<section class="legal-page">
+    <div class="legal-container">
+        <div class="legal-header">
+            <h1>Using Lookinglass</h1>
+            <p class="legal-updated">Your guide to chat, threads, and daily usage</p>
+        </div>
+        
+        <div class="legal-content">
+            <div class="legal-intro">
+                <p>Master the essentials of using Lookinglass—from your first message to organizing conversations and exporting your chat history. This guide covers everything you need to know about the chat interface and thread management.</p>
+            </div>
+            
+            <h2 id="getting-started"><span role="img" aria-label="rocket">🚀</span> Getting Started</h2>
+            
+            <h3 id="first-launch">Your First Launch</h3>
+            <p>When you first open Lookinglass, you'll see two options:</p>
+            <ul>
+                <li><strong>Sign in with Apple</strong> - Recommended for full access to all features, wallet functionality, and cloud sync</li>
+                <li><strong>Continue as Guest</strong> - Explore the interface and settings without signing in (you won't be able to send messages to AI models)</li>
+            </ul>
+            <p>After signing in or continuing as guest, you'll land in the main chat interface—ready to start your first conversation.</p>
+            
+            <h2 id="chat-interface"><span role="img" aria-label="chat bubble">💬</span> The Chat Interface</h2>
+            
+            <h3 id="screen-layout">Screen Layout</h3>
+            <p>The chat interface is designed to feel familiar—like WhatsApp or iMessage—but with powerful AI controls built in.</p>
+            
+            <p><strong>Top Bar:</strong></p>
+            <ul>
+                <li><strong>Top Left Button</strong> - Opens your thread list to switch between conversations</li>
+                <li><strong>Top Right Button</strong> - Opens the model picker to switch between <a href="/models">21 AI models</a></li>
+            </ul>
+            
+            <p><strong>Message Area:</strong></p>
+            <ul>
+                <li><strong>Conversation History</strong> - Your messages and AI responses appear here, organized chronologically</li>
+                <li><strong>Live Streaming</strong> - Watch responses appear letter-by-letter as the AI generates them (if streaming is enabled in <a href="/faq#context-control">conversation settings</a>)</li>
+            </ul>
+            
+            <h3 id="input-bar">The Input Bar</h3>
+            <p>Below the message history, you'll find the input bar with three key components:</p>
+            
+            <p><strong>Left: Microphone Button</strong></p>
+            <ul>
+                <li>Tap to use voice-to-text for hands-free input</li>
+                <li>First use requires granting permission for microphone and speech recognition</li>
+                <li>Supports <a href="/faq#languages">5 languages</a>: English, Spanish, French, Portuguese, and Italian</li>
+                <li>Speech recognition happens on-device for privacy</li>
+            </ul>
+            
+            <p><strong>Center: Text Input Field</strong></p>
+            <ul>
+                <li>Type your message or prompt</li>
+                <li>Supports multi-line input for longer messages</li>
+                <li>Automatically expands as you type</li>
+            </ul>
+            
+            <p><strong>Right: Send Button (Airplane Icon)</strong></p>
+            <ul>
+                <li>Only becomes active once you've typed text</li>
+                <li>Tap to send your message to the selected AI model</li>
+                <li>Message is sent with your current <a href="/faq#context-control">conversation settings</a></li>
+            </ul>
+            
+            <h3 id="cost-bar">The Cost Bar</h3>
+            <p>Below the input bar, Lookinglass displays a transparent cost estimate for every message <strong>before you send it</strong>. This is one of our core differentiators—you always know what you'll pay.</p>
+            
+            <p><strong>Left Side: Token Breakdown</strong></p>
+            <ul>
+                <li><strong>Input Tokens (Estimate)</strong> - Shows how many tokens will be sent to the AI</li>
+                <li><strong>Output Tokens (Maximum)</strong> - Shows the maximum response length based on your <a href="/faq#context-control">response settings</a></li>
+            </ul>
+            
+            <p><strong>Right Side: Maximum Cost</strong></p>
+            <ul>
+                <li>Displays the maximum cost in USD for this message</li>
+                <li>Always shows worst-case scenario (actual cost often lower)</li>
+                <li>Updates in real-time as you type</li>
+            </ul>
+            
+            <p><strong>Info Icon (ⓘ)</strong></p>
+            <ul>
+                <li>Tap for a detailed breakdown of estimated tokens and costs</li>
+                <li><strong>Input tokens include:</strong>
+                    <ul>
+                        <li>Your prompt (the message you're sending)</li>
+                        <li>Context (conversation history, if smart context is enabled)</li>
+                        <li>Permanent memory (if enabled and configured)</li>
+                    </ul>
+                </li>
+                <li><strong>Output tokens include:</strong>
+                    <ul>
+                        <li>Written response from the AI</li>
+                        <li>Reasoning tokens (if using a reasoning model like o3, o1, or o4-mini)</li>
+                    </ul>
+                </li>
+                <li>Shows per-token rates and how the total is calculated</li>
+            </ul>
+            
+            <p>This level of transparency ensures you never send a message wondering "how much will this cost?" You know upfront, every time. Learn more about <a href="/pricing">transparent pricing</a>.</p>
+            
+            <h3 id="switching-models">Switching Models Mid-Conversation</h3>
+            <p>Unlike traditional AI chat apps, Lookinglass lets you switch between any of the <a href="/models">21 models</a> at any time—even mid-conversation.</p>
+            
+            <ul>
+                <li>Tap the <strong>model picker</strong> in the top right</li>
+                <li>Browse and select a different model</li>
+                <li>Continue the conversation with the new model</li>
+                <li>The cost bar updates instantly to reflect the new model's pricing</li>
+            </ul>
+            
+            <p>This is perfect for starting with a fast, cost-effective model like gpt-4o-mini, then switching to o3-pro when you need deep reasoning on a specific question.</p>
+            
+            <h2 id="thread-management"><span role="img" aria-label="file folder">📁</span> Managing Threads</h2>
+            
+            <p>Threads in Lookinglass work like conversations in your messaging app—each one is a separate chat with its own history, model selection, and settings.</p>
+            
+            <h3 id="thread-list">Accessing Your Threads</h3>
+            <p>Tap the <strong>top left button</strong> in the chat interface to open your thread list. Here you'll see:</p>
+            <ul>
+                <li><strong>Pinned threads</strong> - Appear at the top for quick access</li>
+                <li><strong>Recent threads</strong> - Sorted by most recently active</li>
+                <li><strong>Search</strong> - Find threads by name or content</li>
+            </ul>
+            
+            <h3 id="creating-threads">Creating a New Thread</h3>
+            <p>To start a fresh conversation:</p>
+            <ol>
+                <li>Open the thread list (top left button)</li>
+                <li>Tap <strong>"New Thread"</strong></li>
+                <li>Start chatting with a clean slate—no history from previous conversations</li>
+            </ol>
+            <p>Each new thread starts with your default model and settings, which you can customize at any time.</p>
+            
+            <h3 id="organizing-threads">Organizing Threads</h3>
+            <p>Keep your conversations organized with these thread management features:</p>
+            
+            <p><strong>Rename a Thread</strong></p>
+            <ul>
+                <li>Long-press or swipe on a thread in the list</li>
+                <li>Select <strong>"Rename"</strong></li>
+                <li>Give it a descriptive name (e.g., "Python Project Help" or "Travel Planning")</li>
+            </ul>
+            
+            <p><strong>Pin Important Threads</strong></p>
+            <ul>
+                <li>Long-press or swipe on a thread</li>
+                <li>Select <strong>"Pin"</strong></li>
+                <li>Pinned threads stay at the top of your list for instant access</li>
+            </ul>
+            
+            <p><strong>Copy a Thread</strong></p>
+            <ul>
+                <li>Long-press or swipe on a thread</li>
+                <li>Select <strong>"Copy"</strong></li>
+                <li>Duplicate the entire conversation to continue exploring different directions</li>
+            </ul>
+            
+            <h3 id="deleting-threads">Deleting Threads</h3>
+            <p>Clean up your thread list by removing conversations you no longer need:</p>
+            
+            <p><strong>Delete a Single Thread</strong></p>
+            <ul>
+                <li>Long-press or swipe on a thread</li>
+                <li>Select <strong>"Delete"</strong></li>
+                <li>Confirm deletion (this cannot be undone)</li>
+            </ul>
+            
+            <p><strong>Delete All Threads</strong></p>
+            <ul>
+                <li>Open thread list settings (usually a gear icon or menu)</li>
+                <li>Select <strong>"Delete All Threads"</strong></li>
+                <li>Confirm you want to delete all conversations</li>
+                <li><strong>Warning:</strong> This permanently deletes all threads and cannot be undone</li>
+            </ul>
+            
+            <h3 id="searching-threads">Searching for Threads</h3>
+            <p>Find specific conversations quickly using the search feature:</p>
+            <ul>
+                <li>Open the thread list</li>
+                <li>Use the search bar at the top</li>
+                <li>Search by thread name or message content</li>
+                <li>Results update in real-time as you type</li>
+            </ul>
+            
+            <h2 id="exporting"><span role="img" aria-label="export">📤</span> Exporting Conversations</h2>
+            
+            <p>Lookinglass makes it easy to export your conversations for backup, sharing, or analysis. You own your data—take it with you anytime.</p>
+            
+            <h3 id="export-formats">Available Export Formats</h3>
+            <p>Export entire threads in your preferred format:</p>
+            
+            <p><strong>Markdown</strong></p>
+            <ul>
+                <li>Clean, readable format perfect for documentation</li>
+                <li>Preserves formatting and structure</li>
+                <li>Easy to edit and share with others</li>
+                <li>Great for integrating into wikis, GitHub, or note-taking apps</li>
+            </ul>
+            
+            <p><strong>Plaintext</strong></p>
+            <ul>
+                <li>Simple, universal format that works everywhere</li>
+                <li>No formatting—just pure conversation content</li>
+                <li>Smallest file size</li>
+                <li>Perfect for archiving or text analysis</li>
+            </ul>
+            
+            <p><strong>JSON</strong></p>
+            <ul>
+                <li>Structured data format for developers</li>
+                <li>Includes metadata (timestamps, model used, token counts)</li>
+                <li>Machine-readable for automation or custom processing</li>
+                <li>Ideal for building your own analysis tools</li>
+            </ul>
+            
+            <h3 id="how-to-export">How to Export</h3>
+            <p>To export a thread:</p>
+            <ol>
+                <li>Open the thread list (top left button)</li>
+                <li>Long-press or swipe on the thread you want to export</li>
+                <li>Select <strong>"Export"</strong></li>
+                <li>Choose your format: Markdown, Plaintext, or JSON</li>
+                <li>Share or save the file using iOS's share sheet</li>
+            </ol>
+            
+            <p>You can also export your entire <a href="/faq#audit-transactions">transaction history and usage data</a> as CSV files from the wallet section for expense tracking and record-keeping.</p>
+            
+            <h3 id="copying-messages">Copying Individual Messages</h3>
+            <p>Don't need the full thread? Copy individual messages instead:</p>
+            <ul>
+                <li>Long-press any message in the conversation</li>
+                <li>Select <strong>"Copy"</strong></li>
+                <li>Paste the text anywhere you need it</li>
+            </ul>
+            
+            <h2 id="voice-input"><span role="img" aria-label="microphone">🎤</span> Using Voice Input</h2>
+            
+            <p>Lookinglass includes built-in voice-to-text for natural, hands-free interaction with AI models.</p>
+            
+            <h3 id="voice-setup">First-Time Setup</h3>
+            <p>When you first tap the microphone button, iOS will prompt you to grant two permissions:</p>
+            <ul>
+                <li><strong>Microphone Access</strong> - Required to capture your voice</li>
+                <li><strong>Speech Recognition</strong> - Required to convert speech to text</li>
+            </ul>
+            <p>These permissions are used <strong>only for voice input</strong> and all speech recognition happens <strong>on-device</strong> for your privacy. Lookinglass never records or stores your voice.</p>
+            
+            <h3 id="voice-usage">Using Voice-to-Text</h3>
+            <ol>
+                <li>Tap the <strong>microphone button</strong> on the left side of the input bar</li>
+                <li>Speak your message clearly</li>
+                <li>Your speech is transcribed in real-time to the text input field</li>
+                <li>Tap the <strong>send button</strong> when ready, or edit the text first</li>
+            </ol>
+            
+            <h3 id="voice-languages">Supported Languages</h3>
+            <p>Voice input works in all <a href="/faq#languages">5 supported languages</a>:</p>
+            <ul>
+                <li>English</li>
+                <li>Spanish (Español)</li>
+                <li>French (Français)</li>
+                <li>Portuguese (Português)</li>
+                <li>Italian (Italiano)</li>
+            </ul>
+            <p>The app automatically detects your device language and uses it for both the interface and speech recognition. If your device is set to one of the supported languages, Lookinglass will automatically display in that language.</p>
+            
+            <h3 id="voice-tips">Tips for Best Results</h3>
+            <ul>
+                <li><strong>Speak clearly</strong> - Enunciate for more accurate transcription</li>
+                <li><strong>Minimize background noise</strong> - Find a quiet environment when possible</li>
+                <li><strong>Review before sending</strong> - Check the transcribed text for accuracy</li>
+                <li><strong>Edit as needed</strong> - You can tap the text field to manually correct any mistakes</li>
+            </ul>
+            
+            <h2 id="next-steps"><span role="img" aria-label="compass">🧭</span> Next Steps</h2>
+            
+            <p>Now that you understand the basics of using Lookinglass, explore these topics to get even more from the app:</p>
+            
+            <ul>
+                <li><strong><a href="/models">Model Guide</a></strong> - Learn about all 21 AI models and when to use each one</li>
+                <li><strong><a href="/faq#context-control">Conversation Settings</a></strong> - Control smart context, permanent memory, and response length</li>
+                <li><strong><a href="/faq#spending-protection">Spending Protection</a></strong> - Set alerts to avoid accidentally expensive messages</li>
+                <li><strong><a href="/pricing">Pricing</a></strong> - Understand how pay-as-you-go works and compare to subscriptions</li>
+                <li><strong><a href="/faq#onboarding">AI Power User Guide</a></strong> - Replay the in-app tutorial anytime</li>
+            </ul>
+            
+            <div class="legal-footer">
+                <p><strong>Need more help?</strong> Contact us at <a href="mailto:support@lookinglass.ai">support@lookinglass.ai</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+

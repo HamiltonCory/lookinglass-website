@@ -73,6 +73,7 @@ lookinglass-website/
 ├── 📄 index.html              # Homepage - Hero, features, CTA
 ├── 📄 pricing.html            # Pricing comparison and model costs
 ├── 📄 models.html             # Complete AI model guide
+├── 📄 guide.html              # App usage guide - Chat & threads
 ├── 📄 privacy.html            # Privacy policy and data practices
 ├── 📄 faq.html                # Frequently asked questions
 ├── 📄 faq.schema.json         # Structured data for search engines
@@ -86,7 +87,7 @@ lookinglass-website/
 ```
 App Store → index.html → pricing.html → models.html
                       ↓
-                  faq.html → privacy.html
+                  guide.html → faq.html → privacy.html
 ```
 
 ---
@@ -156,6 +157,29 @@ App Store → index.html → pricing.html → models.html
   - Billing plan (fast & reliable vs smart savings)
 
 **Content Strategy**: Match app terminology exactly (lowercase model names, "smart savings" vs "flex", "spending protection" vs "cost guard")
+
+### `guide.html` - App Usage Guide
+**Purpose**: Teach users how to use the core features of Lookinglass for daily interaction
+
+**Key Sections**:
+- **Getting Started**: Sign in with Apple vs. continue as guest
+- **Chat Interface**: Screen layout, top bar controls, message area
+  - Input bar (microphone, text field, send button)
+  - Cost bar (token breakdown, max cost, detailed info icon)
+  - Token composition (input: prompt + context + permanent memory; output: response + reasoning)
+  - Switching models mid-conversation
+- **Thread Management**: Thread list, creating/organizing/deleting threads
+  - Rename, pin, copy threads
+  - Search functionality
+  - Delete single or all threads
+- **Exporting Conversations**: Export formats (markdown, plaintext, JSON)
+  - How to export threads
+  - Copying individual messages
+- **Voice Input**: First-time setup (microphone & speech recognition permissions)
+  - Using voice-to-text in 5 languages
+  - Tips for best results
+
+**Purpose**: Fills the gap between "what features exist" (FAQ) and "how do I use them daily" - focuses on chat interface and thread management without duplicating settings/configuration content
 
 ### `privacy.html` - Privacy Policy
 **Purpose**: Build trust with transparent data practices
@@ -519,6 +543,35 @@ Currently **no analytics** installed to maintain user privacy.
 
 ## Recent Updates
 
+### January 2025 - App Usage Guide & Link Fixes
+**Summary**: Added comprehensive guide page for daily app usage, fixed homepage gallery links to point to correct destinations, expanded FAQ sections
+
+**Changes**:
+- ✅ **New Guide Page** (`guide.html`):
+  - Comprehensive guide for chat interface, thread management, exporting, and voice input
+  - Fills gap between "what features exist" and "how to use them daily"
+  - Added to main navigation between Pricing and FAQ
+  - Detailed sections on cost bar, token composition, thread organization, export formats
+- ✅ **Homepage Gallery Links Fixed**:
+  - Chat Interface → `/guide.html#chat-interface` (was generic #features)
+  - Chat Threads → `/guide.html#thread-management` (was mismatched #export-history)
+  - Conversation Settings → `/faq.html#context-control` (was #advanced-settings)
+  - Complete Transparency (Audit) → `/faq.html#audit-transactions` (new detailed FAQ)
+  - 5 Languages badge/stat → `/faq.html#languages` (was missing anchor)
+- ✅ **FAQ Expansions**:
+  - Added languages FAQ (#languages) - Details 5 supported languages and localization
+  - Added audit transactions FAQ (#audit-transactions) - Comprehensive tracking details
+  - Expanded conversation settings FAQ (#context-control) - Smart context, permanent memory, response settings, streaming toggle
+  - Enhanced tutorial FAQ (#onboarding) - Accurate details matching actual AI Power User Guide content
+- ✅ **Navigation Update**: Added "Guide" link to header navigation
+
+**Files Changed**:
+- `guide.html` - New page created
+- `index.html` - Gallery links updated
+- `faq.html` - Four sections added/expanded
+- `_includes/header.html` - Navigation updated
+- `README.md` - Documentation updated with new page info and anchor IDs
+
 ### January 2025 - Pricing Table Accuracy & Model Intelligence Update
 **Summary**: Updated pricing comparison based on OpenAI's official data, corrected pro model availability, revised model recommendations based on actual intelligence ratings
 
@@ -756,6 +809,30 @@ All pages include semantic anchor IDs for deep linking. Use these for internal n
 `#reasoning-models` - O-Series (7)  
 `#choosing-guide` - Recommendations  
 `#advanced-settings` - Advanced controls
+
+### Guide Page (`/guide.html`)
+`#getting-started` - First launch and sign in  
+`#chat-interface` - Main conversation screen  
+`#screen-layout` - Screen components overview  
+`#input-bar` - Microphone, text field, send button  
+`#cost-bar` - Token breakdown and pricing  
+`#switching-models` - Change models mid-conversation  
+`#thread-management` - Thread organization  
+`#thread-list` - Accessing threads  
+`#creating-threads` - New thread creation  
+`#organizing-threads` - Rename, pin, copy  
+`#deleting-threads` - Delete single or all  
+`#searching-threads` - Search functionality  
+`#exporting` - Export conversations  
+`#export-formats` - Markdown, plaintext, JSON  
+`#how-to-export` - Export instructions  
+`#copying-messages` - Copy individual messages  
+`#voice-input` - Voice-to-text feature  
+`#voice-setup` - First-time permissions  
+`#voice-usage` - Using voice input  
+`#voice-languages` - Supported languages  
+`#voice-tips` - Tips for best results  
+`#next-steps` - Further learning resources
 
 ### Pricing Page (`/pricing.html`)
 `#examples` - Cost examples  

@@ -69,7 +69,7 @@ description: Learn how to use Lookinglass - from sending messages and managing c
             </ul>
             
             <h3 id="cost-bar">The Cost Bar</h3>
-            <p>Below the input bar, Lookinglass displays a transparent cost estimate for every message <strong>before you send it</strong>. This is one of our core differentiators—you always know what you'll pay.</p>
+            <p>Below the input bar (and beneath the send button), Lookinglass displays a transparent cost estimate for every message <strong>before you send it</strong>. This is one of our core differentiators—you always know what you'll pay.</p>
             
             <p><strong>Left Side: Token Breakdown</strong></p>
             <ul>
@@ -77,33 +77,40 @@ description: Learn how to use Lookinglass - from sending messages and managing c
                 <li><strong>Output Tokens (Maximum)</strong> - Shows the maximum response length based on your <a href="/faq#context-control">response settings</a></li>
             </ul>
             
-            <p><strong>Right Side: Maximum Cost</strong></p>
+            <p><strong>Right Side: Cost Information</strong></p>
             <ul>
-                <li>Displays the maximum cost in USD for this message</li>
-                <li>Always shows worst-case scenario (actual cost often lower)</li>
-                <li>Updates in real-time as you type</li>
-            </ul>
-            
-            <p><strong>Info Icon (ⓘ)</strong></p>
-            <ul>
-                <li>Tap for a detailed breakdown of estimated tokens and costs</li>
-                <li><strong>Input tokens include:</strong>
+                <li><strong>Maximum Cost in USD</strong> - Always shows worst-case scenario (actual cost often lower), updates in real-time as you type</li>
+                <li><strong>Info Icon (ⓘ)</strong> - Tap for a detailed breakdown of estimated tokens and costs
                     <ul>
-                        <li>Your prompt (the message you're sending)</li>
-                        <li>Context (conversation history, if smart context is enabled)</li>
-                        <li>Permanent memory (if enabled and configured)</li>
+                        <li><strong>Input tokens include:</strong> Your prompt, context (conversation history if enabled), and permanent memory (if configured)</li>
+                        <li><strong>Output tokens include:</strong> Written response plus reasoning tokens (if using o3, o1, or o4-mini)</li>
+                        <li>Shows per-token rates and how the total is calculated</li>
                     </ul>
                 </li>
-                <li><strong>Output tokens include:</strong>
-                    <ul>
-                        <li>Written response from the AI</li>
-                        <li>Reasoning tokens (if using a reasoning model like o3, o1, or o4-mini)</li>
-                    </ul>
-                </li>
-                <li>Shows per-token rates and how the total is calculated</li>
+                <li><strong>Pricing Icon ($)</strong> - Circle with dollar sign, opens the full pricing sheet (see below)</li>
             </ul>
             
-            <p>This level of transparency ensures you never send a message wondering "how much will this cost?" You know upfront, every time. Learn more about <a href="/pricing">transparent pricing</a>.</p>
+            <h3 id="pricing-sheet">The Pricing Sheet</h3>
+            <p>View complete pricing details for all <a href="/models">21 AI models</a> at any time. Access the pricing sheet from two locations:</p>
+            
+            <ul>
+                <li><strong>Model Menu</strong> - Tap the model picker (top right), then tap the <strong>circle with dollar sign ($)</strong> icon</li>
+                <li><strong>Cost Bar</strong> - Tap the <strong>circle with dollar sign ($)</strong> icon to the right of the info icon</li>
+            </ul>
+            
+            <p><strong>What the Pricing Sheet Shows:</strong></p>
+            <ul>
+                <li><strong>OpenAI Base Prices</strong> - The original per-token rates from OpenAI</li>
+                <li><strong>Lookinglass Prices</strong> - What you pay when using models through our app</li>
+                <li><strong>Billing Plan Toggle</strong> - Switch between two pricing options:
+                    <ul>
+                        <li><strong>Fast & Reliable</strong> - Standard pricing for all 21 models with priority processing</li>
+                        <li><strong><a href="/faq#smart-savings">Smart Savings</a></strong> - 50% off on 5 select models: gpt-5, gpt-5-mini, gpt-5-nano, o3, and o4-mini (responses may take slightly longer)</li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <p>This level of transparency ensures you always know the pricing structure and can choose the billing plan that fits your needs. You can switch between fast & reliable and smart savings at any time in your <a href="/faq#context-control">conversation settings</a>. Learn more about <a href="/pricing">transparent pricing</a>.</p>
             
             <h3 id="switching-models">Switching Models Mid-Conversation</h3>
             <p>Unlike traditional AI chat apps, Lookinglass lets you switch between any of the <a href="/models">21 models</a> at any time—even mid-conversation.</p>
@@ -116,6 +123,41 @@ description: Learn how to use Lookinglass - from sending messages and managing c
             </ul>
             
             <p>This is perfect for starting with a fast, cost-effective model like gpt-4o-mini, then switching to o3-pro when you need deep reasoning on a specific question.</p>
+            
+            <h3 id="message-actions">Interacting with Messages</h3>
+            <p>Long-press any message in the chat history to access powerful message actions:</p>
+            
+            <p><strong>Copy</strong></p>
+            <ul>
+                <li>Copy the message text to your clipboard</li>
+                <li>Paste it anywhere you need</li>
+            </ul>
+            
+            <p><strong>Share</strong></p>
+            <ul>
+                <li>Use iOS's native share sheet to send the message via Messages, Mail, Notes, etc.</li>
+            </ul>
+            
+            <p><strong>Info</strong></p>
+            <ul>
+                <li>View detailed <a href="/faq#audit-transactions">audit information</a> for that specific message</li>
+                <li>See exact token counts, model used, cost breakdown, and timestamp</li>
+                <li>Perfect for understanding what you paid for each individual response</li>
+            </ul>
+            
+            <p><strong>Forward</strong></p>
+            <ul>
+                <li>Select the message, then tap <strong>Forward</strong></li>
+                <li>Multi-select additional messages you want to include</li>
+                <li>Choose to either:
+                    <ul>
+                        <li><strong>Share</strong> - Send the selected messages via iOS share sheet</li>
+                        <li><strong>Create New Thread</strong> - Start a fresh conversation with just those messages as context</li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <p>The forward feature is especially useful when you want to branch off a conversation—pick the relevant messages and continue in a new thread without the rest of the chat history.</p>
             
             <h2 id="thread-management"><span role="img" aria-label="file folder">📁</span> Managing Threads</h2>
             
@@ -235,13 +277,7 @@ description: Learn how to use Lookinglass - from sending messages and managing c
             
             <p>You can also export your entire <a href="/faq#audit-transactions">transaction history and usage data</a> as CSV files from the wallet section for expense tracking and record-keeping.</p>
             
-            <h3 id="copying-messages">Copying Individual Messages</h3>
-            <p>Don't need the full thread? Copy individual messages instead:</p>
-            <ul>
-                <li>Long-press any message in the conversation</li>
-                <li>Select <strong>"Copy"</strong></li>
-                <li>Paste the text anywhere you need it</li>
-            </ul>
+            <p><strong>Need just a few messages?</strong> Use the <a href="#message-actions">Forward feature</a> to select specific messages and either share them or create a new thread with just that subset of your conversation.</p>
             
             <h2 id="voice-input"><span role="img" aria-label="microphone">🎤</span> Using Voice Input</h2>
             

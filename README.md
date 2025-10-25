@@ -163,20 +163,22 @@ App Store → index.html → pricing.html → models.html
 
 **Key Sections**:
 - **Getting Started**: Sign in with Apple vs. continue as guest
-- **Chat Interface**: Screen layout, top bar controls, message area
+- **Chat Interface**: Screen layout, top bar controls, chat history
   - Input bar (microphone, text field, send button)
-  - Cost bar (token breakdown, max cost, detailed info icon)
+  - Cost bar (token breakdown, max cost, info icon, pricing icon)
+  - Pricing sheet (view all model prices, toggle billing plan: fast & reliable vs smart savings)
   - Token composition (input: prompt + context + permanent memory; output: response + reasoning)
   - Switching models mid-conversation
+  - Message actions (long-press: copy, share, info, forward with multi-select)
 - **Thread Management**: Thread list, creating/organizing/deleting threads
   - Rename, pin, copy threads
   - Search functionality
-  - Delete single or all threads
+  - Delete single or all threads (ellipsis menu with refresh for multi-device)
 - **Exporting Conversations**: Export formats (markdown, plaintext, JSON)
   - How to export threads
-  - Copying individual messages
+  - Forward feature for selecting specific messages
 - **Voice Input**: First-time setup (microphone & speech recognition permissions)
-  - Using voice-to-text in 5 languages
+  - Uses device's native speech recognition (Apple)
   - Tips for best results
 
 **Purpose**: Fills the gap between "what features exist" (FAQ) and "how do I use them daily" - focuses on chat interface and thread management without duplicating settings/configuration content
@@ -816,7 +818,9 @@ All pages include semantic anchor IDs for deep linking. Use these for internal n
 `#screen-layout` - Screen components overview  
 `#input-bar` - Microphone, text field, send button  
 `#cost-bar` - Token breakdown and pricing  
+`#pricing-sheet` - Full pricing view with billing plan toggle  
 `#switching-models` - Change models mid-conversation  
+`#message-actions` - Long-press actions (copy, share, info, forward)  
 `#thread-management` - Thread organization  
 `#thread-list` - Accessing threads  
 `#creating-threads` - New thread creation  
@@ -826,11 +830,10 @@ All pages include semantic anchor IDs for deep linking. Use these for internal n
 `#exporting` - Export conversations  
 `#export-formats` - Markdown, plaintext, JSON  
 `#how-to-export` - Export instructions  
-`#copying-messages` - Copy individual messages  
 `#voice-input` - Voice-to-text feature  
 `#voice-setup` - First-time permissions  
 `#voice-usage` - Using voice input  
-`#voice-languages` - Supported languages  
+`#voice-languages` - Language support  
 `#voice-tips` - Tips for best results  
 `#next-steps` - Further learning resources
 

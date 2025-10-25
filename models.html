@@ -504,16 +504,22 @@ description: Complete guide to Lookinglass AI models. Compare 14 Chat models and
 }
 
 /* Model ratings table */
-.model-ratings-table {
-    width: 100%;
-    margin: 1rem 0;
-    border-collapse: separate;
-    border-spacing: 0;
-    background-color: var(--background-color);
-    border-radius: 0.5rem;
-    border: 1px solid var(--border-color);
-    overflow: hidden;
-}
+        .model-ratings-table {
+            width: 100%;
+            min-width: 600px; /* Ensure table doesn't get too cramped */
+            margin: 1rem 0;
+            border-collapse: separate;
+            border-spacing: 0;
+            background-color: var(--background-color);
+            border-radius: 0.5rem;
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+        }
+        
+        /* Wrapper to contain table overflow */
+        .model-card {
+            overflow-x: auto;
+        }
 
 .model-ratings-table tr {
     border-bottom: 1px solid var(--border-color);

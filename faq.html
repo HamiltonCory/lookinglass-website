@@ -142,15 +142,29 @@ description: Common questions about Lookinglass - the pay-as-you-go AI client fo
             <h3 id="permanent-memory">What is "permanent memory" and how does it work?</h3>
             <p>Permanent memory lets you tell the AI key information about yourself once, and it remembers across all conversations. For example: "I'm a Python developer working on iOS apps." This context gets included automatically, so you don't need to re-explain your background each time.</p>
             <p>Your memory is stored locally on your device and is sent with each message when enabled — but it's never stored on our servers or visible to us. You're always in control of what it remembers and when it's used. <a href="/#features">Learn more about memory and advanced controls</a>.</p>
-            <h3 id="context-control">Can I control how much the AI remembers?</h3>
-            <p>Absolutely! You have full control over smart memory (context window):</p>
+            <h3 id="context-control">What conversation settings can I control?</h3>
+            <p>Lookinglass gives you granular control over every aspect of your AI conversations. Here's what you can customize:</p>
+            
+            <p><strong>Smart Context (Smart Memory):</strong></p>
             <ul>
                 <li><strong>Toggle on/off:</strong> Enable or disable conversation history entirely</li>
                 <li><strong>When enabled:</strong> Set from 500 tokens (minimum) up to your model's maximum context</li>
-                <li><strong>Adjustable in 500-token increments:</strong> Fine-tune exactly how much history the AI remembers</li>
-                <li><strong>Response length control:</strong> Set output tokens from 100 (minimum) in 100-token increments</li>
+                <li><strong>Adjustable in 500-token increments:</strong> Fine-tune exactly how much conversation history the AI remembers</li>
             </ul>
-            <p>More context costs more but provides better continuity.</p>
+            
+            <p><strong>Permanent Memory:</strong></p>
+            <ul>
+                <li><strong>Toggle on/off:</strong> Enable or disable persistent context across all conversations</li>
+                <li><strong>Custom text:</strong> Set background information about yourself that the AI remembers in every chat</li>
+            </ul>
+            
+            <p><strong>Response Settings:</strong></p>
+            <ul>
+                <li><strong>Maximum response length:</strong> Set output tokens from 100 (minimum) in 100-token increments to control how long responses can be</li>
+                <li><strong>Live response streaming:</strong> Toggle whether responses appear letter-by-letter as they're generated or all at once</li>
+            </ul>
+            
+            <p>More context and longer responses cost more, but provide better continuity and more detailed answers. All conversation settings are accessible from the settings menu.</p>
             
             <h3 id="spending-protection">What is spending protection?</h3>
             <p>Spending protection alerts you before sending messages that exceed your chosen threshold. Enable spending alerts in settings, set your preferred threshold (like $0.01, $0.10, or any amount), and you'll get a warning before accidentally sending an expensive message.</p>
@@ -177,7 +191,29 @@ description: Common questions about Lookinglass - the pay-as-you-go AI client fo
             <p>Just $1! You can add amounts from $1 to $500. Many users start with $5 or $10 to try it out.</p>
             
             <h3 id="onboarding">Is there an onboarding tutorial?</h3>
-            <p>Yes! The app includes an interactive tutorial that explains all the features. You can access it anytime from Settings if you want a refresher.</p>
+            <p>Yes! Lookinglass includes an interactive <strong>AI Power User Guide</strong> that walks you through the app's key features when you first launch it. The tutorial covers:</p>
+            <ul>
+                <li><strong>Chat Interface:</strong> Learn how to use the main conversation view</li>
+                <li><strong>Accessing Threads:</strong> Organize and navigate between different conversations</li>
+                <li><strong>Choosing AI Models:</strong> Browse and select from recommended models based on your needs</li>
+                <li><strong>Voice-to-Text:</strong> Use the microphone button for hands-free input</li>
+                <li><strong>Sending Messages:</strong> Tap to send and see real-time cost estimates in the cost bar</li>
+                <li><strong>Model Types:</strong> Understand different model categories (nano, mini, pro) and how reasoning models use reasoning tokens</li>
+                <li><strong>Conversation Settings:</strong> Toggle smart context and permanent memory on/off, control memory size (tokens), set maximum response length (tokens), choose billing plan, adjust creativity, response detail level, and AI power level</li>
+                <li><strong>Help Icons:</strong> Discover the question mark icons throughout the app for contextual explanations</li>
+            </ul>
+            <p>You can replay the tutorial anytime from <strong>Settings → Your AI Power User Guide</strong> if you need a refresher.</p>
+
+            <h3 id="languages">What languages are supported?</h3>
+            <p>Lookinglass is available in <strong>5 languages</strong>:</p>
+            <ul>
+                <li><strong>English</strong></li>
+                <li><strong>Spanish (Español)</strong></li>
+                <li><strong>French (Français)</strong></li>
+                <li><strong>Portuguese (Português)</strong></li>
+                <li><strong>Italian (Italiano)</strong></li>
+            </ul>
+            <p>The app automatically detects your device language and switches to the appropriate localization. You can also manually change the language in your iOS Settings → Lookinglass → Language. All UI elements, settings, and help text are fully translated — only your conversations with AI models use the language you choose to type or speak in.</p>
             
             <h2 id="technical"><span role="img" aria-label="tools">🛠</span> Technical</h2>
             
@@ -189,6 +225,26 @@ description: Common questions about Lookinglass - the pay-as-you-go AI client fo
             
             <h3 id="export-history">Can I export my conversation history?</h3>
             <p>Yes! You can <strong>export entire chat threads</strong> in multiple formats including <strong>plaintext, JSON, or markdown documents</strong>. You can also copy and paste individual messages from your conversations. Additionally, you can export your <strong>transaction history and usage data</strong> as CSV files anytime.</p>
+            
+            <h3 id="audit-transactions">What does the audit feature track?</h3>
+            <p>Lookinglass includes a comprehensive audit system that gives you complete transparency into every transaction. The audit feature tracks two types of activities:</p>
+            
+            <p><strong>Wallet Top-Ups:</strong> See when you added funds to your account</p>
+            
+            <p><strong>API Usage (Message Costs):</strong> Each message you send is logged with detailed information including:</p>
+            <ul>
+                <li><strong>Date & Time:</strong> Exact timestamp of when the request was made</li>
+                <li><strong>Model Used:</strong> Which AI model processed your message</li>
+                <li><strong>Status:</strong> Success, error, or failure indicator</li>
+                <li><strong>Request & Audit IDs:</strong> Unique identifiers for tracking and support</li>
+                <li><strong>Token Usage:</strong> Input tokens, output tokens, and cached input tokens (when applicable)</li>
+                <li><strong>OpenAI Rates Snapshot:</strong> The exact per-token pricing rates at the time of your request</li>
+                <li><strong>Cost Breakdown:</strong> Subtotal for OpenAI charges, Lookinglass fee, and total amount charged</li>
+                <li><strong>Device Information:</strong> Device type and device ID for multi-device tracking</li>
+            </ul>
+            
+            <p>This level of detail ensures you always know exactly what you paid for, which device made the request, and can verify charges against OpenAI's published rates. You can export your entire audit history as a CSV file for your records or expense tracking.</p>
+            
             <div class="legal-footer">
                 <p><strong>Still have questions?</strong> Contact us at <a href="mailto:support@lookinglass.ai">support@lookinglass.ai</a></p>
             </div>

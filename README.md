@@ -21,6 +21,7 @@ A modern, static marketing website for **Lookinglass**, a powerful iOS app for a
 
 ### Development
 - [Local Development](#local-development)
+- [Image Optimization](#image-optimization)
 - [Deployment](#deployment)
 - [SEO & Analytics](#seo--analytics)
 
@@ -400,6 +401,34 @@ Before deploying, verify:
 3. **Pricing calculations correct** - Verify against `Pricing.swift` markup
 4. **Context windows accurate** - Check `ModelCatalog.swift` for max tokens
 5. **Capabilities accurate** - Verify temperature, reasoning, verbosity support
+
+### Image Optimization
+
+All app screenshots are compressed using [Squoosh.app](https://squoosh.app/) for optimal web performance.
+
+**Compression Settings:**
+- **Format**: WebP
+- **Quality**: 80-85 (balance between quality and file size)
+- **Target**: Keep images under 150KB when possible
+- **Theme**: Dark mode to match App Store presentation
+
+**Workflow:**
+1. Export screenshots from iOS app (dark mode)
+2. Upload to [squoosh.app](https://squoosh.app/)
+3. Select WebP format
+4. Adjust quality slider (aim for 80-85)
+5. Download and replace in `assets/images/`
+6. Verify visual quality before committing
+
+**Current Screenshots (Dark Mode):**
+- Hero splash, tutorial, welcome, chat interface
+- Model selection, pricing, wallet, audit, threads
+- Settings, advanced controls, permanent memory
+
+**File Size Targets:**
+- Hero images: 40-60KB
+- Gallery screenshots: 80-120KB
+- Complex UI screenshots: 120-150KB max
 
 ---
 

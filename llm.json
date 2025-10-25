@@ -3,7 +3,7 @@
   "tagline": "See further, think deeper.",
   "platform": ["iPhone", "iPad"],
   "category": "AI client",
-  "summary": "Pay-as-you-go AI for iPhone and iPad. Access 19 OpenAI models, including o3-pro, with transparent pricing, advanced controls, and no subscriptions.",
+  "summary": "Pay-as-you-go AI for iPhone and iPad. Access 21 OpenAI models, including o3-pro, with transparent pricing, advanced controls, and no subscriptions.",
   "pricingModel": {
     "type": "pay-as-you-go",
     "walletTopUpUSD": [1, 2, 5, 10, 20, 50, 100, 200, 500],

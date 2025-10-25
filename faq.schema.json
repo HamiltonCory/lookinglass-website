@@ -48,7 +48,7 @@
       "name": "Which AI models are included?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Lookinglass provides access to 19 OpenAI models including:\n\nGPT Models: GPT-5, GPT-4o, GPT-4o-mini, and variants\nO-Series (Reasoning): o1, o1-mini, o3, o3-mini, o4-mini, o3-pro\n\nYou can switch between models mid-conversation based on your needs."
+        "text": "Lookinglass provides access to 21 OpenAI models including:\n\nGPT Models: GPT-5, GPT-4o, GPT-4o-mini, and variants\nO-Series (Reasoning): o1, o1-mini, o3, o3-mini, o4-mini, o3-pro\n\nYou can switch between models mid-conversation based on your needs."
       }
     },
     {

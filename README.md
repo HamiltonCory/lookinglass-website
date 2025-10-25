@@ -260,7 +260,7 @@ The website content should **always match** the iOS app's actual capabilities. K
 - **ChatGPT Models (14 total)**:
   - gpt-5 series (5 models): gpt-5-chat-latest, gpt-5, gpt-5-mini, gpt-5-nano, gpt-5-pro
   - gpt-4o series (3 models): gpt-4o, gpt-4o-mini, chatgpt-4o-latest
-  - gpt-4.1 series (3 models): gpt-4.1, gpt-4.1-mini, gpt-4.1-pro
+  - gpt-4.1 series (3 models): gpt-4.1, gpt-4.1-mini, gpt-4.1-nano
   - gpt-4 legacy (2 models): gpt-4 (8K), gpt-4-turbo (128K)
   - gpt-3.5 series (1 model): gpt-3.5-turbo
 - **O-Series Reasoning (7 total)**:
@@ -489,6 +489,40 @@ Currently **no analytics** installed to maintain user privacy.
 ---
 
 ## Recent Updates
+
+### January 2025 - Pricing Table Accuracy & Model Intelligence Update
+**Summary**: Updated pricing comparison based on OpenAI's official data, corrected pro model availability, revised model recommendations based on actual intelligence ratings
+
+**Changes**:
+- ✅ **Pricing Table Corrections** (based on OpenAI's official pricing page):
+  - Free tier: No GPT-4o access (was incorrectly showing "Limited")
+  - Plus tier: Standard/Expanded models (not "Included/Higher Limits")
+  - Pro tier: Only gets gpt-5-pro, NOT o3-pro or o1-pro (those are Enterprise-only!)
+  - Added response times row (Free: Limited & slow, Plus/Pro: Fast, Lookinglass: Real-time)
+  - Added context windows row (Free: 16K, Plus: 32K, Pro: 128K, Lookinglass: Up to 1M)
+  - Added footnote: "*OpenAI's 'Unlimited' requires 'reasonable use'—you don't define what's reasonable, they do."
+- ✅ **Pro Model Availability Corrections**:
+  - o3-pro and o1-pro are Enterprise-only (not available in Pro $200/mo tier)
+  - Pro tier only gets gpt-5-pro
+  - Lookinglass is the only pay-per-use access to all 3 pro models (o1-pro, o3-pro, gpt-5-pro)
+- ✅ **Model Intelligence Ratings** (based on OpenAI's official model comparison):
+  - gpt-4.1 has highest intelligence rating (4 dots from OpenAI)
+  - gpt-5-chat-latest and gpt-4o both have 3 dots
+  - Updated model card descriptions to reflect actual intelligence ratings
+  - Reordered "Highest Quality" recommendation: gpt-4.1 first (was gpt-5-chat-latest)
+- ✅ **Model Recommendations Expansion**:
+  - Expanded from 4 to 6 recommendation cards
+  - Structured as 2×3 matrix: Non-Reasoning vs Reasoning × Fast/Balanced/Quality tiers
+  - Added gpt-5-mini (balanced reasoning) and clarified gpt-5-nano (cheapest reasoning)
+  - Matches app's onboarding recommendations
+- ✅ **Visual Updates**:
+  - Changed Tokens & Pricing icon from 🔤 to 💰
+  - Removed redundant "(1 million)" from 1M token context descriptions
+
+**Files Changed**:
+- `pricing.html` - Complete pricing table overhaul with accurate OpenAI tier data, footnotes
+- `models.html` - Pro model corrections, intelligence ratings, 6-card recommendations, icon change
+- `README.md` - Fixed gpt-4.1-pro → gpt-4.1-nano, added this update log
 
 ### October 2024 - Model Expansion & Terminology Update
 **Summary**: Updated from 19 to 21 models, standardized terminology with iOS app, improved privacy clarity

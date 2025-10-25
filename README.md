@@ -703,6 +703,44 @@ Currently **no analytics** installed to maintain user privacy.
 
 ---
 
+## Anchor IDs for Internal Linking
+
+All pages include semantic anchor IDs for deep linking. Use these for internal navigation and SEO.
+
+### FAQ Page (`/faq.html`)
+**Pricing & Billing**: `#pricing-billing`, `#pay-as-you-go`, `#typical-cost`, `#wallet-funds`, `#free-credits`, `#why-pay`  
+**Models & Features**: `#models-features`, `#which-models`, `#different-from-chatgpt`, `#pro-model-access`, `#smart-savings`  
+**Privacy & Security**: `#privacy-security`, `#data-privacy`, `#training-data`, `#data-collection`  
+**App Features**: `#app-features`, `#permanent-memory`, `#context-control`, `#spending-protection`, `#voice-to-text`  
+**Getting Started**: `#getting-started`, `#free-download`, `#create-account`, `#minimum-wallet`, `#onboarding`  
+**Technical**: `#technical`, `#devices-supported`, `#offline`, `#export-history`
+
+### Homepage (`/index.html`)
+`#power-users` - Power users section  
+`#features` - Features section  
+`#app-preview` - Screenshot gallery  
+`#download` - CTA section
+
+### Models Page (`/models.html`)
+`#basics` - Understanding tokens/pricing  
+`#chat-models` - Chat Models (14)  
+`#reasoning-models` - O-Series (7)  
+`#choosing-guide` - Recommendations  
+`#advanced-settings` - Advanced controls
+
+### Pricing Page (`/pricing.html`)
+`#examples` - Cost examples  
+`#calculator` - Interactive calculator  
+`#why-payg` - Why pay-as-you-go  
+`#how-pricing-works` - Pricing breakdown
+
+### Privacy Page (`/privacy.html`)
+`#information-we-collect`, `#what-we-dont-collect`, `#how-we-use-information`, `#data-sharing`, `#icloud-sync`, `#data-security`, `#data-retention`, `#your-rights`, `#childrens-privacy`, `#policy-changes`, `#contact-us`
+
+**Usage**: `<a href="/faq.html#spending-protection">Learn about spending protection</a>`
+
+---
+
 ## License
 
 **Private Code - All Rights Reserved**

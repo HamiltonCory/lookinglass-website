@@ -109,6 +109,14 @@
     },
     {
       "@type": "Question",
+      "name": "How much can the AI actually remember? What's the difference between 16K and 1M tokens?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Context window size determines how much conversation history and text the AI can work with at once:\n\nChatGPT Free (16K tokens): ~12,000 words — about 20-30 pages. Only 13% of The Hobbit (95,000 words)—you'd barely make it past Bilbo leaving the Shire. Enough for a few messages, but longer conversations get forgotten.\n\nChatGPT Plus (32K tokens): ~24,000 words — about 40-60 pages. About 25% of The Hobbit—you'd make it to Rivendell, but not much further.\n\nChatGPT Pro (128K tokens): ~96,000 words — a short novel. The entire Hobbit, or about half of Fellowship of the Ring (187,000 words).\n\nLookinglass with gpt-4.1 series (1M tokens): ~750,000 words — multiple full-length books. The entire Lord of the Rings trilogy (480,000 words) plus The Hobbit (95,000 words), with 175,000 words to spare—enough room for another full novel. Analyze multiple books, long documents, or entire codebases in a single conversation without the AI forgetting earlier parts.\n\nWhy this matters: When you hit the context limit, the AI starts forgetting earlier parts of your conversation. With 16K tokens, you might lose important context after just a few messages. With 1M tokens, you can have extensive conversations and the AI remembers everything."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "What is spending protection?",
       "acceptedAnswer": {
         "@type": "Answer",

@@ -456,6 +456,24 @@ All app screenshots are compressed using [Squoosh.app](https://squoosh.app/) for
 - Gallery screenshots: 80-120KB
 - Complex UI screenshots: 120-150KB max
 
+### Icon Assets
+
+All website icons are sourced from [Flaticon.com](https://www.flaticon.com/) - a curated collection of high-quality SVG icons.
+
+**Icon Specifications:**
+- **Format**: SVG (scalable vector graphics)
+- **Style**: Minimal line-art with 2-3px stroke weight
+- **Size**: 24×24px to 48×48px viewBox
+- **Colors**: Use `currentColor` to inherit theme colors (dark green #004B3A in light mode, bright green #22C77A in dark mode)
+- **Location**: `/assets/icons/`
+
+**Icon Organization:**
+- Icons are organized by usage category (see `Docs/icons.md` for full mapping)
+- All icons work in both light and dark themes
+- Total icon set: 76 individual SVG files
+
+**Documentation**: See `Docs/icons.md` for complete icon inventory, usage guide, and implementation instructions.
+
 ---
 
 ## Deployment

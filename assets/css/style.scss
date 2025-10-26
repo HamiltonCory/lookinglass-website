@@ -1975,3 +1975,61 @@ svg.telescope-hero,
     height: 40px;
   }
 }
+
+// FAQ Accordion Styles
+.faq-item {
+  border-bottom: 1px solid var(--border-color);
+  padding: 1.5rem 0;
+  
+  &:first-child {
+    border-top: 1px solid var(--border-color);
+  }
+  
+  summary {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0.5rem 0;
+    
+    &::-webkit-details-marker {
+      display: none;
+    }
+    
+    h3 {
+      margin: 0;
+      flex: 1;
+      font-size: 1.1rem;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    
+    .expand-icon {
+      font-size: 1.5rem;
+      font-weight: 300;
+      line-height: 1;
+      transition: transform 0.2s ease;
+      margin-left: 1rem;
+      flex-shrink: 0;
+    }
+  }
+  
+  &[open] {
+    summary .expand-icon {
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.faq-answer {
+  padding-top: 1rem;
+  
+  p, ul, ol {
+    margin-bottom: 1rem;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

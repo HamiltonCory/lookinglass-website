@@ -1862,12 +1862,23 @@ svg.telescope-hero,
   transition: filter 0.3s ease;
 }
 
-/* User type icons - Homepage user cards (40px container) */
-.user-type-icon img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+/* Setting icons inline - Next to titles in advanced settings (28px) */
+.setting-icon-inline {
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.5rem;
   filter: brightness(0) saturate(100%) invert(17%) sepia(48%) saturate(1574%) hue-rotate(130deg) brightness(95%) contrast(101%);
+  transition: filter 0.3s ease;
+}
+
+/* User type icons - Homepage user cards (40px container with green background) */
+.user-type-icon img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  filter: brightness(0) invert(1); /* Makes icons white to contrast with green background */
   transition: filter 0.3s ease;
 }
 
@@ -1876,14 +1887,15 @@ svg.telescope-hero,
   width: 48px;
   height: 48px;
   display: block;
+  margin: 0 auto 1rem;
   filter: brightness(0) saturate(100%) invert(17%) sepia(48%) saturate(1574%) hue-rotate(130deg) brightness(95%) contrast(101%);
   transition: filter 0.3s ease;
 }
 
 /* Feature icons - Homepage features with colored backgrounds */
 .feature-icon img {
-  width: 100%;
-  height: 100%;
+  width: 24px;
+  height: 24px;
   filter: brightness(0) invert(1); /* Makes icons white */
   transition: filter 0.3s ease;
 }
@@ -1909,11 +1921,13 @@ svg.telescope-hero,
   color: var(--primary-color); /* Bright green in dark mode */
 }
 
+/* User type icons stay white in dark mode too (green background in both themes) */
 [data-theme="dark"] .user-type-icon img {
-  filter: brightness(0) saturate(100%) invert(70%) sepia(48%) saturate(655%) hue-rotate(98deg) brightness(96%) contrast(89%);
+  filter: brightness(0) invert(1); /* Keep white for contrast */
 }
 
 [data-theme="dark"] .setting-icon,
+[data-theme="dark"] .setting-icon-inline,
 [data-theme="dark"] .basics-icon img {
   filter: brightness(0) saturate(100%) invert(70%) sepia(48%) saturate(655%) hue-rotate(98deg) brightness(96%) contrast(89%);
 }
@@ -1933,10 +1947,11 @@ svg.telescope-hero,
   }
   
   :root:not([data-theme="light"]) .user-type-icon img {
-    filter: brightness(0) saturate(100%) invert(70%) sepia(48%) saturate(655%) hue-rotate(98deg) brightness(96%) contrast(89%);
+    filter: brightness(0) invert(1); /* Keep white for contrast */
   }
   
   :root:not([data-theme="light"]) .setting-icon,
+  :root:not([data-theme="light"]) .setting-icon-inline,
   :root:not([data-theme="light"]) .basics-icon img {
     filter: brightness(0) saturate(100%) invert(70%) sepia(48%) saturate(655%) hue-rotate(98deg) brightness(96%) contrast(89%);
   }

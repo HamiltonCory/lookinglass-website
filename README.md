@@ -573,11 +573,11 @@ Currently **no analytics** installed to maintain user privacy.
   - Added to main navigation between Pricing and FAQ
   - Detailed sections on cost bar, token composition, thread organization, export formats
 - ✅ **Homepage Gallery Links Fixed**:
-  - Chat Interface → `/guide.html#chat-interface` (was generic #features)
-  - Chat Threads → `/guide.html#thread-management` (was mismatched #export-history)
-  - Conversation Settings → `/faq.html#context-control` (was #advanced-settings)
-  - Complete Transparency (Audit) → `/faq.html#audit-transactions` (new detailed FAQ)
-  - 5 Languages badge/stat → `/faq.html#languages` (was missing anchor)
+  - Chat Interface → `/guide#chat-interface` (was generic #features)
+  - Chat Threads → `/guide#thread-management` (was mismatched #export-history)
+  - Conversation Settings → `/faq#context-control` (was #advanced-settings)
+  - Complete Transparency (Audit) → `/faq#audit-transactions` (new detailed FAQ)
+  - 5 Languages badge/stat → `/faq#languages` (was missing anchor)
 - ✅ **FAQ Expansions**:
   - Added languages FAQ (#languages) - Details 5 supported languages and localization
   - Added audit transactions FAQ (#audit-transactions) - Comprehensive tracking details
@@ -864,7 +864,7 @@ All pages include semantic anchor IDs for deep linking. Use these for internal n
 ### Privacy Page (`/privacy.html`)
 `#information-we-collect`, `#what-we-dont-collect`, `#how-we-use-information`, `#data-sharing`, `#icloud-sync`, `#data-security`, `#data-retention`, `#your-rights`, `#childrens-privacy`, `#policy-changes`, `#contact-us`
 
-**Usage**: `<a href="/faq.html#spending-protection">Learn about spending protection</a>`
+**Usage**: `<a href="/faq#spending-protection">Learn about spending protection</a>`
 
 ---
 

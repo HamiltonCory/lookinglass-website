@@ -518,10 +518,10 @@ a:hover {
 }
 
 .feature-icon {
-    width: 48px;
-    height: 48px;
+    width: 72px;
+    height: 72px;
     background-color: var(--primary-color);
-    border-radius: 0.75rem;
+    border-radius: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1234,10 +1234,10 @@ svg.telescope-hero,
 }
 
 .user-type-icon {
-    width: 40px;
-    height: 40px;
+    width: 64px;
+    height: 64px;
     background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
-    border-radius: 8px;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1873,10 +1873,10 @@ svg.telescope-hero,
   transition: filter 0.3s ease;
 }
 
-/* User type icons - Homepage user cards (40px container with green background) */
+/* User type icons - Homepage user cards (64px container with green background) */
 .user-type-icon img {
-  width: 24px;
-  height: 24px;
+  width: 42px;
+  height: 42px;
   object-fit: contain;
   filter: brightness(0) invert(1); /* Makes icons white to contrast with green background */
   transition: filter 0.3s ease;
@@ -1894,8 +1894,8 @@ svg.telescope-hero,
 
 /* Feature icons - Homepage features with colored backgrounds */
 .feature-icon img {
-  width: 24px;
-  height: 24px;
+  width: 48px;
+  height: 48px;
   filter: brightness(0) invert(1); /* Makes icons white */
   transition: filter 0.3s ease;
 }

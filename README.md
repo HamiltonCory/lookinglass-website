@@ -260,7 +260,7 @@ The website content should **always match** the iOS app's actual capabilities. K
 
 ### Website Content Strategy
 - **Mirror app terminology exactly** - Don't invent new names
-- **Use lowercase for model names** - Matches app display (e.g., "gpt-5-pro" not "GPT-5 Pro")
+- **Use lowercase for model names** - Matches app display (e.g., "gpt-5-pro" not "gpt-5-pro")
 - **Sync with app releases** - Update website when app adds new models
 - **Verify pricing calculations** - Use Pricing.swift markup to calculate costs
 
@@ -276,11 +276,11 @@ The website content should **always match** the iOS app's actual capabilities. K
 | spending alerts | cost guard alerts | Settings toggle |
 | AI power level | effort level | Reasoning models setting |
 | creativity level | temperature | GPT models parameter |
-| response detail level | verbosity | GPT-5 models setting |
+| response detail level | verbosity | gpt-5 models setting |
 | fast & reliable | standard | Billing plan without discount |
 | 21 models | 19 models | Total count (as of current update) |
 | 14 ChatGPT models | 12 Chat models | ChatGPT family count |
-| gpt-5-pro | GPT-5 Pro | Use lowercase model names |
+| gpt-5-pro | gpt-5-pro | Use lowercase model names |
 | chatgpt-4o-latest | ChatGPT-4o-Latest | Use lowercase model names |
 
 ### Model Families & Counts
@@ -613,7 +613,7 @@ Currently **no analytics** installed to maintain user privacy.
 
 **Changes**:
 - ✅ **Model Count**: 19 → 21 models (added `gpt-5-pro`, `chatgpt-4o-latest`)
-- ✅ **Model Names**: All lowercase to match app (e.g., "gpt-5-pro" not "GPT-5 Pro")
+- ✅ **Model Names**: All lowercase to match app (e.g., "gpt-5-pro" not "gpt-5-pro")
 - ✅ **Terminology Standardization**:
   - "Flex" → "smart savings"
   - "Cost Guard" → "spending protection" / "spending alerts"

@@ -508,13 +508,14 @@ a:hover {
     padding: 2rem;
     border-radius: 1rem;
     text-align: left;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
     border: 1px solid var(--border-color);
 }
 
 .feature-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 20px 40px var(--shadow-color);
+    border-color: var(--primary-color);
 }
 
 .feature-icon {
@@ -1195,12 +1196,13 @@ svg.telescope-hero,
     background: var(--surface-color);
     border-radius: 12px;
     border: 1px solid var(--border-color);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
 .stat-item:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px var(--shadow-color);
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px var(--shadow-color);
+    border-color: var(--primary-color);
 }
 
 .stat-number {
@@ -1231,12 +1233,13 @@ svg.telescope-hero,
     padding: 1.5rem;
     border-radius: 12px;
     border: 1px solid var(--border-color);
-    transition: all 0.3s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
 .user-type-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px var(--shadow-color);
     border-color: var(--primary-color);
-    box-shadow: 0 4px 12px var(--shadow-color);
 }
 
 .user-type-icon {

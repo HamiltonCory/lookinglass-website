@@ -14,7 +14,17 @@ permalink: /models/
         
         <div class="legal-content">
             <div class="legal-intro">
-                <p>Lookinglass gives you access to 21 OpenAI models across two families: 14 Chat models for fast, versatile conversations and 7 O-series models for complex reasoning tasks. This guide helps you choose the right model and settings for your needs.</p>
+                <p>Lookinglass gives you access to <strong>21 OpenAI models</strong> organized into 8 families:</p>
+                <ul>
+                    <li><strong>gpt-5 series</strong> (5 models) - Best for most tasks: writing, coding, analysis</li>
+                    <li><strong>gpt-4o series</strong> (3 models) - Fast, reliable daily workhorse models</li>
+                    <li><strong>gpt-4.1 series</strong> (3 models) - When you need massive context (1M tokens)</li>
+                    <li><strong>o3 series</strong> (3 models) - Complex reasoning and problem-solving</li>
+                    <li><strong>o1 series</strong> (3 models) - Deep research and technical analysis</li>
+                    <li><strong>o4-mini</strong> (1 model) - Quick reasoning at lower cost</li>
+                    <li><strong>gpt-4 & gpt-3.5</strong> (3 models) - Older models, rarely the best choice</li>
+                </ul>
+                <p>This guide helps you choose the right model and settings for your needs.</p>
             </div>
 
             <!-- Understanding the Basics -->
@@ -495,9 +505,8 @@ permalink: /models/
 
 /* Fixed hover - no green background, just subtle border change */
 .model-card:hover {
-    border-color: var(--primary-color);
-    box-shadow: 0 8px 25px var(--shadow-color);
-    transform: translateY(-2px);
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px var(--shadow-color);
 }
 
 .model-card h3 {
@@ -611,7 +620,7 @@ permalink: /models/
 /* Guide sections */
 .guide-section {
     padding: 0.05rem 0 1rem 0; /* Only bottom padding */
-    background-color: var(--surface-color);
+    background-color: var(--background-color);
 }
 
 .guide-content {
@@ -628,10 +637,16 @@ permalink: /models/
 }
 
 .guide-card {
-    background-color: var(--background-color);
+    background-color: var(--surface-color);
     border: 1.5px solid var(--border-color);
     border-radius: 2rem;
     padding: 2rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.guide-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px var(--shadow-color);
 }
 
 /* Fixed header sizing consistency */
@@ -706,9 +721,8 @@ permalink: /models/
 }
 
 .basics-card:hover {
-    border-color: var(--primary-color);
-    box-shadow: 0 8px 25px var(--shadow-color);
-    transform: translateY(-2px);
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px var(--shadow-color);
 }
 
 .basics-icon {

@@ -337,9 +337,10 @@ permalink: /models/
             <!-- Guide Sections -->
             <section id="choosing-guide" class="guide-section">
                 <div class="container">
-                    <h2 class="section-title">Choosing the Right Model</h2>
+                    <h2 class="section-title">Recommended Models</h2>
+                    <p class="section-subtitle">Compare chat and reasoning models by use case</p>
                     <div class="guide-content">
-                        <div class="guide-cards">
+                        <div class="guide-cards-grid">
                             <div class="guide-card">
                                 <h4>Fastest & Cheapest</h4>
                                 <p>Quick answers, simple tasks, basic questions</p>
@@ -365,7 +366,7 @@ permalink: /models/
                                 <p>Advanced work, creative projects, complex conversations</p>
                                 <ul>
                                     <li><strong>recommended:</strong> gpt-4.1, gpt-5-chat-latest, or gpt-4o</li>
-                                    <li><strong>why:</strong> gpt-4.1 (highest intelligence + 1M context), gpt-5-chat-latest (latest knowledge), gpt-4o (proven)</li>
+                                    <li><strong>why:</strong> highest intelligence models in each model family</li>
                                     <li><strong>example:</strong> "Write a detailed business plan" or "Refactor this codebase"</li>
                                 </ul>
                             </div>
@@ -374,8 +375,8 @@ permalink: /models/
                                 <h4>Fastest & Cheapest Reasoning</h4>
                                 <p>Quick step-by-step thinking on a budget</p>
                                 <ul>
-                                    <li><strong>recommended:</strong> gpt-5-nano</li>
-                                    <li><strong>why:</strong> cheapest reasoning model available</li>
+                                    <li><strong>recommended:</strong> gpt-5-nano (smart savings)</li>
+                                    <li><strong>why:</strong> cheapest reasoning model, 50% off with smart savings</li>
                                     <li><strong>example:</strong> "Explain this concept step-by-step"</li>
                                 </ul>
                             </div>
@@ -384,8 +385,8 @@ permalink: /models/
                                 <h4>Balanced Reasoning</h4>
                                 <p>Solid reasoning for everyday problems</p>
                                 <ul>
-                                    <li><strong>recommended:</strong> gpt-5-mini</li>
-                                    <li><strong>why:</strong> balanced speed, cost, and reasoning quality</li>
+                                    <li><strong>recommended:</strong> gpt-5-mini or o4-mini (smart savings)</li>
+                                    <li><strong>why:</strong> balanced speed, cost, and quality, 50% off with smart savings</li>
                                     <li><strong>example:</strong> "Walk me through solving this problem"</li>
                                 </ul>
                             </div>
@@ -395,7 +396,7 @@ permalink: /models/
                                 <p>Complex math, logic, research-level problems</p>
                                 <ul>
                                     <li><strong>recommended:</strong> o3 (smart savings)</li>
-                                    <li><strong>why:</strong> best reasoning outside pro models, 50% off</li>
+                                    <li><strong>why:</strong> best reasoning outside pro models, 50% off with smart savings</li>
                                     <li><strong>example:</strong> "Solve this calculus problem" or "Debug this algorithm"</li>
                                 </ul>
                             </div>
@@ -474,6 +475,13 @@ permalink: /models/
     color: var(--text-primary);
     margin: 0 0 0.5rem 0; /* tighter, removed top margin */
     text-align: center;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    font-size: 1rem;
 }
 
 .section-description {
@@ -624,7 +632,7 @@ permalink: /models/
 }
 
 .guide-content {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -634,6 +642,14 @@ permalink: /models/
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 1.5rem; /* was 2rem */
     margin-top: 1.5rem; /* was 2rem */
+}
+
+/* Guide cards grid - 2x3 layout for recommended models */
+.guide-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 .guide-card {
@@ -678,7 +694,8 @@ permalink: /models/
 /* Responsive design */
 @media (max-width: 768px) {
     .models-grid,
-    .guide-cards {
+    .guide-cards,
+    .guide-cards-grid {
         grid-template-columns: 1fr;
     }
 

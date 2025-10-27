@@ -72,7 +72,7 @@
       "name": "What is smart savings?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Smart savings saves you 50% on message costs if you're willing to wait a bit longer for responses. It's available on select models (gpt-5 series, o3, o4-mini) and perfect for non-urgent tasks where you want to optimize for cost over speed."
+        "text": "Smart savings saves you 50% on message costs if you're willing to wait a bit longer for responses. It's available on select models (gpt-5, gpt-5-mini, gpt-5-nano, o3, and o4-mini) and perfect for non-urgent tasks where you want to optimize for cost over speed."
       }
     },
     {

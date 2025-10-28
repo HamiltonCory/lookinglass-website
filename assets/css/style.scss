@@ -805,12 +805,13 @@ section.cta .btn-primary:hover {
     margin-bottom: 2rem;
     border: 2px solid var(--border-color);
     border-left: 4px solid var(--primary-color);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
 .legal-intro:hover {
     transform: translateY(-5px);
     box-shadow: 0 20px 40px var(--shadow-color);
+    border-color: var(--primary-color);
 }
 
 .legal-footer {
@@ -1549,12 +1550,13 @@ svg.telescope-hero,
         padding: 2rem;
         border-radius: 1rem;
         border: 1px solid var(--border-color);
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
     }
 
     .example-card:hover {
         transform: translateY(-5px);
         box-shadow: 0 20px 40px var(--shadow-color);
+        border-color: var(--primary-color);
     }
 
     .example-card h3 {
@@ -1720,12 +1722,13 @@ svg.telescope-hero,
         border-radius: 1rem;
         border: 1px solid var(--border-color);
         text-align: left;
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
     }
 
     .reason-card:hover {
         transform: translateY(-5px);
         box-shadow: 0 20px 40px var(--shadow-color);
+        border-color: var(--primary-color);
     }
 
     .reason-card h3 {
@@ -1773,12 +1776,13 @@ svg.telescope-hero,
         padding: 1.5rem;
         border-radius: 0.75rem;
         border: 1px solid var(--border-color);
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
     }
 
     .factor:hover {
         transform: translateY(-5px);
         box-shadow: 0 20px 40px var(--shadow-color);
+        border-color: var(--primary-color);
     }
 
     .factor h4 {

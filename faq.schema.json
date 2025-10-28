@@ -176,7 +176,7 @@
       "name": "Does it work offline?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No, Lookinglass requires an internet connection to communicate with AI models. However, your conversation history and settings are stored locally when possible."
+        "text": "No, Lookinglass requires an internet connection to communicate with AI models. However, your conversation history and settings are always stored locally on your device and can be optionally synced to your iCloud account if that feature is enabled."
       }
     },
     {
@@ -185,6 +185,14 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "You can export your transaction history and usage data as CSV files. Individual conversations aren't stored on our servers for privacy, but you can copy/save them locally within the app."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are cached input tokens and how do they save money?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cached input is an OpenAI feature that stores recently used input text/tokens, allowing the AI to continue a conversation without resending the entire context. This enables models to respond faster and more cheaply—sometimes up to 10X cheaper for input tokens, especially on the gpt-5 family. Caching is not guaranteed and can expire in as little as 5 minutes. It's not available for pro models (o3-pro, o1-pro, gpt-5-pro), chatgpt-4o-latest, or gpt-3.5-turbo. View cache usage in the audit information for each message."
       }
     }
   ]

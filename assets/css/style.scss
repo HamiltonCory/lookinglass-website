@@ -224,32 +224,28 @@ a:hover {
 }
 
 .sun-icon {
-    display: block;
+    display: none;
 }
 
 .moon-icon {
-    display: none;
+    display: block;
 }
 
 [data-theme="dark"] .sun-icon {
-    display: none;
+    display: block;
 }
 
 [data-theme="dark"] .moon-icon {
-    display: block;
+    display: none;
 }
 
 @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) .sun-icon {
-        display: none;
-    }
-    :root:not([data-theme="light"]) .moon-icon {
         display: block;
     }
-}
-
-[data-theme="dark"] .moon-icon {
-    display: block;
+    :root:not([data-theme="light"]) .moon-icon {
+        display: none;
+    }
 }
 
 /* Mobile Menu */

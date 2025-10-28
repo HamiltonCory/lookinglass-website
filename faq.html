@@ -422,7 +422,7 @@ permalink: /faq/
                     <span class="expand-icon">+</span>
                 </summary>
                 <div class="faq-answer">
-                    <p>No, Lookinglass requires an internet connection to communicate with AI models. However, your conversation history and settings are stored locally when possible.</p>
+                    <p>No, Lookinglass requires an internet connection to communicate with AI models. However, your conversation history and settings are always stored locally on your device and can be optionally synced to your iCloud account if that feature is enabled.</p>
                 </div>
             </details>
             
@@ -459,6 +459,32 @@ permalink: /faq/
                     </ul>
                     
                     <p>This level of detail ensures you always know exactly what you paid for, which device made the request, and can verify charges against OpenAI's published rates. You can export your entire audit history as a CSV file for your records or expense tracking. See our <a href="/pricing">transparent pricing breakdown</a>.</p>
+                </div>
+            </details>
+            
+            <details class="faq-item">
+                <summary class="faq-question">
+                    <h3 id="cached-input">What are cached input tokens and how do they save money?</h3>
+                    <span class="expand-icon">+</span>
+                </summary>
+                <div class="faq-answer">
+                    <p>Cached input is an OpenAI feature that stores recently used input text/tokens, allowing the AI to continue a conversation without resending the entire context. This enables models to respond faster and more cheaply—sometimes up to <strong>10X cheaper</strong> for input tokens, especially on the gpt-5 family of models.</p>
+                    
+                    <p><strong>How it works:</strong></p>
+                    <ul>
+                        <li>When you send a message within an active conversation (typically within 5 minutes), OpenAI may cache your previous input tokens</li>
+                        <li>Instead of charging for resending all of the conversation history, you only pay for new tokens plus a much lower rate for cached tokens</li>
+                        <li>This makes extended back-and-forth conversations significantly more affordable</li>
+                    </ul>
+                    
+                    <p><strong>Important notes:</strong></p>
+                    <ul>
+                        <li><strong>Caching is not guaranteed</strong> — it can expire in as little as 5 minutes between messages, so you can't rely on it</li>
+                        <li><strong>Not all models support it</strong> — cached input is not available for pro models (o3-pro, o1-pro, gpt-5-pro), chatgpt-4o-latest, or gpt-3.5-turbo</li>
+                        <li><strong>View cache usage</strong> — you can see when cached tokens are used in the <a href="#audit-transactions">audit information</a> for each message, where it shows "cached input tokens" separately from regular input tokens</li>
+                    </ul>
+                    
+                    <p>The best way to benefit from cached input is to have active, extended conversations where you're exchanging multiple messages in quick succession within the same thread. The longer your conversation and the faster your exchanges, the more you'll save.</p>
                 </div>
             </details>
             

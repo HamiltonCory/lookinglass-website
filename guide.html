@@ -156,6 +156,43 @@ permalink: /guide/
                         
                         <p style="margin-top: 1rem;">This level of transparency ensures you always know the pricing structure and can choose the billing plan that fits your needs. Learn more about <a href="/pricing">transparent pricing</a> or <a href="/faq#typical-cost">see typical costs</a>.</p>
                     </div>
+                    
+                    <div class="basics-card">
+                        <div class="basics-icon">
+                            <img src="/assets/icons/credit-card.svg" alt="Cached Input Savings">
+                        </div>
+                        <h3 id="cached-input">Why Your Actual Cost Might Be Lower</h3>
+                        <p>The cost bar shows the <strong>maximum</strong> cost for your message, but your actual cost may be significantly lower thanks to <a href="/faq#cached-input">cached input tokens</a>.</p>
+                        
+                        <div class="basics-example">
+                            <strong>What are cached input tokens?</strong>
+                            <ul>
+                                <li>OpenAI stores your recent conversation context on their servers (typically for about 5 minutes)</li>
+                                <li>When you send a follow-up message quickly, they don't need to resend all the previous conversation</li>
+                                <li>Instead, they charge only for new tokens plus a much lower rate (up to 10X cheaper!) for cached tokens</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="basics-example">
+                            <strong>Best way to save:</strong>
+                            <ul>
+                                <li>Have active, extended conversations in a single thread</li>
+                                <li>Reply quickly within the conversation (within 5 minutes when possible)</li>
+                                <li>The longer your thread and faster your replies, the more you'll save</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="basics-example">
+                            <strong>Important to know:</strong>
+                            <ul>
+                                <li>Not all models support caching (pro models, chatgpt-4o-latest, and gpt-3.5-turbo don't support it)</li>
+                                <li>Caching is <strong>not guaranteed</strong> — it can expire at any time</li>
+                                <li>You can see when cached tokens were used in the <a href="/faq#audit-transactions">message audit information</a></li>
+                            </ul>
+                        </div>
+                        
+                        <p style="margin-top: 1rem; margin-bottom: 0;">Think of it as getting a discount for continuing a conversation rather than starting fresh. <a href="/faq#cached-input">Learn more about cached input</a>.</p>
+                    </div>
                 </div>
             </section>
             

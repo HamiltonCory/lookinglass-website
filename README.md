@@ -98,10 +98,10 @@ App Store → index.html → pricing.html → models.html
 **Purpose**: Convert visitors with clear value proposition and feature overview
 
 **Key Sections**:
-- **Hero**: Main value proposition (21 AI models, transparent pricing, privacy-first)
-- **Badges**: Quick stats (21 models, 5 languages, pay-as-you-go)
+- **Hero**: Main value proposition (20 AI models, transparent pricing, privacy-first)
+- **Badges**: Quick stats (20 models, 5 languages, pay-as-you-go)
 - **Features Grid**: Core features with icons and descriptions
-  - 21 OpenAI models (14 ChatGPT, 7 O-series)
+  - 20 OpenAI models (14 ChatGPT, 6 O-series)
   - Transparent pricing with real-time cost estimates
   - Privacy-first (local storage + optional iCloud sync)
   - Advanced controls (spending protection, smart savings)
@@ -117,7 +117,7 @@ App Store → index.html → pricing.html → models.html
 
 **Key Sections**:
 - **Comparison Table**: Pay-as-you-go vs subscription services
-  - Model access (21 models vs limited)
+  - Model access (20 models vs limited)
   - Pricing transparency (exact costs vs hidden)
   - Control level (full vs automatic)
   - Cost guard protection
@@ -209,7 +209,7 @@ App Store → index.html → pricing.html → models.html
    - Do you offer free credits? ($1 welcome bonus)
    - What is spending protection?
 2. **Models & Features**
-   - Which models are included? (21 total: 14 ChatGPT, 7 O-series)
+   - Which models are included? (20 total: 14 ChatGPT, 6 O-series)
    - Can I use different models in different conversations?
    - How do I control AI memory? (Smart memory: 500 tokens minimum, adjustable in 500-token increments)
 3. **Privacy & Security**
@@ -278,7 +278,7 @@ The website content should **always match** the iOS app's actual capabilities. K
 | creativity level | temperature | GPT models parameter |
 | response detail level | verbosity | gpt-5 models setting |
 | fast & reliable | standard | Billing plan without discount |
-| 21 models | 19 models | Total count (as of current update) |
+| 20 models | 19 models | Total count (as of current update) |
 | 14 ChatGPT models | 12 Chat models | ChatGPT family count |
 | gpt-5-pro | gpt-5-pro | Use lowercase model names |
 | chatgpt-4o-latest | ChatGPT-4o-Latest | Use lowercase model names |
@@ -290,9 +290,9 @@ The website content should **always match** the iOS app's actual capabilities. K
   - gpt-4.1 series (3 models): gpt-4.1, gpt-4.1-mini, gpt-4.1-nano
   - gpt-4 legacy (2 models): gpt-4 (8K), gpt-4-turbo (128K)
   - gpt-3.5 series (1 model): gpt-3.5-turbo
-- **O-Series Reasoning (7 total)**:
+- **O-Series Reasoning (6 total)**:
   - o3 series (3 models): o3, o3-mini, o3-pro
-  - o1 series (3 models): o1 (200K), o1-pro (200K), o1-mini (128K)
+  - o1 series (2 models): o1 (200K), o1-pro (200K)
   - o4-mini (1 model)
 
 ---
@@ -676,7 +676,7 @@ Currently **no analytics** installed to maintain user privacy.
 
 ### Writing Style
 - **Active voice** - "You control your data" (not "Your data is controlled")
-- **Second person** - "You get access to 21 models" (not "Users get access")
+- **Second person** - "You get access to 20 models" (not "Users get access")
 - **Short sentences** - Break complex ideas into digestible chunks
 - **Bullet points** - Use lists for scannable content
 - **Concrete examples** - "Save 50% on select models" (not "Significant savings")

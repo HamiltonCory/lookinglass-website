@@ -597,7 +597,7 @@ Currently **no analytics** installed to maintain user privacy.
 
 **Changes**:
 - ✅ **Pricing Table Corrections** (based on OpenAI's official pricing page):
-  - Free tier: No GPT-4o access (was incorrectly showing "Limited")
+  - Free tier: No gpt-4o access (was incorrectly showing "Limited")
   - Plus tier: Standard/Expanded models (not "Included/Higher Limits")
   - Pro tier: Only gets gpt-5-pro, NOT o3-pro or o1-pro (those are Enterprise-only!)
   - Added response times row (Free: Limited & slow, Plus/Pro: Fast, Lookinglass: Real-time)
@@ -639,7 +639,7 @@ Currently **no analytics** installed to maintain user privacy.
   - "Temperature" → "creativity level"
   - "Verbosity" → "response detail level"
 - ✅ **Context Windows**: Fixed `o1-mini` to 128K, clarified `gpt-5-chat-latest` is 128K (others 400K)
-- ✅ **GPT-4.1 Highlight**: Added 1M token context window callout
+- ✅ **gpt-4.1 Highlight**: Added 1M token context window callout
 - ✅ **Pricing Updates**: Replaced cost ranges with "starting from" prices (calculated using 10 input + 16 output tokens)
 - ✅ **Smart Savings Consistency**: Standardized to "yes (50% off)", "select models (50% off)", or "no"
 - ✅ **Privacy Clarity**: Enhanced iCloud sync explanation

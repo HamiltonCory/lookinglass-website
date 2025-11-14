@@ -72,7 +72,7 @@ All icons are located in `/assets/icons/`. Here's the complete list:
 
 ### Education & Professional Icons
 - `graduation-cap.svg` - Education/students (PERFECT!)
-- `rocket-lunch.svg` - Launch/getting started (PERFECT!)
+- `rocket-launch.svg` - Launch/getting started (PERFECT!)
 - `school.svg` - Learning
 
 ### File & Document Icons
@@ -130,7 +130,7 @@ All icons are located in `/assets/icons/`. Here's the complete list:
 | User Type | Icon | File Name |
 |-----------|------|-----------|
 | Researcher/Student | 🎓 | `graduation-cap.svg` |
-| Founder/Startup | 🚀 | `rocket-lunch.svg` |
+| Founder/Startup | 🚀 | `rocket-launch.svg` |
 | Early Adopter | 💻 | `user-robot.svg` |
 | Power User | ⚡ | `brain-lightning.svg` |
 
@@ -154,7 +154,7 @@ All icons are located in `/assets/icons/`. Here's the complete list:
 | Pricing & Billing | 💰 | 💵 | `wallet.svg` |
 | AI Models & Features | 🧠 | 🧠 | `brain-circuit.svg` |
 | App Features | 📱 | 📱 | `tablet.svg` |
-| Getting Started | 🚀 | 🚀 | `rocket-lunch.svg` |
+| Getting Started | 🚀 | 🚀 | `rocket-launch.svg` |
 | Technical | 🛠 | ⚙️ | `settings.svg` |
 
 ---
@@ -173,7 +173,7 @@ All icons are located in `/assets/icons/`. Here's the complete list:
 | Creativity Level | 🎛️ | `settings-sliders.svg` |
 | AI Power Level | ⚡ | `brain-lightning.svg` |
 | Response Detail Level | 💭 | `thought-bubble.svg` |
-| Fast & Reliable | 🚀 | `rocket-lunch.svg` |
+| Fast & Reliable | 🚀 | `rocket-launch.svg` |
 | Smart Savings | 💰 | `percent-50.svg` ✨ |
 
 ---
@@ -360,7 +360,7 @@ Add these classes to `/assets/css/style.scss`:
 - ✅ `brain-circuit.svg` - Perfect for AI features
 - ✅ `languages-world.svg` - Perfect for multilingual
 - ✅ `graduation-cap.svg` - Perfect for education
-- ✅ `rocket-lunch.svg` - Perfect for getting started
+- ✅ `rocket-launch.svg` - Perfect for getting started
 - ✅ `settings-sliders.svg` - Perfect for controls
 - ✅ `shield-check.svg` - Perfect for privacy
 - ✅ `bubble-discussion.svg` - Perfect for chat
@@ -379,7 +379,7 @@ With the addition of `layers.svg` and `multiple-alt.svg`, you now have **complet
 
 ### Icon Reusability
 Many icons are used in multiple locations:
-- `rocket-lunch.svg` - Getting started (FAQ), Fast mode (Models), Founder card (Homepage)
+- `rocket-launch.svg` - Getting started (FAQ), Fast mode (Models), Founder card (Homepage)
 - `wallet.svg` - Feature card (Homepage), Section header (FAQ), Budget control (Pricing)
 - `settings-sliders.svg` - Feature card (Homepage), Advanced settings (Models), Flexibility (Pricing)
 - `brain-circuit.svg` - Section header (FAQ), Models icon alternative

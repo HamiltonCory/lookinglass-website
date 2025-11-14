@@ -3,18 +3,18 @@
   "tagline": "See further, think deeper.",
   "platform": ["iPhone", "iPad"],
   "category": "AI client",
-  "summary": "Pay-as-you-go AI for iPhone and iPad. Access 20 OpenAI models, including o3-pro, with transparent pricing, advanced controls, and no subscriptions.",
+  "summary": "Pay-as-you-go AI for iPhone and iPad. Access 22 OpenAI models, including o3-pro, with transparent pricing, advanced controls, and no subscriptions.",
   "pricingModel": {
     "type": "pay-as-you-go",
     "walletTopUpUSD": [1, 2, 5, 10, 20, 50, 100, 200, 500],
-    "flex": {
+    "smartSavings": {
       "supportedModels": ["gpt-5", "gpt-5-mini", "gpt-5-nano", "o3", "o4-mini"],
       "savingsHint": "about 50 percent if you can wait"
     },
     "costGuard": "alerts before sending when a message exceeds your chosen threshold"
   },
   "models": {
-    "total": 20,
+    "total": 22,
     "gpt": [
       "gpt-3.5-turbo",
       "gpt-4",
@@ -26,8 +26,10 @@
       "gpt-4o-mini",
       "chatgpt-4o-latest",
       "gpt-5-chat-latest",
+      "gpt-5.1-chat-latest",
       "gpt-5-mini",
       "gpt-5",
+      "gpt-5.1",
       "gpt-5-pro",
       "gpt-5-nano"
     ],

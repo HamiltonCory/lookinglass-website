@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Models | Lookinglass
-description: Complete guide to Lookinglass AI models. Compare 14 Chat models and 6 O-Series models, understand Smart Savings pricing, context windows, and choose the right model for your needs.
+description: Complete guide to Lookinglass AI models. Compare 11 GPT chat models, 5 GPT-5 reasoning models, and 6 O-Series models, understand Smart Savings pricing, context windows, and choose the right model for your needs.
 permalink: /models/
 ---
 
@@ -14,10 +14,10 @@ permalink: /models/
         
         <div class="legal-content">
             <div class="legal-intro">
-                <p>Lookinglass gives you access to 20 OpenAI models (14 ChatGPT models and 6 O-series models) organized by model family and use case:</p>
+                <p>Lookinglass gives you access to 22 OpenAI models (11 GPT chat models, 5 GPT-5 reasoning models, and 6 O-series models) organized by model family and use case:</p>
                 <ul>
                     <li><strong>Default: gpt-4.1-mini</strong> (gpt-4.1 series) - Start here for everyday tasks. Solid performance for writing, coding, and analysis with 1M token context</li>
-                    <li><strong>Latest Generation: gpt-5 series</strong> (5 models) - Newest model family (August 2025). Mix of chat and reasoning models with customizable AI power and response detail</li>
+                    <li><strong>Latest Generation: gpt-5 series</strong> (5 reasoning models) - Newest model family (November 2025). Reasoning models with customizable AI power and response detail. Note: gpt-5-chat-latest and gpt-5.1-chat-latest are chat models (see GPT chat models section)</li>
                     <li><strong>Long Conversations: gpt-4.1</strong> (3 models) - Best for long threads where significant context is needed (up to 1M tokens)</li>
                     <li><strong>Proven & Reliable: gpt-4o series</strong> (3 models) - OpenAI's former flagship model. Battle-tested, widely trusted, and still excellent for daily work.</li>
                     <li><strong>Hard Problems: o3 series</strong> (3 models) - Best reasoning models. Use when you need step-by-step problem solving for math, logic, or complex coding challenges</li>
@@ -74,44 +74,36 @@ permalink: /models/
 
             <!-- ChatGPT Models Section -->
             <section id="chat-models" class="model-section">
-                <h2 class="section-title">Chat Models (14 Available)</h2>
-                <p class="section-description">General-purpose conversation and task completion models, perfect for everyday AI interactions.</p>
+                <h2 class="section-title">GPT Chat Models (11 Available)</h2>
+                <p class="section-description">General-purpose conversation and task completion models, perfect for everyday AI interactions. Most models support image input (up to 5 images per message), except gpt-3.5-turbo and gpt-4.</p>
 
                 <div class="models-grid">
                     <div class="model-card">
-                        <h3>gpt-5 Series (5 Models)</h3>
-                        <p class="model-description">Released August 7, 2025, gpt-5 represents OpenAI's latest generation with newest knowledge (September 30, 2024 cutoff). Includes gpt-5-chat-latest (non-reasoning) and four reasoning-capable models (gpt-5, gpt-5-pro, gpt-5-mini, gpt-5-nano) with AI Power Level controls—though gpt-5-pro always operates at maximum power. Unique features: customizable AI power level (thinking time) and response detail level (verbosity). Multiple size options let you balance speed, quality, and cost. <a href="https://openai.com/index/introducing-gpt-5/" target="_blank" rel="noopener">Learn more from OpenAI</a>.</p>
+                        <h3>gpt-5 Chat Models (2 Models)</h3>
+                        <p class="model-description">Non-reasoning chat variants of the gpt-5 family. gpt-5-chat-latest and gpt-5.1-chat-latest provide the latest knowledge (September 30, 2024 cutoff) without reasoning capabilities. Perfect for everyday conversations and tasks that don't require step-by-step thinking. Both support image input (up to 5 images per message). <a href="https://openai.com/index/introducing-gpt-5/" target="_blank" rel="noopener">Learn more from OpenAI</a>.</p>
                         <table class="model-ratings-table">
                             <tr>
                                 <td class="rating-label">Model:</td>
-                                <td>gpt-5-pro</td>
-                                <td>gpt-5</td>
                                 <td>gpt-5-chat-latest</td>
-                                <td>gpt-5-mini</td>
-                                <td>gpt-5-nano</td>
+                                <td>gpt-5.1-chat-latest</td>
                             </tr>
                             <tr>
                                 <td class="rating-label">Intelligence:</td>
-                                <td>●●●●●</td>
-                                <td>●●●●○</td>
                                 <td>●●●○○</td>
                                 <td>●●●○○</td>
-                                <td>●●○○○</td>
                             </tr>
                             <tr>
                                 <td class="rating-label">Speed:</td>
-                                <td>⚡○○○○</td>
                                 <td>⚡⚡⚡○○</td>
                                 <td>⚡⚡⚡○○</td>
-                                <td>⚡⚡⚡⚡○</td>
-                                <td>⚡⚡⚡⚡⚡</td>
                             </tr>
                         </table>
                         <ul class="model-details">
-                            <li><strong>models:</strong> gpt-5, gpt-5-pro, gpt-5-chat-latest, gpt-5-mini, gpt-5-nano</li>
-                            <li><strong>best for:</strong> Latest knowledge. Use gpt-5-chat-latest for conversation; use gpt-5/pro/mini/nano for reasoning tasks</li>
-                            <li><strong>context:</strong> 400K tokens (gpt-5-chat-latest: 128K)</li>
-                            <li><strong>smart savings:</strong> yes (gpt-5, gpt-5-mini, and gpt-5-nano)</li>
+                            <li><strong>models:</strong> gpt-5-chat-latest, gpt-5.1-chat-latest</li>
+                            <li><strong>best for:</strong> Latest knowledge, everyday conversations, tasks that don't require reasoning</li>
+                            <li><strong>context:</strong> 128K tokens</li>
+                            <li><strong>image support:</strong> yes (up to 5 images per message)</li>
+                            <li><strong>smart savings:</strong> no</li>
                             <li><strong>starting from:</strong> $0.00001 per message</li>
                         </ul>
                     </div>
@@ -143,6 +135,7 @@ permalink: /models/
                             <li><strong>models:</strong> chatgpt-4o-latest, gpt-4o, gpt-4o-mini</li>
                             <li><strong>best for:</strong> proven reliable choice for daily work, battle-tested for all tasks</li>
                             <li><strong>context:</strong> 128K tokens</li>
+                            <li><strong>image support:</strong> yes (up to 5 images per message)</li>
                             <li><strong>smart savings:</strong> no</li>
                             <li><strong>starting from:</strong> $0.00003 per message</li>
                         </ul>
@@ -175,6 +168,7 @@ permalink: /models/
                             <li><strong>models:</strong> gpt-4.1, gpt-4.1-mini, gpt-4.1-nano</li>
                             <li><strong>best for:</strong> tasks requiring significant context, long conversations, and analyzing large amounts of text</li>
                             <li><strong>context:</strong> 1M tokens</li>
+                            <li><strong>image support:</strong> yes (up to 5 images per message)</li>
                             <li><strong>smart savings:</strong> no</li>
                             <li><strong>starting from:</strong> $0.00002 per message</li>
                         </ul>
@@ -204,6 +198,7 @@ permalink: /models/
                             <li><strong>models:</strong> gpt-4 (8K), gpt-4-turbo (128K)</li>
                             <li><strong>best for:</strong> Legacy model, supported for compatibility with existing workflows and testing</li>
                             <li><strong>context:</strong> 8K - 128K tokens</li>
+                            <li><strong>image support:</strong> no (gpt-4), yes (gpt-4-turbo, up to 5 images per message)</li>
                             <li><strong>smart savings:</strong> no</li>
                             <li><strong>starting from:</strong> $0.001 per message</li>
                         </ul>
@@ -230,8 +225,57 @@ permalink: /models/
                             <li><strong>models:</strong> gpt-3.5-turbo</li>
                             <li><strong>best for:</strong> Legacy model, supported for compatibility with existing workflows and testing</li>
                             <li><strong>context:</strong> 16K tokens</li>
+                            <li><strong>image support:</strong> no</li>
                             <li><strong>smart savings:</strong> no</li>
                             <li><strong>starting from:</strong> $0.00007 per message</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- GPT-5 Reasoning Models Section -->
+            <section id="gpt5-reasoning-models" class="model-section">
+                <h2 class="section-title">GPT-5 Reasoning Models (5 Available)</h2>
+                <p class="section-description">Advanced reasoning models from the gpt-5 family that "think" step-by-step through complex problems. All support image input (up to 5 images per message) and customizable AI power levels.</p>
+
+                <div class="models-grid">
+                    <div class="model-card">
+                        <h3>gpt-5 Series (5 Reasoning Models)</h3>
+                        <p class="model-description">Released August 7, 2025, gpt-5 represents OpenAI's latest generation with newest knowledge (September 30, 2024 cutoff). Includes five reasoning-capable models (gpt-5, gpt-5.1, gpt-5-pro, gpt-5-mini, gpt-5-nano) with AI Power Level controls—though gpt-5-pro always operates at maximum power. Unique features: customizable AI power level (thinking time) and response detail level. gpt-5.1 introduces a special "none" AI power level that disables reasoning, effectively turning it into a non-reasoning model. Multiple size options let you balance speed, quality, and cost. <a href="https://openai.com/index/introducing-gpt-5/" target="_blank" rel="noopener">Learn more from OpenAI</a>.</p>
+                        <table class="model-ratings-table">
+                            <tr>
+                                <td class="rating-label">Model:</td>
+                                <td>gpt-5-pro</td>
+                                <td>gpt-5</td>
+                                <td>gpt-5.1</td>
+                                <td>gpt-5-mini</td>
+                                <td>gpt-5-nano</td>
+                            </tr>
+                            <tr>
+                                <td class="rating-label">Intelligence:</td>
+                                <td>●●●●●</td>
+                                <td>●●●●○</td>
+                                <td>●●●●○</td>
+                                <td>●●●○○</td>
+                                <td>●●○○○</td>
+                            </tr>
+                            <tr>
+                                <td class="rating-label">Speed:</td>
+                                <td>⚡○○○○</td>
+                                <td>⚡⚡⚡○○</td>
+                                <td>⚡⚡⚡⚡○</td>
+                                <td>⚡⚡⚡⚡○</td>
+                                <td>⚡⚡⚡⚡⚡</td>
+                            </tr>
+                        </table>
+                        <ul class="model-details">
+                            <li><strong>models:</strong> gpt-5, gpt-5.1, gpt-5-pro, gpt-5-mini, gpt-5-nano</li>
+                            <li><strong>best for:</strong> Latest knowledge with reasoning capabilities. Use for complex tasks requiring step-by-step thinking</li>
+                            <li><strong>context:</strong> 400K tokens</li>
+                            <li><strong>image support:</strong> yes (up to 5 images per message)</li>
+                            <li><strong>smart savings:</strong> yes (gpt-5, gpt-5-mini, and gpt-5-nano)</li>
+                            <li><strong>special feature:</strong> gpt-5.1 supports "none" AI power level that disables reasoning</li>
+                            <li><strong>starting from:</strong> $0.00001 per message</li>
                         </ul>
                     </div>
                 </div>
@@ -240,7 +284,7 @@ permalink: /models/
             <!-- O-Series Models Section -->
             <section id="reasoning-models" class="model-section">
                 <h2 class="section-title">O-Series Reasoning Models (6 Available)</h2>
-                <p class="section-description">Advanced reasoning models that "think" step-by-step through complex problems, perfect for mathematics, logic, and detailed analysis.</p>
+                <p class="section-description">Advanced reasoning models that "think" step-by-step through complex problems, perfect for mathematics, logic, and detailed analysis. Most support image input (up to 5 images per message), except o3-mini.</p>
 
                 <div class="models-grid">
                     <div class="model-card">
@@ -271,6 +315,7 @@ permalink: /models/
                             <li><strong>best for:</strong> complex reasoning, research-level problems, mathematical proofs</li>
                             <li><strong>AI power levels:</strong> standard, power, ultimate</li>
                             <li><strong>context:</strong> 200K tokens</li>
+                            <li><strong>image support:</strong> yes (o3, o3-pro). Note: o3-mini does not support images</li>
                             <li><strong>smart savings:</strong> yes (o3)</li>
                             <li><strong>starting from:</strong> $0.003 per message</li>
                         </ul>
@@ -301,6 +346,7 @@ permalink: /models/
                             <li><strong>best for:</strong> mathematical problems, logical reasoning, academic work</li>
                             <li><strong>AI power levels:</strong> standard, power, ultimate</li>
                             <li><strong>context:</strong> 200K tokens</li>
+                            <li><strong>image support:</strong> yes (up to 5 images per message)</li>
                             <li><strong>smart savings:</strong> no</li>
                             <li><strong>starting from:</strong> $0.004 per message</li>
                         </ul>
@@ -328,6 +374,7 @@ permalink: /models/
                             <li><strong>best for:</strong> basic reasoning, educational problems, logic puzzles</li>
                             <li><strong>AI power levels:</strong> standard, power, ultimate</li>
                             <li><strong>context:</strong> 200K tokens</li>
+                            <li><strong>image support:</strong> yes (up to 5 images per message)</li>
                             <li><strong>smart savings:</strong> yes</li>
                             <li><strong>starting from:</strong> $0.002 per message</li>
                         </ul>
@@ -417,7 +464,7 @@ permalink: /models/
                                 <li><strong>low (0.2):</strong> focused, consistent, factual responses</li>
                                 <li><strong>balanced (1.0):</strong> balanced creativity and accuracy (default)</li>
                                 <li><strong>high (1.5):</strong> creative, varied, sometimes unexpected</li>
-                                <li><strong>availability:</strong> gpt-5-chat-latest, gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, chatgpt-4o-latest, gpt-4, gpt-4-turbo, and gpt-3.5-turbo</li>
+                                <li><strong>availability:</strong> gpt-5-chat-latest, gpt-4.1, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-mini, chatgpt-4o-latest, gpt-4, gpt-4-turbo, and gpt-3.5-turbo. Note: gpt-5.1-chat-latest does not support creativity level</li>
                             </ul>
                         </div>
 
@@ -425,11 +472,12 @@ permalink: /models/
                             <h4><img src="/assets/icons/brain-lightning.svg" alt="AI Power Level" class="setting-icon-inline"> AI Power Level (Reasoning Models)</h4>
                             <p>How much time the AI spends thinking through problems.</p>
                             <ul>
+                                <li><strong>none:</strong> disables reasoning, turns gpt-5.1 into a non-reasoning model (gpt-5.1 only)</li>
                                 <li><strong>light:</strong> minimal thinking, fastest, lowest cost (gpt-5, gpt-5-mini, and gpt-5-nano)</li>
                                 <li><strong>standard:</strong> quick thinking, good for most tasks</li>
                                 <li><strong>power:</strong> deeper thinking, balanced cost and quality</li>
                                 <li><strong>ultimate:</strong> maximum thinking, highest cost, best quality</li>
-                                <li><strong>availability:</strong> gpt-5, gpt-5-mini, gpt-5-nano, o1-pro, o1, o3-pro, o3, o3-mini, and o4-mini</li>
+                                <li><strong>availability:</strong> gpt-5, gpt-5.1, gpt-5-mini, gpt-5-nano, o1-pro, o1, o3-pro, o3, o3-mini, and o4-mini</li>
                             </ul>
                         </div>
 
@@ -440,7 +488,7 @@ permalink: /models/
                                 <li><strong>concise:</strong> brief, to-the-point answers</li>
                                 <li><strong>balanced:</strong> standard level of detail (default)</li>
                                 <li><strong>detailed:</strong> thorough, comprehensive explanations</li>
-                                <li><strong>availability:</strong> gpt-5, gpt-5-mini, and gpt-5-nano</li>
+                                <li><strong>availability:</strong> gpt-5, gpt-5.1, gpt-5-mini, and gpt-5-nano</li>
                             </ul>
                         </div>
 

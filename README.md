@@ -98,10 +98,10 @@ App Store → index.html → pricing.html → models.html
 **Purpose**: Convert visitors with clear value proposition and feature overview
 
 **Key Sections**:
-- **Hero**: Main value proposition (20 AI models, transparent pricing, privacy-first)
-- **Badges**: Quick stats (20 models, 5 languages, pay-as-you-go)
+- **Hero**: Main value proposition (22 AI models, transparent pricing, privacy-first)
+- **Badges**: Quick stats (22 models, 5 languages, pay-as-you-go)
 - **Features Grid**: Core features with icons and descriptions
-  - 20 OpenAI models (14 ChatGPT, 6 O-series)
+  - 22 OpenAI models (11 GPT chat, 5 GPT-5 reasoning, 6 O-series)
   - Transparent pricing with real-time cost estimates
   - Privacy-first (local storage + optional iCloud sync)
   - Advanced controls (spending protection, smart savings)
@@ -117,7 +117,7 @@ App Store → index.html → pricing.html → models.html
 
 **Key Sections**:
 - **Comparison Table**: Pay-as-you-go vs subscription services
-  - Model access (20 models vs limited)
+  - Model access (22 models vs limited)
   - Pricing transparency (exact costs vs hidden)
   - Control level (full vs automatic)
   - Cost guard protection
@@ -135,13 +135,15 @@ App Store → index.html → pricing.html → models.html
   - What are tokens? (1 token ≈ 4 characters, 100 tokens ≈ 75 words)
   - How pricing works (tokens × rate = cost)
   - AI workspace (context window explanation)
-- **Chat Models (14 Available)**:
-  - **gpt-5 series (5 models)**: Advanced reasoning, 400K context (gpt-5-chat-latest: 128K)
+- **GPT Chat Models (11 Available)**:
+  - **gpt-5 chat (2 models)**: Latest knowledge, 128K context, non-reasoning
   - **gpt-4o series (3 models)**: Multimodal capabilities, 128K context
   - **gpt-4.1 series (3 models)**: Massive 1M token context window
   - **gpt-4 legacy (2 models)**: Stable production models
   - **gpt-3.5 series (1 model)**: Cost-effective option
-- **O-Series Reasoning Models (7 Available)**:
+- **GPT-5 Reasoning Models (5 Available)**:
+  - **gpt-5 series (5 models)**: Advanced reasoning, 400K context, customizable AI power and response detail
+- **O-Series Reasoning Models (6 Available)**:
   - **o3 series**: Advanced reasoning with AI power levels
   - **o1 series**: Research-grade reasoning
   - **o4-mini**: Efficient reasoning for common tasks
@@ -209,7 +211,7 @@ App Store → index.html → pricing.html → models.html
    - Do you offer free credits? ($1 welcome bonus)
    - What is spending protection?
 2. **Models & Features**
-   - Which models are included? (20 total: 14 ChatGPT, 6 O-series)
+   - Which models are included? (22 total: 11 GPT chat, 5 GPT-5 reasoning, 6 O-series)
    - Can I use different models in different conversations?
    - How do I control AI memory? (Smart memory: 500 tokens minimum, adjustable in 500-token increments)
 3. **Privacy & Security**
@@ -278,18 +280,21 @@ The website content should **always match** the iOS app's actual capabilities. K
 | creativity level | temperature | GPT models parameter |
 | response detail level | verbosity | gpt-5 models setting |
 | fast & reliable | standard | Billing plan without discount |
-| 20 models | 19 models | Total count (as of current update) |
-| 14 ChatGPT models | 12 Chat models | ChatGPT family count |
+| 22 models | 20 models | Total count (as of current update) |
+| 11 GPT chat models | 14 ChatGPT models | GPT chat family count |
+| 5 GPT-5 reasoning models | 5 GPT-5 models | GPT-5 reasoning family count |
 | gpt-5-pro | gpt-5-pro | Use lowercase model names |
 | chatgpt-4o-latest | ChatGPT-4o-Latest | Use lowercase model names |
 
 ### Model Families & Counts
-- **ChatGPT Models (14 total)**:
-  - gpt-5 series (5 models): gpt-5-chat-latest, gpt-5, gpt-5-mini, gpt-5-nano, gpt-5-pro
+- **GPT Chat Models (11 total)**:
+  - gpt-5 chat (2 models): gpt-5-chat-latest, gpt-5.1-chat-latest
   - gpt-4o series (3 models): gpt-4o, gpt-4o-mini, chatgpt-4o-latest
   - gpt-4.1 series (3 models): gpt-4.1, gpt-4.1-mini, gpt-4.1-nano
   - gpt-4 legacy (2 models): gpt-4 (8K), gpt-4-turbo (128K)
   - gpt-3.5 series (1 model): gpt-3.5-turbo
+- **GPT-5 Reasoning Models (5 total)**:
+  - gpt-5 series (5 models): gpt-5, gpt-5.1, gpt-5-pro, gpt-5-mini, gpt-5-nano
 - **O-Series Reasoning (6 total)**:
   - o3 series (3 models): o3, o3-mini, o3-pro
   - o1 series (2 models): o1 (200K), o1-pro (200K)
@@ -676,7 +681,7 @@ Currently **no analytics** installed to maintain user privacy.
 
 ### Writing Style
 - **Active voice** - "You control your data" (not "Your data is controlled")
-- **Second person** - "You get access to 20 models" (not "Users get access")
+- **Second person** - "You get access to 22 models" (not "Users get access")
 - **Short sentences** - Break complex ideas into digestible chunks
 - **Bullet points** - Use lists for scannable content
 - **Concrete examples** - "Save 50% on select models" (not "Significant savings")

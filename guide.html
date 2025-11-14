@@ -54,7 +54,7 @@ permalink: /guide/
                             <strong>Top Bar:</strong>
                             <ul>
                                 <li><strong>Top Left Button</strong> - Opens your thread list to switch between conversations</li>
-                                <li><strong>Top Right Button</strong> - Opens the model picker to switch between <a href="/models">21 AI models</a></li>
+                                <li><strong>Top Right Button</strong> - Opens the model picker to switch between <a href="/models">22 AI models</a></li>
                             </ul>
                         </div>
                         
@@ -72,14 +72,15 @@ permalink: /guide/
                             <img src="/assets/icons/pen-square.svg" alt="Input Bar">
                         </div>
                         <h3 id="input-bar">The Input Bar</h3>
-                        <p>Below the message history, you'll find the input bar with three key components:</p>
+                        <p>Below the message history, you'll find the input bar with four key components:</p>
                         
                         <div class="basics-example">
-                            <strong>Left: Microphone Button</strong>
+                            <strong>Left: Plus Button</strong>
                             <ul>
-                                <li>Tap to use voice-to-text for hands-free input</li>
-                                <li>First use requires granting permission for microphone and speech recognition</li>
-                                <li>Speech recognition happens on-device for privacy</li>
+                                <li>Tap to upload images (up to 5 images per message)</li>
+                                <li>Take photos or choose from your photo library</li>
+                                <li>Most models support images (except gpt-3.5-turbo, gpt-4, and o3-mini)</li>
+                                <li>Token counts include accurate image calculations</li>
                             </ul>
                         </div>
                         
@@ -93,11 +94,21 @@ permalink: /guide/
                         </div>
                         
                         <div class="basics-example">
+                            <strong>Right: Microphone Button</strong>
+                            <ul>
+                                <li>Tap to use voice-to-text for hands-free input</li>
+                                <li>First use requires granting permission for microphone and speech recognition</li>
+                                <li>Speech recognition happens on-device for privacy</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="basics-example">
                             <strong>Right: Send Button</strong>
                             <ul>
                                 <li>Paper airplane icon - the typical send button you'd see in any messaging app</li>
-                                <li>Only becomes active once you've typed text</li>
+                                <li>Only becomes active once you've typed text or attached images</li>
                                 <li>Tap to send your message to the selected AI model</li>
+                                <li>Becomes a grayed-out Stop button when a message is being sent—tap to cancel anytime</li>
                                 <li>Message is sent with your current <a href="/faq#context-control">conversation settings</a></li>
                             </ul>
                         </div>
@@ -138,7 +149,7 @@ permalink: /guide/
                             <img src="/assets/icons/price.svg" alt="Pricing Sheet">
                         </div>
                         <h3 id="pricing-sheet">The Pricing Sheet</h3>
-                        <p>View complete pricing details for all <a href="/models">20 AI models</a> at any time. Access the pricing sheet from two locations:</p>
+                        <p>View complete pricing details for all <a href="/models">22 AI models</a> at any time. Access the pricing sheet from two locations:</p>
                         
                         <ul>
                             <li><strong>Model Menu</strong> - Tap the model picker (top right), then tap the circle with dollar sign ($) icon</li>
@@ -204,7 +215,7 @@ permalink: /guide/
                             <img src="/assets/icons/microchip-ai.svg" alt="Switching Models">
                         </div>
                         <h3 id="switching-models">Switching Models Mid-Conversation</h3>
-                        <p>Unlike traditional AI chat apps, Lookinglass lets you switch between any of the <a href="/models">20 models</a> at any time—even mid-conversation.</p>
+                        <p>Unlike traditional AI chat apps, Lookinglass lets you switch between any of the <a href="/models">22 models</a> at any time—even mid-conversation.</p>
                         
                         <ul>
                             <li>Tap the <strong>model picker</strong> in the top right</li>
@@ -224,7 +235,7 @@ permalink: /guide/
                             <img src="/assets/icons/multiple-alt.svg" alt="Message Actions">
                         </div>
                         <h3 id="message-actions">Interacting with Messages</h3>
-                        <p>Long-press any message in the chat history to access powerful message actions:</p>
+                        <p>Long-press any message in the chat history to access message actions. You can also cancel any message (streaming or non-streaming) by tapping the Stop button that appears when a message is being sent.</p>
                         
                         <div class="basics-example">
                             <strong>Copy</strong>
@@ -329,6 +340,18 @@ permalink: /guide/
                                 <li>Long-press or swipe on a thread</li>
                                 <li>Select <strong>Copy</strong></li>
                                 <li>Duplicate the entire conversation to continue exploring different directions</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="basics-example">
+                            <strong>Archive Threads</strong>
+                            <ul>
+                                <li><strong>Archive single:</strong> Swipe or tap Archive on a thread</li>
+                                <li><strong>Archive multiple:</strong> Long press to select multiple threads, then tap Archive</li>
+                                <li><strong>Archive all:</strong> Tap the top-right button (ellipsis menu) and select Archive All</li>
+                                <li>Archived threads are moved out of your main list but not deleted</li>
+                                <li>Access archived threads from the Archive view</li>
+                                <li>In Archive view: unarchive (single/multiple/all) or delete from archive</li>
                             </ul>
                         </div>
                     </div>
@@ -517,7 +540,7 @@ permalink: /guide/
                             <img src="/assets/icons/microchip-ai.svg" alt="Models">
                         </div>
                         <h3><a href="/models">Model Guide</a></h3>
-                        <p>Learn about all 20 AI models and when to use each one</p>
+                        <p>Learn about all 22 AI models and when to use each one</p>
                     </div>
                     
                     <div class="basics-card">

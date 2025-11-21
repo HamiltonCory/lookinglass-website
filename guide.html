@@ -204,6 +204,34 @@ permalink: /guide/
                         
                         <p style="margin-top: 1rem; margin-bottom: 0;">Think of it as getting a discount for continuing a conversation rather than starting fresh. <a href="/faq#cached-input">Learn more about cached input</a>.</p>
                     </div>
+                    
+                    <div class="basics-card">
+                        <div class="basics-icon">
+                            <img src="/assets/icons/globe.svg" alt="Web Search">
+                        </div>
+                        <h3 id="web-search-costs">Web Search and Token Costs</h3>
+                        <p>When using models that support <a href="/faq#web-search">web search</a>, enabling this feature can significantly increase your input token count.</p>
+                        
+                        <div class="basics-example">
+                            <strong>Token impact:</strong>
+                            <ul>
+                                <li>Web search typically adds <strong>10,000-25,000 input tokens</strong> or more</li>
+                                <li>The exact amount depends on your question and the model you're using</li>
+                                <li>Some complex queries can add 50,000+ input tokens</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="basics-example">
+                            <strong>Cost control:</strong>
+                            <ul>
+                                <li>You can enable or disable web search anytime in <a href="/faq#context-control">conversation settings</a></li>
+                                <li>Disable web search when you don't need current information to save on input tokens</li>
+                                <li>The cost bar shows the estimated token count before you send, so you can see the impact</li>
+                            </ul>
+                        </div>
+                        
+                        <p style="margin-top: 1rem; margin-bottom: 0;">Web search is perfect for questions requiring up-to-date information, but disabling it when not needed is an effective way to reduce costs. <a href="/faq#web-search">Learn which models support web search</a>.</p>
+                    </div>
                 </div>
             </section>
             
@@ -502,7 +530,7 @@ permalink: /guide/
                         </div>
                         <h3 id="voice-usage">Using Voice-to-Text</h3>
                         <ol>
-                            <li>Tap the microphone button on the left side of the input bar</li>
+                            <li>Tap the microphone button inside the text input bar on the bottom right</li>
                             <li>Speak your message clearly</li>
                             <li>Your speech is transcribed in real-time to the text input field</li>
                             <li>Tap the send button when ready, or edit the text first</li>

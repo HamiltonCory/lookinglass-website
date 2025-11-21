@@ -98,10 +98,10 @@ App Store → index.html → pricing.html → models.html
 **Purpose**: Convert visitors with clear value proposition and feature overview
 
 **Key Sections**:
-- **Hero**: Main value proposition (22 AI models, transparent pricing, privacy-first)
-- **Badges**: Quick stats (22 models, 5 languages, pay-as-you-go)
+- **Hero**: Main value proposition (24 AI models, transparent pricing, privacy-first)
+- **Badges**: Quick stats (24 models, 5 languages, pay-as-you-go)
 - **Features Grid**: Core features with icons and descriptions
-  - 22 OpenAI models (11 GPT chat, 5 GPT-5 reasoning, 6 O-series)
+  - 24 OpenAI models (11 GPT chat, 5 GPT-5 reasoning, 8 O-series)
   - Transparent pricing with real-time cost estimates
   - Privacy-first (local storage + optional iCloud sync)
   - Advanced controls (spending protection, smart savings)
@@ -117,7 +117,7 @@ App Store → index.html → pricing.html → models.html
 
 **Key Sections**:
 - **Comparison Table**: Pay-as-you-go vs subscription services
-  - Model access (22 models vs limited)
+  - Model access (24 models vs limited)
   - Pricing transparency (exact costs vs hidden)
   - Control level (full vs automatic)
   - Cost guard protection
@@ -211,7 +211,7 @@ App Store → index.html → pricing.html → models.html
    - Do you offer free credits? ($1 welcome bonus)
    - What is spending protection?
 2. **Models & Features**
-   - Which models are included? (22 total: 11 GPT chat, 5 GPT-5 reasoning, 6 O-series)
+   - Which models are included? (24 total: 11 GPT chat, 5 GPT-5 reasoning, 8 O-series)
    - Can I use different models in different conversations?
    - How do I control AI memory? (Smart memory: 500 tokens minimum, adjustable in 500-token increments)
 3. **Privacy & Security**
@@ -280,7 +280,7 @@ The website content should **always match** the iOS app's actual capabilities. K
 | creativity level | temperature | GPT models parameter |
 | response detail level | verbosity | gpt-5 models setting |
 | fast & reliable | standard | Billing plan without discount |
-| 22 models | 20 models | Total count (as of current update) |
+| 24 models | 20 models | Total count (as of current update) |
 | 11 GPT chat models | 14 ChatGPT models | GPT chat family count |
 | 5 GPT-5 reasoning models | 5 GPT-5 models | GPT-5 reasoning family count |
 | gpt-5-pro | gpt-5-pro | Use lowercase model names |
@@ -681,7 +681,7 @@ Currently **no analytics** installed to maintain user privacy.
 
 ### Writing Style
 - **Active voice** - "You control your data" (not "Your data is controlled")
-- **Second person** - "You get access to 22 models" (not "Users get access")
+- **Second person** - "You get access to 24 models" (not "Users get access")
 - **Short sentences** - Break complex ideas into digestible chunks
 - **Bullet points** - Use lists for scannable content
 - **Concrete examples** - "Save 50% on select models" (not "Significant savings")

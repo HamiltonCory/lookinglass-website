@@ -137,7 +137,7 @@ All icons are located in `/assets/icons/`. Here's the complete list:
 #### Features Grid (Lines 206-266)
 | Feature | Icon | File Name |
 |---------|------|-----------|
-| 22 models | 🤖 | `layers.svg` ✨ NEW! |
+| 24 models | 🤖 | `layers.svg` ✨ NEW! |
 | Transparent Pricing | 💵 | `file-invoice-dollar.svg` |
 | Smart Wallet | 💰 | `wallet.svg` |
 | Advanced Controls | 🎛️ | `settings-sliders.svg` |

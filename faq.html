@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Lookinglass | Frequently Asked Questions
-description: Common questions about Lookinglass - the pay-as-you-go AI client for iOS with access to 22 models including o3-pro.
+description: Common questions about Lookinglass - the pay-as-you-go AI client for iOS with access to 24 OpenAI models including o3-pro, deep research models, and 15 models with web search.
 permalink: /faq/
 ---
 
@@ -103,8 +103,9 @@ permalink: /faq/
                     <p><strong>Consider Lookinglass if:</strong></p>
                     <ul>
                         <li><strong>You're a light user:</strong> Why pay $20 or $200/month when you can pay $2-$5/month?</li>
-                        <li><strong>You want complete model access:</strong> Free tier gives you no selection. Plus ($20/month) gives you some models. Pro ($200/month) still doesn't include everything. Lookinglass gives you all 22 models with no subscription required.</li>
+                        <li><strong>You want complete model access:</strong> Free tier gives you no selection. Plus ($20/month) gives you some models. Pro ($200/month) still doesn't include everything. Lookinglass gives you all 24 models with no subscription required.</li>
                         <li><strong>You need all pro models:</strong> Access o3-pro, o1-pro, AND gpt-5-pro without $200/month subscriptions or enterprise contracts</li>
+                        <li><strong>You need web search control:</strong> 15 models support web search—enable it when needed, disable it to save 10k-50k+ input tokens</li>
                         <li><strong>You need context control:</strong> Set from 500 tokens to 1M tokens—you decide what the AI remembers</li>
                         <li><strong>Quality consistency matters:</strong> Choose your model, get consistent results every time—no surprise downgrades</li>
                         <li><strong>You need transparency:</strong> See your balance, costs, model, and tokens before every message</li>
@@ -122,13 +123,13 @@ permalink: /faq/
                     <span class="expand-icon">+</span>
                 </summary>
                 <div class="faq-answer">
-                    <p>Lookinglass provides access to <a href="/models">22 OpenAI models</a> including:</p>
+                    <p>Lookinglass provides access to <a href="/models">24 OpenAI models</a> including:</p>
                     <ul>
                         <li><strong>GPT Chat Models (11 total):</strong> gpt-5-chat-latest, gpt-5.1-chat-latest, gpt-4o series (including chatgpt-4o-latest), gpt-4.1 series, gpt-4, and gpt-3.5</li>
                         <li><strong>GPT-5 Reasoning Models (5 total):</strong> gpt-5, gpt-5.1, gpt-5-pro, gpt-5-mini, and gpt-5-nano</li>
-                        <li><strong>O-Series Reasoning (6 total):</strong> o1, o1-pro, o3, o3-pro, o3-mini, and o4-mini</li>
+                        <li><strong>O-Series Reasoning (8 total):</strong> o1, o1-pro, o3, o3-pro, o3-mini, o4-mini, o3-deep-research, and o4-mini-deep-research</li>
                     </ul>
-                    <p>You can switch between models mid-conversation based on your needs. <a href="/guide#switching-models">See how to switch models</a>.</p>
+                    <p><strong>15 models support web search</strong> for up-to-date information, and all reasoning models "think" step-by-step through complex problems. You can switch between models mid-conversation based on your needs. <a href="/guide#switching-models">See how to switch models</a>.</p>
                 </div>
             </details>
             
@@ -172,6 +173,105 @@ permalink: /faq/
                 </summary>
                 <div class="faq-answer">
                     <p>Smart savings saves you 50% on message costs if you're willing to wait a bit longer for responses. It's available on select models (gpt-5, gpt-5-mini, gpt-5-nano, o3, and o4-mini) and perfect for non-urgent tasks where you want to optimize for cost over speed. <a href="/pricing#calculator">Try the pricing calculator</a> to see potential savings.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary class="faq-question">
+                    <h3 id="web-search">Which models support web search?</h3>
+                    <span class="expand-icon">+</span>
+                </summary>
+                <div class="faq-answer">
+                    <p>15 models in Lookinglass support web search, allowing the AI to find and incorporate up-to-date information from the internet into its responses. This is perfect for questions requiring current data, recent events, or information beyond the model's training cutoff date.</p>
+                    
+                    <p><strong>Models with web search:</strong></p>
+                    <ul>
+                        <li><strong>GPT-4.1 series:</strong> gpt-4.1, gpt-4.1-mini</li>
+                        <li><strong>GPT-4o series:</strong> gpt-4o, gpt-4o-mini</li>
+                        <li><strong>GPT-5 chat:</strong> gpt-5-chat-latest, gpt-5.1-chat-latest</li>
+                        <li><strong>GPT-5 reasoning:</strong> gpt-5, gpt-5.1, gpt-5-mini, gpt-5-nano, gpt-5-pro</li>
+                        <li><strong>O-series:</strong> o3, o3-pro, o4-mini</li>
+                        <li><strong>Deep research:</strong> o3-deep-research, o4-mini-deep-research</li>
+                    </ul>
+                    
+                    <p><strong>Cost note:</strong> Web search adds input tokens (typically 10k-25k, sometimes 50k+). You can enable or disable web search anytime in Settings. <a href="/models">See the full models guide</a>.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary class="faq-question">
+                    <h3 id="deep-research-models">What are deep research models?</h3>
+                    <span class="expand-icon">+</span>
+                </summary>
+                <div class="faq-answer">
+                    <p>Deep research models are specialized AI variants designed for intensive research and analysis tasks. They combine powerful reasoning capabilities with web search support to gather and synthesize information from across the internet.</p>
+                    
+                    <p><strong>Available models:</strong></p>
+                    <ul>
+                        <li><strong>o3-deep-research:</strong> Maximum research power for comprehensive investigations</li>
+                        <li><strong>o4-mini-deep-research:</strong> Fast, cost-efficient research for lighter tasks</li>
+                    </ul>
+                    
+                    <p><strong>Key features:</strong></p>
+                    <ul>
+                        <li><strong>Multi-step investigation:</strong> Combines reasoning with evidence from multiple sources</li>
+                        <li><strong>Response time:</strong> Takes 5-15+ minutes for thorough analysis</li>
+                        <li><strong>Best for:</strong> Research requiring up-to-date data, comprehensive analysis, or deep investigation into complex topics</li>
+                    </ul>
+                    
+                    <p><strong>Important notes:</strong></p>
+                    <ul>
+                        <li>Push notifications recommended—you'll be notified when your research is complete</li>
+                        <li>Response streaming is disabled due to long processing times</li>
+                        <li>Not available with Smart Savings pricing</li>
+                    </ul>
+                    
+                    <p>Deep research models are perfect for tasks like market research, academic investigations, technical deep-dives, or any scenario where you need the AI to gather, analyze, and synthesize information from multiple sources. <a href="/models#reasoning-models">Learn more about deep research models</a>.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary class="faq-question">
+                    <h3 id="cost-optimization">How can I optimize my costs?</h3>
+                    <span class="expand-icon">+</span>
+                </summary>
+                <div class="faq-answer">
+                    <p>Lookinglass gives you complete control over your AI spending. Here are proven strategies to reduce costs while maintaining quality:</p>
+                    
+                    <p><strong>Model Selection:</strong></p>
+                    <ul>
+                        <li><strong>Choose the right model:</strong> Use nano/mini variants for simple tasks, reserve pro models for complex work</li>
+                        <li><strong>Match the task:</strong> Don't use reasoning models when a chat model will do—reasoning tokens add cost</li>
+                        <li><strong>Check recommended models:</strong> See the <a href="/models#choosing-guide">models guide</a> for suggestions by use case</li>
+                    </ul>
+                    
+                    <p><strong>Web Search Management:</strong></p>
+                    <ul>
+                        <li><strong>Disable when not needed:</strong> Web search can add 10k-25k input tokens (sometimes 50k+)</li>
+                        <li><strong>Toggle in Settings:</strong> Turn it off for tasks that don't need current information</li>
+                    </ul>
+                    
+                    <p><strong>Response Settings:</strong></p>
+                    <ul>
+                        <li><strong>Lower response length:</strong> Output tokens are the biggest cost contributor—set maximum response length appropriately</li>
+                        <li><strong>Adjust context window:</strong> Reduce Smart Memory (context window) if you don't need extensive conversation history</li>
+                        <li><strong>Disable permanent memory:</strong> Turn it off when not needed to save input tokens</li>
+                    </ul>
+                    
+                    <p><strong>Smart Savings:</strong></p>
+                    <ul>
+                        <li><strong>Enable for non-urgent tasks:</strong> Save 50% on compatible models (gpt-5, gpt-5-mini, gpt-5-nano, o3, o4-mini)</li>
+                        <li><strong>Combine with streaming:</strong> Enable Live Response Streaming with Smart Savings to reduce perceived wait times</li>
+                    </ul>
+                    
+                    <p><strong>Spending Protection:</strong></p>
+                    <ul>
+                        <li><strong>Set spending alerts:</strong> Get warnings before sending expensive messages</li>
+                        <li><strong>Review the cost bar:</strong> Always check the estimated cost before sending</li>
+                        <li><strong>Monitor your audit log:</strong> Review transaction history to identify spending patterns</li>
+                    </ul>
+                    
+                    <p><strong>Pro tip:</strong> The combination of a nano/mini model + Smart Savings + modest response length can give you excellent results at a fraction of the cost. Experiment to find your sweet spot! <a href="/pricing">See detailed pricing</a>.</p>
                 </div>
             </details>
             
@@ -341,7 +441,7 @@ permalink: /faq/
                         <li><strong>All GPT-4o models</strong> (chatgpt-4o-latest, gpt-4o, gpt-4o-mini)</li>
                         <li><strong>All GPT-4.1 models</strong> (gpt-4.1, gpt-4.1-mini, gpt-4.1-nano)</li>
                         <li><strong>gpt-4-turbo</strong> (but not gpt-4)</li>
-                        <li><strong>All O-series models</strong> (o1, o1-pro, o3, o3-pro, o4-mini) except o3-mini</li>
+                        <li><strong>All O-series models</strong> (o1, o1-pro, o3, o3-pro, o4-mini, o3-deep-research, o4-mini-deep-research) except o3-mini</li>
                     </ul>
                     <p><strong>Models that do NOT support images:</strong></p>
                     <ul>
@@ -373,6 +473,23 @@ permalink: /faq/
                         <li><strong>Delete from archive:</strong> Swipe left on an archived thread and tap "Delete" to permanently remove it</li>
                     </ul>
                     <p>Archived threads retain all their conversation history and can be restored at any time. This is perfect for keeping your active conversations organized while preserving important past chats. <a href="/guide#organizing-threads">Learn more about archiving</a>.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary class="faq-question">
+                    <h3 id="push-notifications">Can I get notified when my response is ready?</h3>
+                    <span class="expand-icon">+</span>
+                </summary>
+                <div class="faq-answer">
+                    <p>Yes! Lookinglass supports push notifications so you can send a message and go do something else while the AI thinks. This is especially useful for:</p>
+                    <ul>
+                        <li><strong>Reasoning models:</strong> When using models like o3 or gpt-5 that take extra time to think through complex problems</li>
+                        <li><strong>Deep research models:</strong> o3-deep-research and o4-mini-deep-research can take 5-15+ minutes, making notifications essential</li>
+                        <li><strong>Smart Savings mode:</strong> When you're trading speed for 50% cost savings</li>
+                        <li><strong>Long responses:</strong> When you've set a high maximum response length</li>
+                    </ul>
+                    <p>Enable notifications in your device settings, and you'll get an alert as soon as your AI response arrives—even if the app is in the background or your device is locked.</p>
                 </div>
             </details>
             

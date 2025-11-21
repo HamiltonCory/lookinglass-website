@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Models | Lookinglass
-description: Complete guide to Lookinglass AI models. Compare 11 GPT chat models, 5 GPT-5 reasoning models, and 6 O-Series models, understand Smart Savings pricing, context windows, and choose the right model for your needs.
+description: Complete guide to Lookinglass AI models. Compare 11 GPT chat models, 5 GPT-5 reasoning models, and 8 O-Series models including deep research variants. Understand Smart Savings pricing, web search capabilities, context windows, and choose the right model for your needs.
 permalink: /models/
 ---
 
@@ -14,15 +14,16 @@ permalink: /models/
         
         <div class="legal-content">
             <div class="legal-intro">
-                <p>Lookinglass gives you access to 22 OpenAI models (11 GPT chat models, 5 GPT-5 reasoning models, and 6 O-series models) organized by model family and use case:</p>
+                <p>Lookinglass gives you access to 24 OpenAI models (11 GPT chat models, 5 GPT-5 reasoning models, and 8 O-series models) organized by model family and use case. The app includes powerful filtering to help you find the perfect model—filter by reasoning capability, web search support, image input, input caching, Smart Savings availability, context window size, and more.</p>
                 <ul>
                     <li><strong>Default: gpt-4.1-mini</strong> (gpt-4.1 series) - Start here for everyday tasks. Solid performance for writing, coding, and analysis with 1M token context</li>
                     <li><strong>Latest Generation: gpt-5 series</strong> (5 reasoning models) - Newest model family (November 2025). Reasoning models with customizable AI power and response detail. Note: gpt-5-chat-latest and gpt-5.1-chat-latest are chat models (see GPT chat models section)</li>
-                    <li><strong>Long Conversations: gpt-4.1</strong> (3 models) - Best for long threads where significant context is needed (up to 1M tokens)</li>
-                    <li><strong>Proven & Reliable: gpt-4o series</strong> (3 models) - OpenAI's former flagship model. Battle-tested, widely trusted, and still excellent for daily work.</li>
-                    <li><strong>Hard Problems: o3 series</strong> (3 models) - Best reasoning models. Use when you need step-by-step problem solving for math, logic, or complex coding challenges</li>
+                    <li><strong>Long Conversations: gpt-4.1</strong> (3 models) - Best for long threads where significant context is needed (up to 1M tokens). gpt-4.1 and gpt-4.1-mini support web search</li>
+                    <li><strong>Proven & Reliable: gpt-4o series</strong> (3 models) - OpenAI's former flagship model. Battle-tested, widely trusted, and still excellent for daily work. Supports web search</li>
+                    <li><strong>Hard Problems: o3 series</strong> (3 models) - Best reasoning models. Use when you need step-by-step problem solving for math, logic, or complex coding challenges. o3 supports web search</li>
+                    <li><strong>Deep Research: o3-deep-research & o4-mini-deep-research</strong> (2 models) - Specialized for intensive research and analysis. Perfect for comprehensive investigations requiring up-to-date information</li>
                     <li><strong>Alternative Reasoning: o1 series</strong> (2 models) - Previous generation reasoning. OpenAI recommends o3, but o1 remains available for users who prefer its approach</li>
-                    <li><strong>Budget Reasoning: o4-mini</strong> (1 model) - Most affordable reasoning model, good for basic reasoning tasks</li>
+                    <li><strong>Budget Reasoning: o4-mini</strong> (1 model) - Most affordable reasoning model with web search support, good for basic reasoning tasks</li>
                     <li><strong>Legacy: gpt-4 & gpt-3.5</strong> (3 models) - Legacy models, rarely the best choice</li>
                 </ul>
                 <p>This guide helps you choose the right model and settings for your needs.</p>
@@ -72,6 +73,59 @@ permalink: /models/
                 </div>
             </section>
 
+            <!-- Model Filtering & Categories Section -->
+            <section id="model-filtering" class="model-section">
+                <h2 class="section-title">Find Your Perfect Model</h2>
+                <p class="section-description">Lookinglass includes powerful filtering to help you find the right model for any task. Browse by category or filter by specific capabilities.</p>
+                
+                <div class="models-grid">
+                    <div class="model-card">
+                        <h3>Model Categories</h3>
+                        <p class="model-description">Models are organized into four categories by use case, making it easy to find what you need:</p>
+                        <ul class="model-details">
+                            <li><strong>Everyday Models:</strong> Balanced performance for daily tasks—your go-to models for most work</li>
+                            <li><strong>Lightweight Models:</strong> Mini and nano variants optimized for speed and cost—perfect when you need quick answers</li>
+                            <li><strong>Advanced Models:</strong> Pro models and deep research variants for the most demanding tasks</li>
+                            <li><strong>Legacy Models:</strong> Older generation models maintained for compatibility</li>
+                        </ul>
+                    </div>
+
+                    <div class="model-card">
+                        <h3>Filter by Capabilities</h3>
+                        <p class="model-description">Narrow down models by specific features you need:</p>
+                        <ul class="model-details">
+                            <li><strong>Reasoning:</strong> Models that think step-by-step through complex problems</li>
+                            <li><strong>Web Search:</strong> Models that can search the internet for up-to-date information (15 models)</li>
+                            <li><strong>Image Input:</strong> Models that accept and analyze images (up to 5 per message)</li>
+                            <li><strong>Input Caching:</strong> Models that support cached tokens for faster, cheaper follow-up messages</li>
+                            <li><strong>Smart Savings:</strong> Models with 50% discount option for non-urgent tasks</li>
+                        </ul>
+                    </div>
+
+                    <div class="model-card">
+                        <h3>Filter by Settings</h3>
+                        <p class="model-description">Find models that support the controls you want:</p>
+                        <ul class="model-details">
+                            <li><strong>Creativity Level:</strong> Adjust temperature for more creative or focused responses</li>
+                            <li><strong>Response Detail Level:</strong> Control how concise or thorough responses are</li>
+                            <li><strong>AI Power Level:</strong> Set reasoning effort from light to ultimate thinking</li>
+                        </ul>
+                    </div>
+
+                    <div class="model-card">
+                        <h3>Filter by Context Size</h3>
+                        <p class="model-description">Choose models by minimum context window:</p>
+                        <ul class="model-details">
+                            <li><strong>Any:</strong> All 24 models available</li>
+                            <li><strong>128K+:</strong> Models with at least 128,000 tokens (22 models)</li>
+                            <li><strong>200K+:</strong> Models with at least 200,000 tokens (16 models)</li>
+                            <li><strong>400K+:</strong> Models with at least 400,000 tokens (8 models)</li>
+                            <li><strong>1M+:</strong> Models with 1 million token context (3 models)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
             <!-- ChatGPT Models Section -->
             <section id="chat-models" class="model-section">
                 <h2 class="section-title">GPT Chat Models (11 Available)</h2>
@@ -80,7 +134,7 @@ permalink: /models/
                 <div class="models-grid">
                     <div class="model-card">
                         <h3>gpt-5 Chat Models (2 Models)</h3>
-                        <p class="model-description">Non-reasoning chat variants of the gpt-5 family. gpt-5-chat-latest and gpt-5.1-chat-latest provide the latest knowledge (September 30, 2024 cutoff) without reasoning capabilities. Perfect for everyday conversations and tasks that don't require step-by-step thinking. Both support image input (up to 5 images per message). <a href="https://openai.com/index/introducing-gpt-5/" target="_blank" rel="noopener">Learn more from OpenAI</a>.</p>
+                        <p class="model-description">Non-reasoning chat variants of the gpt-5 family. gpt-5-chat-latest and gpt-5.1-chat-latest provide the latest knowledge (September 30, 2024 cutoff) without reasoning capabilities. Perfect for everyday conversations and tasks that don't require step-by-step thinking. Both support image input (up to 5 images per message) and web search. <a href="https://openai.com/index/introducing-gpt-5/" target="_blank" rel="noopener">Learn more from OpenAI</a>.</p>
                         <table class="model-ratings-table">
                             <tr>
                                 <td class="rating-label">Model:</td>
@@ -103,6 +157,7 @@ permalink: /models/
                             <li><strong>best for:</strong> Latest knowledge, everyday conversations, tasks that don't require reasoning</li>
                             <li><strong>context:</strong> 128K tokens</li>
                             <li><strong>image support:</strong> yes (up to 5 images per message)</li>
+                            <li><strong>web search:</strong> yes</li>
                             <li><strong>smart savings:</strong> no</li>
                             <li><strong>starting from:</strong> $0.00001 per message</li>
                         </ul>
@@ -110,7 +165,7 @@ permalink: /models/
 
                     <div class="model-card">
                         <h3>gpt-4o Series (3 Models)</h3>
-                        <p class="model-description">Released May 13, 2024, gpt-4o ("omni") was OpenAI's first truly multimodal model, processing text, audio, and vision natively. Featured dramatically faster responses, superior multilingual capabilities (50+ languages), and free access that democratized advanced AI. Anecdotal user feedback suggests its communication style remains preferred by many users over newer models. <a href="https://openai.com/index/gpt-4o-system-card/" target="_blank" rel="noopener">Technical deep dive (system card)</a>.</p>
+                        <p class="model-description">Released May 13, 2024, gpt-4o ("omni") was OpenAI's first truly multimodal model, processing text, audio, and vision natively. Featured dramatically faster responses, superior multilingual capabilities (50+ languages), and free access that democratized advanced AI. Anecdotal user feedback suggests its communication style remains preferred by many users over newer models. gpt-4o and gpt-4o-mini support web search. <a href="https://openai.com/index/gpt-4o-system-card/" target="_blank" rel="noopener">Technical deep dive (system card)</a>.</p>
                         <table class="model-ratings-table">
                             <tr>
                                 <td class="rating-label">Model:</td>
@@ -136,6 +191,7 @@ permalink: /models/
                             <li><strong>best for:</strong> proven reliable choice for daily work, battle-tested for all tasks</li>
                             <li><strong>context:</strong> 128K tokens</li>
                             <li><strong>image support:</strong> yes (up to 5 images per message)</li>
+                            <li><strong>web search:</strong> yes (gpt-4o, gpt-4o-mini only)</li>
                             <li><strong>smart savings:</strong> no</li>
                             <li><strong>starting from:</strong> $0.00003 per message</li>
                         </ul>
@@ -143,7 +199,7 @@ permalink: /models/
 
                     <div class="model-card">
                         <h3>gpt-4.1 Series (3 Models)</h3>
-                        <p class="model-description">Released April 14, 2025, gpt-4.1 introduced the industry's largest context window at 1M tokens—enough to analyze entire codebases or multiple books simultaneously. Designed for tasks requiring significant context, long-form content analysis, and complex multi-document reasoning. Also features improved tool-calling and more precise instruction following compared to previous generations.</p>
+                        <p class="model-description">Released April 14, 2025, gpt-4.1 introduced the industry's largest context window at 1M tokens—enough to analyze entire codebases or multiple books simultaneously. Designed for tasks requiring significant context, long-form content analysis, and complex multi-document reasoning. Also features improved tool-calling and more precise instruction following compared to previous generations. gpt-4.1 and gpt-4.1-mini support web search.</p>
                         <table class="model-ratings-table">
                             <tr>
                                 <td class="rating-label">Model:</td>
@@ -169,6 +225,7 @@ permalink: /models/
                             <li><strong>best for:</strong> tasks requiring significant context, long conversations, and analyzing large amounts of text</li>
                             <li><strong>context:</strong> 1M tokens</li>
                             <li><strong>image support:</strong> yes (up to 5 images per message)</li>
+                            <li><strong>web search:</strong> yes (gpt-4.1, gpt-4.1-mini only)</li>
                             <li><strong>smart savings:</strong> no</li>
                             <li><strong>starting from:</strong> $0.00002 per message</li>
                         </ul>
@@ -236,12 +293,12 @@ permalink: /models/
             <!-- GPT-5 Reasoning Models Section -->
             <section id="gpt5-reasoning-models" class="model-section">
                 <h2 class="section-title">GPT-5 Reasoning Models (5 Available)</h2>
-                <p class="section-description">Advanced reasoning models from the gpt-5 family that "think" step-by-step through complex problems. All support image input (up to 5 images per message) and customizable AI power levels.</p>
+                <p class="section-description">Advanced reasoning models from the gpt-5 family that "think" step-by-step through complex problems. All support image input (up to 5 images per message), web search, and customizable AI power levels.</p>
 
                 <div class="models-grid">
                     <div class="model-card">
                         <h3>gpt-5 Series (5 Reasoning Models)</h3>
-                        <p class="model-description">Released August 7, 2025, gpt-5 represents OpenAI's latest generation with newest knowledge (September 30, 2024 cutoff). Includes five reasoning-capable models (gpt-5, gpt-5.1, gpt-5-pro, gpt-5-mini, gpt-5-nano) with AI Power Level controls—though gpt-5-pro always operates at maximum power. Unique features: customizable AI power level (thinking time) and response detail level. gpt-5.1 introduces a special "none" AI power level that disables reasoning, effectively turning it into a non-reasoning model. Multiple size options let you balance speed, quality, and cost. <a href="https://openai.com/index/introducing-gpt-5/" target="_blank" rel="noopener">Learn more from OpenAI</a>.</p>
+                        <p class="model-description">Released August 7, 2025, gpt-5 represents OpenAI's latest generation with newest knowledge (September 30, 2024 cutoff). Includes five reasoning-capable models (gpt-5, gpt-5.1, gpt-5-pro, gpt-5-mini, gpt-5-nano) with AI Power Level controls—though gpt-5-pro always operates at maximum power. Unique features: customizable AI power level (thinking time), response detail level, and web search support. gpt-5.1 introduces a special "none" AI power level that disables reasoning, effectively turning it into a non-reasoning model. Multiple size options let you balance speed, quality, and cost. <a href="https://openai.com/index/introducing-gpt-5/" target="_blank" rel="noopener">Learn more from OpenAI</a>.</p>
                         <table class="model-ratings-table">
                             <tr>
                                 <td class="rating-label">Model:</td>
@@ -273,6 +330,7 @@ permalink: /models/
                             <li><strong>best for:</strong> Latest knowledge with reasoning capabilities. Use for complex tasks requiring step-by-step thinking</li>
                             <li><strong>context:</strong> 400K tokens</li>
                             <li><strong>image support:</strong> yes (up to 5 images per message)</li>
+                            <li><strong>web search:</strong> yes</li>
                             <li><strong>smart savings:</strong> yes (gpt-5, gpt-5-mini, and gpt-5-nano)</li>
                             <li><strong>special feature:</strong> gpt-5.1 supports "none" AI power level that disables reasoning</li>
                             <li><strong>starting from:</strong> $0.00001 per message</li>
@@ -283,13 +341,13 @@ permalink: /models/
 
             <!-- O-Series Models Section -->
             <section id="reasoning-models" class="model-section">
-                <h2 class="section-title">O-Series Reasoning Models (6 Available)</h2>
-                <p class="section-description">Advanced reasoning models that "think" step-by-step through complex problems, perfect for mathematics, logic, and detailed analysis. Most support image input (up to 5 images per message), except o3-mini.</p>
+                <h2 class="section-title">O-Series Reasoning Models (8 Available)</h2>
+                <p class="section-description">Advanced reasoning models that "think" step-by-step through complex problems, perfect for mathematics, logic, and detailed analysis. Includes specialized deep research variants optimized for comprehensive investigations. Most support image input (up to 5 images per message), except o3-mini.</p>
 
                 <div class="models-grid">
                     <div class="model-card">
                         <h3>o3 Series (3 Models)</h3>
-                        <p class="model-description">Released April 16, 2025, o3 is the successor to o1 with improved reasoning capabilities and better performance on complex multi-step problems. Features configurable thinking depth and significantly outperforms o1 on reasoning tasks. Notable for its ability to process both text and images during its chain-of-thought phase, including analyzing whiteboard sketches. Perfect for advanced math, programming challenges, and scientific problems. <a href="https://openai.com/index/introducing-o3-and-o4-mini/" target="_blank" rel="noopener">Learn more from OpenAI</a>.</p>
+                        <p class="model-description">Released April 16, 2025, o3 is the successor to o1 with improved reasoning capabilities and better performance on complex multi-step problems. Features configurable thinking depth and significantly outperforms o1 on reasoning tasks. Notable for its ability to process both text and images during its chain-of-thought phase, including analyzing whiteboard sketches. Perfect for advanced math, programming challenges, and scientific problems. o3 supports web search. <a href="https://openai.com/index/introducing-o3-and-o4-mini/" target="_blank" rel="noopener">Learn more from OpenAI</a>.</p>
                         <table class="model-ratings-table">
                             <tr>
                                 <td class="rating-label">Model:</td>
@@ -316,6 +374,7 @@ permalink: /models/
                             <li><strong>AI power levels:</strong> standard, power, ultimate</li>
                             <li><strong>context:</strong> 200K tokens</li>
                             <li><strong>image support:</strong> yes (o3, o3-pro). Note: o3-mini does not support images</li>
+                            <li><strong>web search:</strong> yes (o3, o3-pro only)</li>
                             <li><strong>smart savings:</strong> yes (o3)</li>
                             <li><strong>starting from:</strong> $0.003 per message</li>
                         </ul>
@@ -375,8 +434,42 @@ permalink: /models/
                             <li><strong>AI power levels:</strong> standard, power, ultimate</li>
                             <li><strong>context:</strong> 200K tokens</li>
                             <li><strong>image support:</strong> yes (up to 5 images per message)</li>
+                            <li><strong>web search:</strong> yes</li>
                             <li><strong>smart savings:</strong> yes</li>
                             <li><strong>starting from:</strong> $0.002 per message</li>
+                        </ul>
+                    </div>
+
+                    <div class="model-card">
+                        <h3>Deep Research Models (2 Models)</h3>
+                        <p class="model-description">Specialized variants designed for intensive research and analysis tasks. These models combine powerful reasoning capabilities with web search support to gather and synthesize information from across the internet. Perfect for comprehensive investigations, up-to-date research, and tasks requiring evidence from multiple sources. Deep research models take 5-15+ minutes to complete their analysis, making them ideal for non-urgent, thorough research tasks.</p>
+                        <table class="model-ratings-table">
+                            <tr>
+                                <td class="rating-label">Model:</td>
+                                <td>o3-deep-research</td>
+                                <td>o4-mini-deep-research</td>
+                            </tr>
+                            <tr>
+                                <td class="rating-label">Intelligence:</td>
+                                <td>●●●●●</td>
+                                <td>●●●●○</td>
+                            </tr>
+                            <tr>
+                                <td class="rating-label">Speed:</td>
+                                <td>⚡○○○○</td>
+                                <td>⚡○○○○</td>
+                            </tr>
+                        </table>
+                        <ul class="model-details">
+                            <li><strong>models:</strong> o3-deep-research, o4-mini-deep-research</li>
+                            <li><strong>best for:</strong> comprehensive research requiring multiple sources, up-to-date information gathering, deep investigation into complex topics</li>
+                            <li><strong>reasoning:</strong> yes (AI power level not configurable)</li>
+                            <li><strong>context:</strong> 200K tokens</li>
+                            <li><strong>image support:</strong> yes (up to 5 images per message)</li>
+                            <li><strong>web search:</strong> yes</li>
+                            <li><strong>response time:</strong> 5-15+ minutes (streaming disabled)</li>
+                            <li><strong>smart savings:</strong> no</li>
+                            <li><strong>starting from:</strong> varies based on research depth</li>
                         </ul>
                     </div>
                 </div>
@@ -413,7 +506,7 @@ permalink: /models/
                                 <h4>Highest Quality</h4>
                                 <p>Advanced work, creative projects, complex conversations</p>
                                 <ul>
-                                    <li><strong>recommended:</strong> chatgpt-4o-latest or gpt-5-chat-latest</li>
+                                    <li><strong>recommended:</strong> chatgpt-4o-latest or gpt-5.1-chat-latest</li>
                                     <li><strong>why:</strong> top non-reasoning models, continuously updated by OpenAI</li>
                                     <li><strong>example:</strong> "Write a detailed business plan" or "Refactor this codebase"</li>
                                 </ul>
